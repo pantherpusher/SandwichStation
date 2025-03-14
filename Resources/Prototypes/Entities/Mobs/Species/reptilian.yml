@@ -104,6 +104,7 @@
     - DoorBumpOpener
     - ReptilianEmotes
     - AnomalyHost # ShibaStation
+
 - type: entity
   parent: BaseSpeciesDummy
   id: MobReptilianDummy
