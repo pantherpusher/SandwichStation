@@ -88,5 +88,5 @@
           volume: -2 
       color: Green
       forceEnableEmergencyLights: true
-      emergencyLightColor: Orange
+      emergencyLightColor: Green
       shuttleTime: 600
