@@ -30,6 +30,14 @@
       distro: '#0055cc'
       air: '#03fcd3'
       mix: '#947507'
+      oxygen: '#2887E8' # ShibaStation
+      nitrogen: '#DA1010' # ShibaStation
+      plasma: '#FF6500' # ShibaStation
+      tritium: '#13FF4B' # ShibaStation
+      ammonia: '#56941E' # ShibaStation
+      frezon: '#3A758C' # ShibaStation
+      
+      
   - type: StaticPrice
     price: 40
   - type: PhysicalComposition #Goobstation - Recycle update
