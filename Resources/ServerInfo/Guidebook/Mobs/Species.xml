@@ -24,7 +24,7 @@
   <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
   <GuideEntityEmbed Entity="MobTajaran" Caption="Tajaran"/>
   <GuideEntityEmbed Entity="MobVox" Caption="Vox"/>
-  <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vuplkanin"/>
+  <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vulpkanin"/>
   <GuideEntityEmbed Entity="MobYowie" Caption="Yowie"/>
   </Box>
 

@@ -104,6 +104,7 @@
     - FootstepSound
     - DoorBumpOpener
     - VulpEmotes
+    - AnomalyHost # ShibaStation
   - type: FootPrints # WD EDIT
 
 - type: entity
