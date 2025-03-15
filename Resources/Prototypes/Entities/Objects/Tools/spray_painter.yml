@@ -34,7 +34,7 @@
       plasma: '#FF6500' # ShibaStation
       tritium: '#13FF4B' # ShibaStation
       ammonia: '#56941E' # ShibaStation
-      frezon: '#3A758C' # ShibaStation
+      frezon: '#5B7085' # ShibaStation
       
       
   - type: StaticPrice
