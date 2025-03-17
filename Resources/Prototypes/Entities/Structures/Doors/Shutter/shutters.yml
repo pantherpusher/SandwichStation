@@ -236,6 +236,4 @@
         - HighImpassable
         layer:
         - HighImpassable
-  - type: Transform
-    noRot: false #ShibaStation - Prevents rotation being reset to Angle.Zero by TransformComponent and being locked.
-  - type: Rotatable #ShibaStation - Allows for rotation during construction.
+  - type: Rotatable #ShibaStation
