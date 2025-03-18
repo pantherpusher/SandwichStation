@@ -34,6 +34,7 @@
    # - id: ClothingEyesGlassesMedSec - NO MORE MEDSEC NTR. DEATH TO YOU
    # - id: ClothingHandsGlovesCombat
     - id: ClothingOuterHardsuitBlueshield
+    - id: BSOManual # why tf didn't get get this sooner?
     - id: BoxZiptie
     - id: OxygenTankFilled
     - id: NitrogenTankFilled
