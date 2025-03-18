@@ -1,24 +1,62 @@
 Entries:
-- author: MinxLite
+- author: AstroDogeDX
+  changes:
+  - message: BSO actually gets their CQC manual in their locker now. Try to remember
+      the basics.
+    type: Fix
+  id: 227
+  time: '2025-03-18T22:28:21.876093'
+- author: Blahaj-the-Shonk
+  changes:
+  - message: Added parts for machine construction to some techfabs.
+    type: Add
+  id: 226
+  time: '2025-03-18T22:28:55.406266'
+- author: B3CKDOOR
+  changes:
+  - message: Added "ShibaStation" song to playlist in jukebox
+    type: Add
+  id: 225
+  time: '2025-03-18T22:31:58.579408'
+- author: B3CKDOOR
+  changes:
+  - message: Added more colors to the spraypaint tool based on canisters colors
+    type: Add
+  id: 224
+  time: '2025-03-18T22:30:52.692688'
+- author: B3CKDOOR
+  changes:
+  - message: Replaced strings of contraband scanner inside of the construction menu
+      to show the proper name.
+    type: Fix
+  id: 223
+  time: '2025-03-18T22:30:07.139630'
+- author: MinxIsntHere
+  changes:
+  - message: Shutters and blast doors are now rotatable during construction.
+    type: Tweak
+  id: 222
+  time: '2025-03-18T22:29:38.637336'
+- author: MinxIsntHere
   changes:
   - message: Smol species are now consistent in their stamina damage.
     type: Tweak
   id: 221
   time: '2025-03-13T18:43:38.243481'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Guidebook is more accurate with species specific listings.
     type: Tweak
   id: 220
   time: '2025-03-13T18:43:38.707410'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Ensured ALL foodstuffs are animal friendly! Garlic and onions are on
       the menu!
     type: Fix
   id: 219
   time: '2025-03-13T18:43:39.197213'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Onis can open doors and pilot shuttles again. Oopsie.
     type: Fix
