@@ -2,3 +2,11 @@
   id: ServiceWeapons
   recipes:
   - WeaponLaserSvalinn
+
+- type: latheRecipePack
+  id: ServicePartsStatic
+  recipes:
+  - MicroManipulatorStockPart
+  - MatterBinStockPart
+  - CapacitorStockPart
+  - CableStack

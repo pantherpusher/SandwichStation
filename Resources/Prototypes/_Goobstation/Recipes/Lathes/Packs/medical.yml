@@ -31,6 +31,14 @@
   recipes:
   - VehicleHoverchairSci
 
+- type: latheRecipePack
+  id: MedicalPartsStatic
+  recipes:
+  - MicroManipulatorStockPart
+  - MatterBinStockPart
+  - CapacitorStockPart
+  - CableStack
+
 ## Dynamic
 - type: latheRecipePack
   id: MedicalSurgery
