@@ -100,8 +100,7 @@
         - HighImpassable
         layer:
         - HighImpassable
-  - type: Transform
-    noRot: true
+  - type: Rotatable #ShibaStation
   - type: Construction
     graph: BlastDoor
     node: frame1
