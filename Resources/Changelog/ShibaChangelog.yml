@@ -1,4 +1,10 @@
 Entries:
+- author: KBraid
+  changes:
+  - message: New lobby background; Average shift in Sci!
+    type: Add
+  id: 228
+  time: '2025-03-20T12:25:18.030717'
 - author: AstroDogeDX
   changes:
   - message: BSO actually gets their CQC manual in their locker now. Try to remember
