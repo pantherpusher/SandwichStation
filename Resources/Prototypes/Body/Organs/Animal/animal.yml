@@ -115,22 +115,19 @@
 - type: entity
   id: OrganMouseStomach
   parent: OrganAnimalStomach
-  name: stomach
-  categories: [ HideSpawnMenu ]
+  suffix: "mouse"
   components:
   - type: SolutionContainerManager
     solutions:
       stomach:
-        maxVol: 30
-  - type: Item
-    size: Small
-    heldPrefix: stomach
-  - type: Tag # tags are dumb and I think this was making them unedible.
-    tags:
-    - Meat
-    - Organ
-    - Stomach
-    - Trash
+        maxVol: 50
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: Sprite
+    state: stomach
 
 - type: entity
   id: OrganAnimalLiver
