@@ -13,6 +13,13 @@ using Robust.Client.Graphics;
 using Content.Client.DamageState;
 using System.Linq;
 
+using Content.Shared._Goobstation.Wizard.SupermatterHalberd;
+using Robust.Shared.Timing;
+using Content.Shared._Goobstation.Emoting;
+using Content.Client.Animations;
+using System;
+using Robust.Shared.Audio.Systems;
+
 namespace Content.Client.Emoting;
 
 public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
@@ -20,6 +27,9 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
     [Dependency] private readonly AnimationPlayerSystem _anim = default!;
     [Dependency] private readonly IPrototypeManager _prot = default!;
     [Dependency] private readonly JitteringSystem _jitter = default!;
+    [Dependency] private readonly RaysSystem _rays = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly TransformSystem _transform = default!;
 
     private const int TweakAnimationDurationMs = 1100; // 11 frames * 100ms per frame
 
@@ -34,6 +44,30 @@ public sealed partial class AnimatedEmotesSystem : SharedAnimatedEmotesSystem
         SubscribeLocalEvent<AnimatedEmotesComponent, AnimationJumpEmoteEvent>(OnJump);
         SubscribeLocalEvent<AnimatedEmotesComponent, AnimationVibrateEmoteEvent>(OnVibrate);
         SubscribeLocalEvent<AnimatedEmotesComponent, AnimationTweakEmoteEvent>(OnTweak);
+        SubscribeNetworkEvent<BibleFartSmiteEvent>(OnBibleSmite);
+    }
+
+    public void OnBibleSmite(BibleFartSmiteEvent args)
+    {
+        EntityUid uid = GetEntity(args.Bible);
+        if (!_timing.IsFirstTimePredicted || uid == EntityUid.Invalid)
+            return;
+
+        var rays = _rays.DoRays(_transform.GetMapCoordinates(uid),
+            Color.LightGoldenrodYellow,
+            Color.AntiqueWhite,
+            10,
+            15,
+            minMaxRadius: new Vector2(3f, 6f),
+            minMaxEnergy: new Vector2(2f, 4f),
+            proto: "EffectRayCharge",
+            server: false);
+
+        if (rays == null)
+            return;
+
+        var track = EnsureComp<TrackUserComponent>(rays.Value);
+        track.User = uid;
     }
 
     public void PlayEmote(EntityUid uid, Animation anim, string animationKey = "emoteAnimKeyId")
