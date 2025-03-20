@@ -5,7 +5,7 @@
   components:
   - type: WizardRule
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 15
   - type: AntagObjectives
     objectives:
     - WizardSurviveObjective
@@ -16,7 +16,7 @@
     definitions:
     - spawnerPrototype: SpawnPointWizard
       prefRoles: [ Wizard ]
-      playerRatio: 20
+      playerRatio: 10
       min: 1
       max: 1
       mindRoles:
@@ -66,7 +66,7 @@
   - type: StationEvent
     earliestStart: 35
     weight: 5.5
-    minimumPlayers: 20
+    minimumPlayers: 15
     duration: 1
     chaos: # Goobstation
       Hostile: 200
@@ -78,7 +78,7 @@
     selectionTime: PostPlayerSpawn
     definitions:
     - spawnerPrototype: SpawnPointWizard
-      playerRatio: 20
+      playerRatio: 10
       min: 1
       max: 1
       pickPlayer: false
