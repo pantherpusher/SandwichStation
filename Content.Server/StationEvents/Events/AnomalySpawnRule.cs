@@ -1,6 +1,11 @@
-﻿using Content.Server.Anomaly;
+﻿using System.Linq;
+using Content.Server.Anomaly;
+using Content.Server.Spawners.Components;
 using Content.Server.Station.Components;
 using Content.Server.StationEvents.Components;
+using Content.Shared.EntityTable;
+using Robust.Shared.Prototypes;
+
 ﻿using Content.Shared.GameTicking.Components;
 
 namespace Content.Server.StationEvents.Events;
@@ -8,6 +13,8 @@ namespace Content.Server.StationEvents.Events;
 public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleComponent>
 {
     [Dependency] private readonly AnomalySystem _anomaly = default!;
+    [Dependency] private readonly EntityTableSystem _entityTable = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     protected override void Added(EntityUid uid, AnomalySpawnRuleComponent component, GameRuleComponent gameRule, GameRuleAddedEvent args)
     {
@@ -39,7 +46,35 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
         var amountToSpawn = 1;
         for (var i = 0; i < amountToSpawn; i++)
         {
-            _anomaly.SpawnOnRandomGridLocation(grid.Value, component.AnomalySpawnerPrototype);
+
+            var chosenAnomaly = GetAnomalySpawn(component.AnomalySpawnerPrototype);
+
+            if (chosenAnomaly == "RandomAnomalyInjectorSpawner")
+            {
+                chosenAnomaly = GetAnomalySpawn("RandomAnomalyInjectorSpawner");
+            }
+
+            if (chosenAnomaly == "RandomRockAnomalySpawner")
+            {
+                chosenAnomaly = GetAnomalySpawn("RandomRockAnomalySpawner");
+            }
+
+            if (!string.IsNullOrEmpty(chosenAnomaly))
+            {
+                _anomaly.SpawnOnRandomGridLocation(grid.Value, chosenAnomaly, true, 0.15f);
+            }
+
         }
+
+    }
+
+    private string? GetAnomalySpawn(string prototypeId)
+    {
+        var proto = _prototypeManager.Index<EntityPrototype>(prototypeId);
+        if (!proto.TryGetComponent<EntityTableSpawnerComponent>(out var anomalies, EntityManager.ComponentFactory))
+            return null;
+
+        var spawns = _entityTable.GetSpawns(anomalies.Table);
+        return spawns.FirstOrDefault();
     }
 }
