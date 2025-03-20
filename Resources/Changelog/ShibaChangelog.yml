@@ -1,4 +1,43 @@
 Entries:
+- author: AstroDogeDX
+  changes:
+  - message: Jobs and non-antag roles now have varied shiba shilling payouts. Command,
+      medical and security have higher bonuses!
+    type: Add
+  id: 234
+  time: '2025-03-20T15:39:23.284166'
+- author: AstroDogeDX
+  changes:
+  - message: Early merged wizard bugfixes and new nanochat features (public number
+      directory!)
+    type: Add
+  id: 233
+  time: '2025-03-20T15:40:03.176354'
+- author: Apfy
+  changes:
+  - message: Added bunny ears and tails to the human markings list. Bnuuytime!
+    type: Add
+  id: 232
+  time: '2025-03-20T15:37:09.912092'
+- author: AstroDogeDX
+  changes:
+  - message: Animal organs are now considered trash for easy cleaning.
+    type: Tweak
+  id: 231
+  time: '2025-03-20T15:37:26.979542'
+- author: AstroDogeDX
+  changes:
+  - message: adminbus even more busable.
+    type: Tweak
+  id: 230
+  time: '2025-03-20T15:37:45.274451'
+- author: AstroDogeDX
+  changes:
+  - message: Heretics and Changelings should roll more often - also Wizards require
+      less players.
+    type: Tweak
+  id: 229
+  time: '2025-03-20T15:38:21.878575'
 - author: KBraid
   changes:
   - message: New lobby background; Average shift in Sci!
