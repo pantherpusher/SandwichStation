@@ -54,7 +54,7 @@
     - ShiftImplanter
     - StopTimeImplanter
     - VaporizeImplanter
-    - CentCommFreedomImplanter
+    - CentcommFreedomImplanter
     # Misc
     - LightReplacerLEDAdmeme
     - PortableRecharger
