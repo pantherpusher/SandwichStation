@@ -11,6 +11,10 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Content.Shared.Power;
+using Content.Server.Chat.Managers;
+using Content.Server.Administration.Logs;
+using Content.Shared.Database;
+
 
 namespace Content.Server.Anomaly;
 
@@ -23,6 +27,8 @@ public sealed partial class AnomalySystem
 {
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly IChatManager _chat = default!;
+    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
     private void InitializeGenerator()
     {
@@ -82,7 +88,7 @@ public sealed partial class AnomalySystem
         UpdateGeneratorUi(uid, component);
     }
 
-    public void SpawnOnRandomGridLocation(EntityUid grid, string toSpawn)
+    public void SpawnOnRandomGridLocation(EntityUid grid, string toSpawn, bool logSpawn = false, float offset = 0.0f)
     {
         if (!TryComp<MapGridComponent>(grid, out var gridComp))
             return;
@@ -149,6 +155,15 @@ public sealed partial class AnomalySystem
 
             targetCoords = pos;
             break;
+        }
+
+        if (logSpawn)
+        {
+            var anomalyLoc = _transform.ToMapCoordinates(targetCoords).Position;
+            var x = anomalyLoc.X;
+            var y = anomalyLoc.Y;
+            _chat.SendAdminAnnouncement($"{toSpawn} spawned at ({x},{y})");
+            _adminLogger.Add(LogType.EventRan, LogImpact.High, $"{toSpawn} spawned at ({x},{y})");
         }
 
         Spawn(toSpawn, targetCoords);
