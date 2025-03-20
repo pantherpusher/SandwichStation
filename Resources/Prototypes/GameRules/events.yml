@@ -519,7 +519,7 @@
   - type: StationEvent
     earliestStart: 30
     weight: 8
-    minimumPlayers: 20
+    minimumPlayers: 12
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:
@@ -533,7 +533,7 @@
       fallbackRoles: [ Traitor ]
       min: 1
       max: 2
-      playerRatio: 10
+      playerRatio: 6
       blacklist:
         components:
         - AntagImmune

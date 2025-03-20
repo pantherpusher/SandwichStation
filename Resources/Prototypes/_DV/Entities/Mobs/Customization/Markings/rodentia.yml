@@ -114,7 +114,7 @@
   id: RodentiaHeadTopEarRabbit
   markingCategory: HeadTop
   bodyPart: HeadTop
-  speciesRestriction: [Rodentia]
+  speciesRestriction: [Rodentia, Human]
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: rabbit
@@ -343,7 +343,7 @@
   id: RodentiaTailRabbit
   markingCategory: Tail
   bodyPart: Tail
-  speciesRestriction: [Rodentia]
+  speciesRestriction: [Rodentia, Human]
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: rabbit
@@ -352,7 +352,7 @@
   id: RodentiaTailRabbitCounter
   markingCategory: Tail
   bodyPart: Tail
-  speciesRestriction: [Rodentia]
+  speciesRestriction: [Rodentia, Human]
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: rabbit
