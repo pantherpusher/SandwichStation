@@ -36,7 +36,45 @@ public sealed class EscapeInventorySystem : SharedEscapeInventorySystem
         if (!_actionBlockerSystem.CanInteract(user, container))
             return;
 
-        base.AttemptEscape(user, container, component, multiplier);
+        if (!_containerSystem.TryGetContainingContainer((uid, null, null), out var container) || !_actionBlockerSystem.CanInteract(uid, container.Owner))
+            return;
+
+        // Make sure there's nothing stopped the removal (like being glued)
+        if (!_containerSystem.CanRemove(uid, container))
+        {
+            _popupSystem.PopupEntity(Loc.GetString("escape-inventory-component-failed-resisting"), uid, uid);
+            return;
+        }
+
+        // Contested
+        if (_handsSystem.IsHolding(container.Owner, uid, out _))
+        {
+            AttemptEscape(uid, container.Owner, component);
+            return;
+        }
+
+        // Uncontested
+        if (HasComp<StorageComponent>(container.Owner) || HasComp<InventoryComponent>(container.Owner) || HasComp<SecretStashComponent>(container.Owner))
+            AttemptEscape(uid, container.Owner, component);
+    }
+
+    public void AttemptEscape(EntityUid user, EntityUid container, CanEscapeInventoryComponent component, float multiplier = 1f) //private to public for carrying system.
+    {
+        if (component.IsEscaping)
+            return;
+
+        var doAfterEventArgs = new DoAfterArgs(EntityManager, user, component.BaseResistTime * multiplier, new EscapeInventoryEvent(), user, target: container)
+        {
+            BreakOnDamage = true,
+            NeedHand = false,
+            CancelDuplicate = false, // Goobstation
+        };
+
+        if (!_doAfterSystem.TryStartDoAfter(doAfterEventArgs, out component.DoAfter))
+            return;
+
+        _popupSystem.PopupEntity(Loc.GetString("escape-inventory-component-start-resisting"), user, user);
+        _popupSystem.PopupEntity(Loc.GetString("escape-inventory-component-start-resisting-target"), container, container);
 
         // DeltaV - escape cancel action
         if (component.EscapeCancelAction is not { Valid: true })
