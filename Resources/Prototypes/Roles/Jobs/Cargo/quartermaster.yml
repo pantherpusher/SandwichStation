@@ -20,7 +20,7 @@
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
   canBeAntag: false
-  goobcoin: 50
+  goobcoins: 50
   access:
   - Cargo
   - Salvage

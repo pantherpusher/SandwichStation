@@ -11,7 +11,7 @@
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
   canBeAntag: false
-  goobcoin: 50
+  goobcoins: 50
   access:
   - Security
   - Brig

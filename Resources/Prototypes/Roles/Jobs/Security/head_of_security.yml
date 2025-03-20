@@ -20,7 +20,7 @@
   icon: "JobIconHeadOfSecurity"
   supervisors: job-supervisors-captain
   canBeAntag: false
-  goobcoin: 80
+  goobcoins: 80
   access:
   - HeadOfSecurity
   - Command

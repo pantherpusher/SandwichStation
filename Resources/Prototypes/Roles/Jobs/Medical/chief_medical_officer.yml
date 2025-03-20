@@ -20,7 +20,7 @@
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain
   canBeAntag: false
-  goobcoin: 70
+  goobcoins: 70
   access:
   - Medical
   - Command

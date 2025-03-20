@@ -6,7 +6,7 @@
   startingGear: JanitorGear
   icon: "JobIconJanitor"
   supervisors: job-supervisors-hop
-  goobcoin: 30
+  goobcoins: 30
   access:
   - Service
   - Janitor

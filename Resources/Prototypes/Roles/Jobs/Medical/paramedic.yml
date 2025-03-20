@@ -12,7 +12,7 @@
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
-  goobcoin: 20
+  goobcoins: 20
   access:
   - Medical
   - Maintenance
