@@ -23,6 +23,7 @@
     tags:
     - Meat
     - Organ
+    - Trash
 
 - type: entity
   id: BaseAnimalOrgan
@@ -70,6 +71,7 @@
     - Meat
     - Organ
     - Lungs
+    - Trash
   - type: Item
     size: Small
     heldPrefix: lungs
@@ -105,6 +107,7 @@
     - Meat
     - Organ
     - Stomach
+    - Trash
   - type: Item
     size: Small
     heldPrefix: stomach
@@ -122,6 +125,12 @@
   - type: Item
     size: Small
     heldPrefix: stomach
+  - type: Tag # tags are dumb and I think this was making them unedible.
+    tags:
+    - Meat
+    - Organ
+    - Stomach
+    - Trash
 
 - type: entity
   id: OrganAnimalLiver
@@ -145,6 +154,7 @@
     - Meat
     - Organ
     - Liver
+    - Trash
   - type: Item
     size: Small
     heldPrefix: liver
@@ -172,6 +182,7 @@
     - Meat
     - Organ
     - Heart
+    - Trash
   - type: Item
     size: Small
     heldPrefix: heart
@@ -197,6 +208,7 @@
     - Meat
     - Organ
     - Kidneys
+    - Trash
   - type: Item
     size: Small
     heldPrefix: kidneys
