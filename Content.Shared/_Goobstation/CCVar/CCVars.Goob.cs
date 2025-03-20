@@ -234,7 +234,7 @@ public sealed partial class GoobCVars
         CVarDef.Create("goob.coins_per_greentext", 5, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinNonAntagMultiplier =
-        CVarDef.Create("goob.coins_non_antag_multiplier", 1, CVar.SERVERONLY);
+        CVarDef.Create("goob.coins_non_antag_multiplier", 3, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinServerMultiplier =
         CVarDef.Create("goob.coins_server_multiplier", 1, CVar.SERVERONLY);
@@ -243,52 +243,4 @@ public sealed partial class GoobCVars
         CVarDef.Create("goob.coins_min_players", 5, CVar.SERVERONLY);
 
     #endregion
-
-    #region Game Director
-
-    public static readonly CVarDef<float> MinimumTimeUntilFirstEvent =
-        CVarDef.Create("gamedirector.minimumtimeuntilfirstevent", 300f, CVar.SERVERONLY);
-
-    #endregion
-
-    #region Mass Contests
-    /// <summary>
-    ///
-    ///     Toggles all MassContest functions. All mass contests output 1f when false
-    /// </summary>
-    public static readonly CVarDef<bool> DoMassContests =
-        CVarDef.Create("contests.do_mass_contests", true, CVar.REPLICATED | CVar.SERVER);
-
-    /// <summary>
-    ///     The maximum amount that Mass Contests can modify a physics multiplier, given as a +/- percentage
-    ///     Default of 0.25f outputs between * 0.75f and 1.25f
-    /// </summary>
-    public static readonly CVarDef<float> MassContestsMaxPercentage =
-        CVarDef.Create("contests.max_percentage", 1f, CVar.REPLICATED | CVar.SERVER);
-
-
-    #endregion
-
-    #region Chat highlights
-
-    /// <summary>
-    /// A string containing a list of newline-separated words to be highlighted in the chat.
-    /// </summary>
-    public static readonly CVarDef<string> ChatHighlights =
-        CVarDef.Create("chat.highlights", "", CVar.CLIENTONLY | CVar.ARCHIVE, "A list of newline-separated words to be highlighted in the chat.");
-
-    /// <summary>
-    /// An option to toggle the automatic filling of the highlights with the character's info, if available.
-    /// </summary>
-    public static readonly CVarDef<bool> ChatAutoFillHighlights =
-        CVarDef.Create("chat.auto_fill_highlights", false, CVar.CLIENTONLY | CVar.ARCHIVE, "Toggles automatically filling the highlights with the character's information.");
-
-    /// <summary>
-    /// The color in which the highlights will be displayed.
-    /// </summary>
-    public static readonly CVarDef<string> ChatHighlightsColor =
-        CVarDef.Create("chat.highlights_color", "#17FFC1FF", CVar.CLIENTONLY | CVar.ARCHIVE, "The color in which the highlights will be displayed.");
-
-    #endregion
-
 }
