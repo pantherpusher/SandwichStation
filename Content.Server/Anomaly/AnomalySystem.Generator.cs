@@ -89,6 +89,7 @@ public sealed partial class AnomalySystem
         UpdateGeneratorUi(uid, component);
     }
 
+    // ShibaStation - Added logSpawn parameter to allow logging whenever desired.
     public void SpawnOnRandomGridLocation(EntityUid grid, string toSpawn, bool logSpawn = false)
     {
         if (!TryComp<MapGridComponent>(grid, out var gridComp))
@@ -137,7 +138,8 @@ public sealed partial class AnomalySystem
             var pos = _mapSystem.GridTileToLocal(grid, gridComp, tile);
 
 
-            // ShibaStation - Apply a slight offset to avoid exact grid alignment unless using predefined prototype. Refer to predefined spawner prototypes.
+            // ShibaStation - Applies a slight offset to avoid exact grid alignment, except for predefined spawner prototypes.
+            // Refer to predefined spawner prototypes.
             if (toSpawn != "!AnomalySpawnerPrototype")
             {
                 var offset = 0.15f;
