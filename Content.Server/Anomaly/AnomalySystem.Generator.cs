@@ -1,22 +1,21 @@
 using System.Numerics;
+using Content.Server.Administration.Logs;
 using Content.Server.Anomaly.Components;
+using Content.Server.Chat.Managers;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Station.Components;
 using Content.Shared.Anomaly;
 using Content.Shared.CCVar;
+using Content.Shared.Database;
 using Content.Shared.Materials;
+using Content.Shared.Physics;
+using Content.Shared.Power;
 using Content.Shared.Radio;
 using Robust.Shared.Audio;
-using Content.Shared.Physics;
+using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
-using Content.Shared.Power;
-using Content.Server.Chat.Managers;
-using Content.Server.Administration.Logs;
-using Content.Shared.Database;
-using Content.Shared.Directions;
-
 
 namespace Content.Server.Anomaly;
 
@@ -137,14 +136,15 @@ public sealed partial class AnomalySystem
 
             var pos = _mapSystem.GridTileToLocal(grid, gridComp, tile);
 
-            // If it's not spawned from the anomaly spawner prototypes, it wont have an offset, this gives it one.
+
+            // ShibaStation - Apply a slight offset to avoid exact grid alignment unless using predefined prototype. Refer to predefined spawner prototypes.
             if (toSpawn != "!AnomalySpawnerPrototype")
             {
-                var offset = 0.15f; // Hardcoded, I know, it sucks, but this should never be increased anyways. As it would break things. Refer to anomaly.yml for more.
+                var offset = 0.15f;
                 var xOffset = Random.NextFloat(-offset, offset);
                 var yOffset = Random.NextFloat(-offset, offset);
 
-                pos.Offset(new Vector2(xOffset, yOffset));
+                pos = pos.Offset(new Vector2(xOffset, yOffset));
             }
 
             var mapPos = _transform.ToMapCoordinates(pos);
@@ -171,17 +171,25 @@ public sealed partial class AnomalySystem
             break;
         }
 
-        if (logSpawn)
+        if (logSpawn) // ShibaStation
         {
-            var anomalyLoc = _transform.ToMapCoordinates(targetCoords).Position;
-            var x = anomalyLoc.X;
-            var y = anomalyLoc.Y;
-            _chat.SendAdminAnnouncement($"{toSpawn} spawned at ({x},{y})");
-            _adminLogger.Add(LogType.EventRan, LogImpact.High, $"{toSpawn} spawned at ({x},{y})");
+            LogSpawnDetails(toSpawn, targetCoords);
         }
 
         Spawn(toSpawn, targetCoords);
     }
+
+    // ShibaStation
+    private void LogSpawnDetails(string prototype, EntityCoordinates coordinates)
+    {
+        var anomalyLoc = _transform.ToMapCoordinates(coordinates).Position;
+        var x = anomalyLoc.X;
+        var y = anomalyLoc.Y;
+
+        _chat.SendAdminAnnouncement($"{prototype} spawned at ({x},{y})");
+        _adminLogger.Add(LogType.EventRan, LogImpact.High, $"{prototype} spawned at ({x},{y})");
+    }
+
 
     private void OnGeneratingStartup(EntityUid uid, GeneratingAnomalyGeneratorComponent component, ComponentStartup args)
     {

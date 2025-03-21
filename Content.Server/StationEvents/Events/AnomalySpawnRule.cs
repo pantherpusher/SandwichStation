@@ -47,18 +47,7 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
         for (var i = 0; i < amountToSpawn; i++)
         {
 
-            // SihbaStation – Dynamically use the RandomAnomalySpawner prototype to retrieve a list of anomalies to spawn and their weights. This should make things easier if changes are made in the future.
-            var chosenAnomaly = GetAnomalySpawn(component.AnomalySpawnerPrototype);
-
-            if (chosenAnomaly == "RandomAnomalyInjectorSpawner")
-            {
-                chosenAnomaly = GetAnomalySpawn("RandomAnomalyInjectorSpawner");
-            }
-
-            if (chosenAnomaly == "RandomRockAnomalySpawner")
-            {
-                chosenAnomaly = GetAnomalySpawn("RandomRockAnomalySpawner");
-            }
+            var chosenAnomaly = ChooseAnomaly(component.AnomalySpawnerPrototype);
 
             if (!string.IsNullOrEmpty(chosenAnomaly))
             {
@@ -69,13 +58,37 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
 
     }
 
+    private string? ChooseAnomaly(string prototypeId)
+    {
+        // Attempt to fetch the primary anomaly based on the provided prototype ID.
+        var chosenAnomaly = GetAnomalySpawn(prototypeId);
+
+        // If it picks another random spawner, we also have to refrence it's table and pick one.
+        if (chosenAnomaly == "RandomAnomalyInjectorSpawner")
+        {
+            chosenAnomaly = GetAnomalySpawn("RandomAnomalyInjectorSpawner");
+        }
+
+        if (chosenAnomaly == "RandomRockAnomalySpawner")
+        {
+            chosenAnomaly = GetAnomalySpawn("RandomRockAnomalySpawner");
+        }
+
+        return chosenAnomaly;
+    }
+
+
     private string? GetAnomalySpawn(string prototypeId)
     {
         var proto = _prototypeManager.Index<EntityPrototype>(prototypeId);
         if (!proto.TryGetComponent<EntityTableSpawnerComponent>(out var anomalies, EntityManager.ComponentFactory))
-            return null;
+        {
+            Log.Warning($"Prototype '{prototypeId}' does not contain an EntityTableSpawnerComponent. Returning default spawner prototype");
+            return "RandomAnomalySpawner";
+        }
 
         var spawns = _entityTable.GetSpawns(anomalies.Table);
+
         return spawns.FirstOrDefault();
     }
 }
