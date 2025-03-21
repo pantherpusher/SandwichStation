@@ -47,6 +47,7 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
         for (var i = 0; i < amountToSpawn; i++)
         {
 
+            // SihbaStation – Dynamically use the RandomAnomalySpawner prototype to retrieve a list of anomalies to spawn and their weights. This should make things easier if changes are made in the future.
             var chosenAnomaly = GetAnomalySpawn(component.AnomalySpawnerPrototype);
 
             if (chosenAnomaly == "RandomAnomalyInjectorSpawner")
@@ -61,7 +62,7 @@ public sealed class AnomalySpawnRule : StationEventSystem<AnomalySpawnRuleCompon
 
             if (!string.IsNullOrEmpty(chosenAnomaly))
             {
-                _anomaly.SpawnOnRandomGridLocation(grid.Value, chosenAnomaly, true, 0.15f);
+                _anomaly.SpawnOnRandomGridLocation(grid.Value, chosenAnomaly, true);
             }
 
         }
