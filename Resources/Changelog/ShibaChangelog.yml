@@ -1,24 +1,107 @@
 Entries:
-- author: MinxLite
+- author: AstroDogeDX
+  changes:
+  - message: Jobs and non-antag roles now have varied shiba shilling payouts. Command,
+      medical and security have higher bonuses!
+    type: Add
+  id: 234
+  time: '2025-03-20T15:39:23.284166'
+- author: AstroDogeDX
+  changes:
+  - message: Early merged wizard bugfixes and new nanochat features (public number
+      directory!)
+    type: Add
+  id: 233
+  time: '2025-03-20T15:40:03.176354'
+- author: Apfy
+  changes:
+  - message: Added bunny ears and tails to the human markings list. Bnuuytime!
+    type: Add
+  id: 232
+  time: '2025-03-20T15:37:09.912092'
+- author: AstroDogeDX
+  changes:
+  - message: Animal organs are now considered trash for easy cleaning.
+    type: Tweak
+  id: 231
+  time: '2025-03-20T15:37:26.979542'
+- author: AstroDogeDX
+  changes:
+  - message: adminbus even more busable.
+    type: Tweak
+  id: 230
+  time: '2025-03-20T15:37:45.274451'
+- author: AstroDogeDX
+  changes:
+  - message: Heretics and Changelings should roll more often - also Wizards require
+      less players.
+    type: Tweak
+  id: 229
+  time: '2025-03-20T15:38:21.878575'
+- author: KBraid
+  changes:
+  - message: New lobby background; Average shift in Sci!
+    type: Add
+  id: 228
+  time: '2025-03-20T12:25:18.030717'
+- author: AstroDogeDX
+  changes:
+  - message: BSO actually gets their CQC manual in their locker now. Try to remember
+      the basics.
+    type: Fix
+  id: 227
+  time: '2025-03-18T22:28:21.876093'
+- author: Blahaj-the-Shonk
+  changes:
+  - message: Added parts for machine construction to some techfabs.
+    type: Add
+  id: 226
+  time: '2025-03-18T22:28:55.406266'
+- author: B3CKDOOR
+  changes:
+  - message: Added "ShibaStation" song to playlist in jukebox
+    type: Add
+  id: 225
+  time: '2025-03-18T22:31:58.579408'
+- author: B3CKDOOR
+  changes:
+  - message: Added more colors to the spraypaint tool based on canisters colors
+    type: Add
+  id: 224
+  time: '2025-03-18T22:30:52.692688'
+- author: B3CKDOOR
+  changes:
+  - message: Replaced strings of contraband scanner inside of the construction menu
+      to show the proper name.
+    type: Fix
+  id: 223
+  time: '2025-03-18T22:30:07.139630'
+- author: MinxIsntHere
+  changes:
+  - message: Shutters and blast doors are now rotatable during construction.
+    type: Tweak
+  id: 222
+  time: '2025-03-18T22:29:38.637336'
+- author: MinxIsntHere
   changes:
   - message: Smol species are now consistent in their stamina damage.
     type: Tweak
   id: 221
   time: '2025-03-13T18:43:38.243481'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Guidebook is more accurate with species specific listings.
     type: Tweak
   id: 220
   time: '2025-03-13T18:43:38.707410'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Ensured ALL foodstuffs are animal friendly! Garlic and onions are on
       the menu!
     type: Fix
   id: 219
   time: '2025-03-13T18:43:39.197213'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Onis can open doors and pilot shuttles again. Oopsie.
     type: Fix

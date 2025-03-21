@@ -236,5 +236,4 @@
         - HighImpassable
         layer:
         - HighImpassable
-  - type: Transform
-    noRot: true
+  - type: Rotatable #ShibaStation

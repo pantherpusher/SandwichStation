@@ -50,6 +50,8 @@
     speechVerb: Skeleton
   - type: ZombieImmune
   - type: Vocal
+    wilhelm: "/Audio/_Goobstation/Voice/badtothebone.ogg" # Goobstation
+    wilhelmProbability: 0.1 # Goobstation
     sounds:
       Male: Skeleton
       Female: Skeleton
@@ -104,13 +106,6 @@
   - type: FireVisuals
     alternateState: Standing
   - type: FlashImmunity
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
   - type: FootPrints # WD EDIT
   - type: Tag # Goobstation
     tags:
@@ -127,10 +122,3 @@
   components:
   - type: HumanoidAppearance
     species: Skeleton
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

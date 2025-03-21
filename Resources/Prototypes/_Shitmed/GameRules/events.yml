@@ -63,6 +63,7 @@
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
+          - AbductorMind
       - type: AbductorScientist
       - type: SurgeryIgnoreClothing
       - type: Sanitized
@@ -154,6 +155,7 @@
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
+          - AbductorMind
       - type: AbductorScientist
       - type: SurgeryIgnoreClothing
       - type: Sanitized

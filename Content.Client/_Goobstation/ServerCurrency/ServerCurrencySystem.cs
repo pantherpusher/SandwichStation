@@ -51,4 +51,3 @@ public sealed class ServerCurrencySystem : EntitySystem
         ? $"{amount} {Loc.GetString("server-currency-name-singular")}"
         : $"{amount} {Loc.GetString("server-currency-name-plural")}";
 }
-
