@@ -184,14 +184,14 @@ public sealed partial class AnomalySystem
     // ShibaStation
     private void LogSpawnDetails(string prototype, EntityCoordinates coordinates)
     {
-        var anomalyLoc = _transform.ToMapCoordinates(coordinates).Position;
-        var x = (int)anomalyLoc.X;
-        var y = (int)anomalyLoc.Y;
+        var mapCords = _transform.ToMapCoordinates(coordinates);
+        var x = (int)mapCords.X;
+        var y = (int)mapCords.Y;
+        var mapId = mapCords.MapId;
 
+        _adminLogger.Add(LogType.EventRan, LogImpact.High, $"{prototype} spawned at ({x},{y}) on map {mapId}.");
         _chat.SendAdminAnnouncement($"{prototype} spawned at ({x},{y})");
-        _adminLogger.Add(LogType.EventRan, LogImpact.High, $"{prototype} spawned at ({x},{y})");
     }
-
 
     private void OnGeneratingStartup(EntityUid uid, GeneratingAnomalyGeneratorComponent component, ComponentStartup args)
     {
