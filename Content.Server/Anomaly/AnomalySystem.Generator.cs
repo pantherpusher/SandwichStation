@@ -185,8 +185,8 @@ public sealed partial class AnomalySystem
     private void LogSpawnDetails(string prototype, EntityCoordinates coordinates)
     {
         var anomalyLoc = _transform.ToMapCoordinates(coordinates).Position;
-        var x = anomalyLoc.X;
-        var y = anomalyLoc.Y;
+        var x = (int)anomalyLoc.X;
+        var y = (int)anomalyLoc.Y;
 
         _chat.SendAdminAnnouncement($"{prototype} spawned at ({x},{y})");
         _adminLogger.Add(LogType.EventRan, LogImpact.High, $"{prototype} spawned at ({x},{y})");
