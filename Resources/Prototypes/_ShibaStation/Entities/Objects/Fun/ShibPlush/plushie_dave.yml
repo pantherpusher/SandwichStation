@@ -1,7 +1,7 @@
 - type: entity
   parent: BasePlushie
-  id: DavePlush
-  name: Secretary Dave Plushie 
+  id: PlushieDave
+  name: Secretary Dave plushie 
   description: CentComm's best secretary and pizza delivery boy. Still looks great, even with his 5 speso haircut!
   components:
   - type: Sprite
@@ -10,12 +10,12 @@
   - type: EmitSoundOnUse
     sound:
       collection: DavePlushUse
-      Params:
+      params:
         Variation: 0.03
   - type: EmitSoundOnActivate
     sound:
       collection: DavePlushUse
-      Params:
+      params:
         Variation: 0.03
   - type: EmitSoundOnTrigger
     sound:
