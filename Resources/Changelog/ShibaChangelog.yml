@@ -1,4 +1,16 @@
 Entries:
+- author: Azrakoth
+  changes:
+  - message: Gave the Dave plushie some bodacious new voice lines, dude!
+    type: Tweak
+  id: 241
+  time: '2025-03-22T19:56:17.812042'
+- author: AstroDogeDX
+  changes:
+  - message: Cluster should work again.
+    type: Fix
+  id: 240
+  time: '2025-03-22T19:56:43.464074'
 - author: AstroDogeDX & kaminukurumi
   changes:
   - message: Akuji and Miccau have been turned into marketable plushies!
