@@ -1,4 +1,10 @@
 Entries:
+- author: MinxIsntHere
+  changes:
+  - message: Shelters created via the shelter capsule now have functioning doors
+    type: Fix
+  id: 242
+  time: '2025-03-23T16:11:08.316029'
 - author: Azrakoth
   changes:
   - message: Gave the Dave plushie some bodacious new voice lines, dude!
