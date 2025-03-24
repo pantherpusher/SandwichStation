@@ -7,7 +7,7 @@
   id: BaseMobSkeletonPerson
   abstract: true
   components:
-  - type: Carriable # Goobstation
+  # - type: Carriable # ShibaStation - Disabled carrying; it's buggy. It may get fixed in the future but it's not a priority.
   - type: HumanoidAppearance
     species: Skeleton
   - type: Icon
