@@ -1,6 +1,54 @@
 Entries:
 - author: MinxIsntHere
   changes:
+  - message: (Admin) Universal Access Configurators now spawn with a Universal ID
+      card inserted.
+    type: Add
+  id: 249
+  time: '2025-03-24T19:24:17.139604'
+- author: AstroDogeDX
+  changes:
+  - message: Rodentians can now vent crawl; but they can't take a bag, outerwear or
+      anything carried on their back.
+    type: Add
+  id: 248
+  time: '2025-03-24T19:27:01.375162'
+- author: AstroDogeDX
+  changes:
+  - message: Rodentians can still sneak while standing, and their speed penalty has
+      been reduced slightly.
+    type: Tweak
+  id: 247
+  time: '2025-03-24T19:26:35.613202'
+- author: AstroDogeDX
+  changes:
+  - message: All species can now sneak/crawl under tables and other objects while
+      laying down first - just activate the action when you're laying down!
+    type: Add
+  id: 246
+  time: '2025-03-24T19:25:53.569305'
+- author: AstroDogeDX
+  changes:
+  - message: You can no longer slide over tables while laying down.
+    type: Remove
+  id: 245
+  time: '2025-03-24T19:25:22.122535'
+- author: AstroDogeDX
+  changes:
+  - message: Carrying has been (temporarily) disabled for all species due to some
+      severe bugs. It may return in the future, it may not.
+    type: Remove
+  id: 244
+  time: '2025-03-24T19:25:04.964996'
+- author: AstroDogeDX
+  changes:
+  - message: Ore Processors will grant points even if they're not linked to a silo.
+      They still need to be on the station, though!
+    type: Fix
+  id: 243
+  time: '2025-03-24T19:27:25.323385'
+- author: MinxIsntHere
+  changes:
   - message: Shelters created via the shelter capsule now have functioning doors
     type: Fix
   id: 242
