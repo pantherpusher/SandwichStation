@@ -1,24 +1,204 @@
 Entries:
-- author: MinxLite
+- author: MinxIsntHere
+  changes:
+  - message: (Admin) Universal Access Configurators now spawn with a Universal ID
+      card inserted.
+    type: Add
+  id: 249
+  time: '2025-03-24T19:24:17.139604'
+- author: AstroDogeDX
+  changes:
+  - message: Rodentians can now vent crawl; but they can't take a bag, outerwear or
+      anything carried on their back.
+    type: Add
+  id: 248
+  time: '2025-03-24T19:27:01.375162'
+- author: AstroDogeDX
+  changes:
+  - message: Rodentians can still sneak while standing, and their speed penalty has
+      been reduced slightly.
+    type: Tweak
+  id: 247
+  time: '2025-03-24T19:26:35.613202'
+- author: AstroDogeDX
+  changes:
+  - message: All species can now sneak/crawl under tables and other objects while
+      laying down first - just activate the action when you're laying down!
+    type: Add
+  id: 246
+  time: '2025-03-24T19:25:53.569305'
+- author: AstroDogeDX
+  changes:
+  - message: You can no longer slide over tables while laying down.
+    type: Remove
+  id: 245
+  time: '2025-03-24T19:25:22.122535'
+- author: AstroDogeDX
+  changes:
+  - message: Carrying has been (temporarily) disabled for all species due to some
+      severe bugs. It may return in the future, it may not.
+    type: Remove
+  id: 244
+  time: '2025-03-24T19:25:04.964996'
+- author: AstroDogeDX
+  changes:
+  - message: Ore Processors will grant points even if they're not linked to a silo.
+      They still need to be on the station, though!
+    type: Fix
+  id: 243
+  time: '2025-03-24T19:27:25.323385'
+- author: MinxIsntHere
+  changes:
+  - message: Shelters created via the shelter capsule now have functioning doors
+    type: Fix
+  id: 242
+  time: '2025-03-23T16:11:08.316029'
+- author: Azrakoth
+  changes:
+  - message: Gave the Dave plushie some bodacious new voice lines, dude!
+    type: Tweak
+  id: 241
+  time: '2025-03-22T19:56:17.812042'
+- author: AstroDogeDX
+  changes:
+  - message: Cluster should work again.
+    type: Fix
+  id: 240
+  time: '2025-03-22T19:56:43.464074'
+- author: AstroDogeDX & kaminukurumi
+  changes:
+  - message: Akuji and Miccau have been turned into marketable plushies!
+    type: Add
+  id: 239
+  time: '2025-03-21T19:17:19.164592'
+- author: AstroDogeDX
+  changes:
+  - message: Shiba Sector brand plushies should now appear in loot tables!
+    type: Tweak
+  id: 238
+  time: '2025-03-21T19:17:41.981210'
+- author: kaminukurumi
+  changes:
+  - message: Changed the fax machines' animations to be consistent!
+    type: Fix
+  id: 237
+  time: '2025-03-21T19:19:31.301035'
+- author: AstroDogeDX
+  changes:
+  - message: Yet again have antag and ghost role requirements been adjusted; they've
+      mostly been lowered - so hopefully things get spicy again!
+    type: Tweak
+  id: 236
+  time: '2025-03-21T19:18:36.461676'
+- author: MinxIsntHere
+  changes:
+  - message: (Admin) Logging for anomaly spawns has been added.
+    type: Add
+  id: 235
+  time: '2025-03-21T19:18:10.715411'
+- author: AstroDogeDX
+  changes:
+  - message: Jobs and non-antag roles now have varied shiba shilling payouts. Command,
+      medical and security have higher bonuses!
+    type: Add
+  id: 234
+  time: '2025-03-20T15:39:23.284166'
+- author: AstroDogeDX
+  changes:
+  - message: Early merged wizard bugfixes and new nanochat features (public number
+      directory!)
+    type: Add
+  id: 233
+  time: '2025-03-20T15:40:03.176354'
+- author: Apfy
+  changes:
+  - message: Added bunny ears and tails to the human markings list. Bnuuytime!
+    type: Add
+  id: 232
+  time: '2025-03-20T15:37:09.912092'
+- author: AstroDogeDX
+  changes:
+  - message: Animal organs are now considered trash for easy cleaning.
+    type: Tweak
+  id: 231
+  time: '2025-03-20T15:37:26.979542'
+- author: AstroDogeDX
+  changes:
+  - message: adminbus even more busable.
+    type: Tweak
+  id: 230
+  time: '2025-03-20T15:37:45.274451'
+- author: AstroDogeDX
+  changes:
+  - message: Heretics and Changelings should roll more often - also Wizards require
+      less players.
+    type: Tweak
+  id: 229
+  time: '2025-03-20T15:38:21.878575'
+- author: KBraid
+  changes:
+  - message: New lobby background; Average shift in Sci!
+    type: Add
+  id: 228
+  time: '2025-03-20T12:25:18.030717'
+- author: AstroDogeDX
+  changes:
+  - message: BSO actually gets their CQC manual in their locker now. Try to remember
+      the basics.
+    type: Fix
+  id: 227
+  time: '2025-03-18T22:28:21.876093'
+- author: Blahaj-the-Shonk
+  changes:
+  - message: Added parts for machine construction to some techfabs.
+    type: Add
+  id: 226
+  time: '2025-03-18T22:28:55.406266'
+- author: B3CKDOOR
+  changes:
+  - message: Added "ShibaStation" song to playlist in jukebox
+    type: Add
+  id: 225
+  time: '2025-03-18T22:31:58.579408'
+- author: B3CKDOOR
+  changes:
+  - message: Added more colors to the spraypaint tool based on canisters colors
+    type: Add
+  id: 224
+  time: '2025-03-18T22:30:52.692688'
+- author: B3CKDOOR
+  changes:
+  - message: Replaced strings of contraband scanner inside of the construction menu
+      to show the proper name.
+    type: Fix
+  id: 223
+  time: '2025-03-18T22:30:07.139630'
+- author: MinxIsntHere
+  changes:
+  - message: Shutters and blast doors are now rotatable during construction.
+    type: Tweak
+  id: 222
+  time: '2025-03-18T22:29:38.637336'
+- author: MinxIsntHere
   changes:
   - message: Smol species are now consistent in their stamina damage.
     type: Tweak
   id: 221
   time: '2025-03-13T18:43:38.243481'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Guidebook is more accurate with species specific listings.
     type: Tweak
   id: 220
   time: '2025-03-13T18:43:38.707410'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Ensured ALL foodstuffs are animal friendly! Garlic and onions are on
       the menu!
     type: Fix
   id: 219
   time: '2025-03-13T18:43:39.197213'
-- author: MinxLite
+- author: MinxIsntHere
   changes:
   - message: Onis can open doors and pilot shuttles again. Oopsie.
     type: Fix

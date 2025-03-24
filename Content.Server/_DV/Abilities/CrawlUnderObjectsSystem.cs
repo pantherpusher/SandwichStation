@@ -5,6 +5,7 @@ using Content.Shared._DV.Abilities;
 using Content.Shared.Maps;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Physics;
+using Content.Shared.Standing;
 using Robust.Server.GameObjects;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
@@ -18,6 +19,10 @@ public sealed partial class CrawlUnderObjectsSystem : SharedCrawlUnderObjectsSys
     [Dependency] private readonly MovementSpeedModifierSystem _movespeed = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
+    [Dependency] private readonly StandingStateSystem _standing = default!;
+
+    // ShibaStation - Dictionary to track whether actions were removed due to standing state
+    private readonly Dictionary<EntityUid, string> _removedActionsByStanding = new();
 
     public override void Initialize()
     {
@@ -27,6 +32,57 @@ public sealed partial class CrawlUnderObjectsSystem : SharedCrawlUnderObjectsSys
         SubscribeLocalEvent<CrawlUnderObjectsComponent, ToggleCrawlingStateEvent>(OnAbilityToggle);
         SubscribeLocalEvent<CrawlUnderObjectsComponent, AttemptClimbEvent>(OnAttemptClimb);
         SubscribeLocalEvent<CrawlUnderObjectsComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovespeed);
+
+        // ShibaStation - Subscribe to the StoodEvent to disable sneaking when the entity stands up
+        SubscribeLocalEvent<CrawlUnderObjectsComponent, StoodEvent>(OnStood);
+
+        // ShibaStation - Subscribe to the DownedEvent to re-enable action when entity lies down
+        SubscribeLocalEvent<CrawlUnderObjectsComponent, DownedEvent>(OnDowned);
+
+        // ShibaStation - Handle cleanup when component is removed
+        SubscribeLocalEvent<CrawlUnderObjectsComponent, ComponentShutdown>(OnShutdown);
+    }
+
+    // ShibaStation - Clean up any tracked actions when component is removed
+    private void OnShutdown(EntityUid uid, CrawlUnderObjectsComponent component, ComponentShutdown args)
+    {
+        _removedActionsByStanding.Remove(uid);
+    }
+
+    // ShibaStation - Handler for when an entity lies down
+    private void OnDowned(EntityUid uid, CrawlUnderObjectsComponent component, DownedEvent args)
+    {
+        // ShibaStation - If entity can sneak and the action isn't present, add it
+        if (!component.SneakWhileStanding && component.ToggleHideAction == null && component.ActionProto != null)
+        {
+            _actionsSystem.AddAction(uid, ref component.ToggleHideAction, component.ActionProto);
+            Dirty(uid, component);
+        }
+    }
+
+    private void OnStood(EntityUid uid, CrawlUnderObjectsComponent component, StoodEvent args)
+    {
+        if (!component.SneakWhileStanding)
+        {
+            // ShibaStation - Disable sneaking when standing up
+            if (component.Enabled)
+            {
+                DisableSneakMode(uid, component);
+
+                if (TryComp<AppearanceComponent>(uid, out var app))
+                    _appearance.SetData(uid, SneakMode.Enabled, false, app);
+
+                _movespeed.RefreshMovementSpeedModifiers(uid);
+            }
+
+            // ShibaStation - Hide the action button when standing up
+            if (component.ToggleHideAction.HasValue)
+            {
+                _actionsSystem.RemoveAction(uid, component.ToggleHideAction.Value);
+                component.ToggleHideAction = null;
+                Dirty(uid, component);
+            }
+        }
     }
 
     private bool IsOnCollidingTile(EntityUid uid)
@@ -41,10 +97,24 @@ public sealed partial class CrawlUnderObjectsSystem : SharedCrawlUnderObjectsSys
 
     private void OnInit(EntityUid uid, CrawlUnderObjectsComponent component, ComponentInit args)
     {
+        // ShibaStation - Only add the action if the entity can sneak in their current state
         if (component.ToggleHideAction != null)
+        {
+            // ShibaStation - If entity can't sneak while standing and is currently standing, remove the action
+            if (!component.SneakWhileStanding && !_standing.IsDown(uid))
+            {
+                _actionsSystem.RemoveAction(uid, component.ToggleHideAction.Value);
+                component.ToggleHideAction = null;
+                Dirty(uid, component);
+            }
             return;
+        }
 
-        _actionsSystem.AddAction(uid, ref component.ToggleHideAction, component.ActionProto);
+        // ShibaStation - Only add the action if the entity can sneak in their current state
+        if ((component.SneakWhileStanding || _standing.IsDown(uid)) && component.ActionProto != null)
+        {
+            _actionsSystem.AddAction(uid, ref component.ToggleHideAction, component.ActionProto);
+        }
     }
 
     private bool EnableSneakMode(EntityUid uid, CrawlUnderObjectsComponent component)
@@ -52,6 +122,9 @@ public sealed partial class CrawlUnderObjectsSystem : SharedCrawlUnderObjectsSys
         if (component.Enabled
             || (TryComp<ClimbingComponent>(uid, out var climbing)
                 && climbing.IsClimbing == true))
+            return false;
+
+        if (!component.SneakWhileStanding && !_standing.IsDown(uid))
             return false;
 
         component.Enabled = true;
@@ -112,7 +185,15 @@ public sealed partial class CrawlUnderObjectsSystem : SharedCrawlUnderObjectsSys
         if (component.Enabled)
             result = DisableSneakMode(uid, component);
         else
+        {
+            if (!component.SneakWhileStanding && !_standing.IsDown(uid))
+            {
+                args.Handled = false;
+                return;
+            }
+
             result = EnableSneakMode(uid, component);
+        }
 
         if (TryComp<AppearanceComponent>(uid, out var app))
             _appearance.SetData(uid, SneakMode.Enabled, component.Enabled, app);

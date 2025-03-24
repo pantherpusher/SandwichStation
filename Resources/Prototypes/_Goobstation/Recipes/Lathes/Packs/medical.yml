@@ -6,6 +6,7 @@
   - CartridgeEpinephrine
   - CartridgeBicaridine
   - CartridgeDermaline
+  - CartridgeSaline
   - ParamedHypo
 
 - type: latheRecipePack
@@ -30,6 +31,14 @@
   id: MedicalVehiclesAdvanced
   recipes:
   - VehicleHoverchairSci
+
+- type: latheRecipePack
+  id: MedicalPartsStatic
+  recipes:
+  - MicroManipulatorStockPart
+  - MatterBinStockPart
+  - CapacitorStockPart
+  - CableStack
 
 ## Dynamic
 - type: latheRecipePack

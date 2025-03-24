@@ -1,17 +1,17 @@
 - type: startingGear
   id: ChiefCCAdmemeGear
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
+    jumpsuit: ClothingUniformJumpsuitNavyGold
     back: ClothingModsuitExperimental
     shoes: ClothingShoesChameleonNoSlips
-    eyes: ClothingEyesGlassesMedSec
-    gloves: ClothingHandsGlovesCaptain
-    outerClothing: ClothingBlueshieldArmourVest
-    id: CentcomPDA
-    ears: ClothingHeadsetAltCentCom
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesHeavyGoldenTrim
+    outerClothing: ClothingOuterDogi
+    id: AdminPDA
+    ears: ClothingHeadsetChronolegioneer
     head: ClothingHeadHatCentcomcap
     neck: ClothingNeckCloakCentcom
-    belt: ClothingBeltSheathFilled
+    belt: ClothingBeltSheathFilledNavyOfficer
   storage:
     back:
     # Survival
@@ -22,7 +22,6 @@
     - RPDRecharging
     - NetworkConfigurator
     - WelderExperimental
-    - ClothingEyesGlassesMeson
     - GasAnalyzer
     - HolofanProjectorEmpty
     - trayScanner
@@ -34,7 +33,7 @@
     - AnomalyScanner
     - ChronoTeleporter
     # Security
-    - StasisBaton
+    - Wonderprod
     - WeaponDisablerSMG
     - WeaponPulseRifle
     - Handcuffs
@@ -50,13 +49,21 @@
     # Implants
     - MindShieldImplanter
     - TrackingImplanter
-    - FreedomImplanter
     - BluespaceLifelineImplanter
+    - BlinkImplanter
+    - ShiftImplanter
+    - StopTimeImplanter
+    - VaporizeImplanter
+    - CentcommFreedomImplanter
     # Misc
     - LightReplacerLEDAdmeme
     - PortableRecharger
-    - PowerCellMicroreactor
-    - PowerCellMicroreactor
-    - PowerCellMicroreactor
-    - PowerCellMicroreactor
-    - PowerCellMicroreactor
+    - PowerCellAntiqueProto
+    - PowerCellAntiqueProto
+    - PowerCellAntiqueProto
+    - PowerCellAntiqueProto
+    - PowerCellAntiqueProto
+    # Martial Arts
+    - SleepingCarpScroll
+    - ClothingHandsGlovesKravMaga
+    - BSOManual

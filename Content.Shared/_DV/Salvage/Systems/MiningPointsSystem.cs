@@ -7,6 +7,11 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Timing;
 using Content.Shared._Goobstation.Silo;
+using Content.Shared.Station.Components;
+using Content.Shared._Lavaland.Shuttles.Components;
+using Content.Shared.Shuttles.Components;
+using Content.Shared.Cargo.Components;
+using System;
 
 namespace Content.Shared._DV.Salvage.Systems;
 
@@ -36,10 +41,18 @@ public sealed class MiningPointsSystem : EntitySystem
     private void OnMaterialEntityInserted(Entity<MiningPointsLatheComponent> ent, ref MaterialEntityInsertedEvent args)
     {
         if (!_timing.IsFirstTimePredicted
-            || !TryComp<UnclaimedOreComponent>(args.Inserted, out var unclaimedOre)
-            || !TryComp<SiloUtilizerComponent>(ent, out var utilizer)
-            || !utilizer.Silo.HasValue
-            || Transform(utilizer.Silo.Value).MapID != Transform(ent).MapID)
+            || !TryComp<UnclaimedOreComponent>(args.Inserted, out var unclaimedOre))
+            return;
+
+        // Check if this ore processor is on a station grid
+        var xform = Transform(ent);
+        if (xform.GridUid == null || !HasComp<StationMemberComponent>(xform.GridUid))
+            return;
+
+        // Check if the grid has any shuttle-related components
+        // If any of these are present, this is likely a shuttle and not the main station
+        if (HasComp<CargoShuttleComponent>(xform.GridUid) ||
+            HasComp<MiningShuttleComponent>(xform.GridUid))
             return;
 
         var points = unclaimedOre.MiningPoints * args.Count;

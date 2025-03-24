@@ -23,6 +23,7 @@
     tags:
     - Meat
     - Organ
+    - Trash
 
 - type: entity
   id: BaseAnimalOrgan
@@ -70,6 +71,7 @@
     - Meat
     - Organ
     - Lungs
+    - Trash
   - type: Item
     size: Small
     heldPrefix: lungs
@@ -105,6 +107,7 @@
     - Meat
     - Organ
     - Stomach
+    - Trash
   - type: Item
     size: Small
     heldPrefix: stomach
@@ -112,16 +115,19 @@
 - type: entity
   id: OrganMouseStomach
   parent: OrganAnimalStomach
-  name: stomach
-  categories: [ HideSpawnMenu ]
+  suffix: "mouse"
   components:
   - type: SolutionContainerManager
     solutions:
       stomach:
-        maxVol: 30
-  - type: Item
-    size: Small
-    heldPrefix: stomach
+        maxVol: 50
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: Sprite
+    state: stomach
 
 - type: entity
   id: OrganAnimalLiver
@@ -145,6 +151,7 @@
     - Meat
     - Organ
     - Liver
+    - Trash
   - type: Item
     size: Small
     heldPrefix: liver
@@ -172,6 +179,7 @@
     - Meat
     - Organ
     - Heart
+    - Trash
   - type: Item
     size: Small
     heldPrefix: heart
@@ -197,6 +205,7 @@
     - Meat
     - Organ
     - Kidneys
+    - Trash
   - type: Item
     size: Small
     heldPrefix: kidneys

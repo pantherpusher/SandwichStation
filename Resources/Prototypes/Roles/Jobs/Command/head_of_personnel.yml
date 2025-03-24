@@ -21,6 +21,7 @@
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-captain
   canBeAntag: false
+  goobcoins: 50
   access:
   - Command
   - HeadOfPersonnel

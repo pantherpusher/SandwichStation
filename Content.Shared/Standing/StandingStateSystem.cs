@@ -23,6 +23,11 @@ public sealed class StandingStateSystem : EntitySystem
 
     // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
     private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
+
+    // Separate collision layers to handle differently
+    private const int BulletCollisionLayer = (int) CollisionGroup.BulletImpassable;
+    // No longer modifying TableLayer when lying down - entities will still collide with tables
+
     public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
     {
         if (!Resolve(uid, ref standingState, false))
@@ -74,18 +79,21 @@ public sealed class StandingStateSystem : EntitySystem
         // Seemed like the best place to put it
         _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Horizontal, appearance);
 
-        // Change collision masks to allow going under certain entities like flaps and tables
+        // Change collision masks to allow only avoiding bullets but not passing under tables
         if (TryComp(uid, out FixturesComponent? fixtureComponent))
         {
             foreach (var (key, fixture) in fixtureComponent.Fixtures)
             {
-                if ((fixture.CollisionMask & StandingCollisionLayer) == 0)
+                // Only modify BulletImpassable layer, leave MidImpassable intact so they still collide with tables
+                if ((fixture.CollisionMask & BulletCollisionLayer) == 0)
                     continue;
 
                 standingState.ChangedFixtures.Add(key);
-                _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask & ~StandingCollisionLayer, manager: fixtureComponent);
+                // Only remove the bullet collision, not the table collision
+                _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask & ~BulletCollisionLayer, manager: fixtureComponent);
             }
         }
+
         // check if component was just added or streamed to client
         // if true, no need to play sound - mob was down before player could seen that
         if (standingState.LifeStage <= ComponentLifeStage.Starting)
@@ -135,7 +143,8 @@ public sealed class StandingStateSystem : EntitySystem
             foreach (var key in standingState.ChangedFixtures)
             {
                 if (fixtureComponent.Fixtures.TryGetValue(key, out var fixture))
-                    _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask | StandingCollisionLayer, fixtureComponent);
+                    // Restore bullet collision
+                    _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask | BulletCollisionLayer, fixtureComponent);
             }
         }
         standingState.ChangedFixtures.Clear();

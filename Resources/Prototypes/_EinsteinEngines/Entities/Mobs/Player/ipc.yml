@@ -164,6 +164,8 @@
   - type: Speech # ShibaStation - Better IPC noises; pAI too small, borg makes more sense.
     speechVerb: Robotic
     speechSounds: Borg
+  - type: CrawlUnderObjects # ShibaStation - Let species sneak but only while laying down.
+    actionProto: ActionToggleSneakMode
 
 - type: entity
   save: false
