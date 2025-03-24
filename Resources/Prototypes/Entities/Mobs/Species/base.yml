@@ -299,6 +299,8 @@
     alternateState: Standing
   - type: Carriable # Goobstation
   - type: CPRTraining # Goobstation - Just give to everyone! This ain't MRP.
+  - type: CrawlUnderObjects # ShibaStation - Let species sneak but only while laying down.
+    actionProto: ActionToggleSneakMode
 
 - type: entity
   save: false
