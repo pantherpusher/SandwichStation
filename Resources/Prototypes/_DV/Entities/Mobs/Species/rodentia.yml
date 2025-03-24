@@ -115,6 +115,8 @@
     spitDamageThreshold: 3
   - type: CrawlUnderObjects
     actionProto: ActionToggleSneakMode
+    sneakWhileStanding: true
+    sneakSpeedModifier: 0.85
   - type: FootPrints # WD EDIT
   - type: RodentiaAccent # ShibaStation - give da maus a funny accent
 
