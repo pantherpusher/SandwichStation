@@ -299,6 +299,8 @@
     alternateState: Standing
   # - type: Carriable # ShibaStation - Disabled carrying; it's buggy. It may get fixed in the future but it's not a priority.
   - type: CPRTraining # Goobstation - Just give to everyone! This ain't MRP.
+  - type: CrawlUnderObjects # ShibaStation - Let species sneak but only while laying down.
+    actionProto: ActionToggleSneakMode
 
 - type: entity
   save: false

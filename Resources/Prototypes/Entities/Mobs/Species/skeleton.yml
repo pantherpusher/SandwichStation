@@ -107,6 +107,8 @@
     alternateState: Standing
   - type: FlashImmunity
   - type: FootPrints # WD EDIT
+  - type: CrawlUnderObjects # ShibaStation - Let species sneak but only while laying down.
+    actionProto: ActionToggleSneakMode
   - type: Tag # Goobstation
     tags:
     - CanPilot
