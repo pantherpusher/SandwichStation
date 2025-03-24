@@ -117,6 +117,8 @@
     actionProto: ActionToggleSneakMode
   - type: FootPrints # WD EDIT
   - type: RodentiaAccent # ShibaStation - give da maus a funny accent
+  - type: VentCrawler # ShibaStation - let ratmen vent crawl but they can't take an inventory
+    allowInventory: false
 
 - type: entity
   save: false
