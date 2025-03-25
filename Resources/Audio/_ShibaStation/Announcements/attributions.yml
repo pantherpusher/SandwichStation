@@ -49,9 +49,9 @@
   source: "https://github.com/AstroDogeDX/ShibaStation-GS"
 
 - files: ["alert-dave.ogg"]
-  license: "CC-BY-NC-4.0"
-  copyright: ".Yuuchan (on discord), used soundbit from AstroDogeDX"
-  source: "https://discord.gg/hFb5p4nP3g"
+  license: "CC-BY-SA-3.0"
+  copyright: "Voice:Azrakoth & Soundbit: AstroDogeDX"
+  source: "https://github.com/Azrakoth / https://github.com/AstroDogeDX/"
 
 - files: ["attention.ogg"]
   license: "CC-BY-SA-3.0"
