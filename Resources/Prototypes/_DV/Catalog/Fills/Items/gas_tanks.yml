@@ -35,6 +35,9 @@
         - 0 # tritium
         - 0.270782035 # water vapor
       temperature: 293.15
+  - type: Tag # Goobstation - For survival boxes
+    tags:
+    - EmergencyWaterVaporTank
 
 - type: entity
   id: ExtendedEmergencyWaterVaporTankFilled
@@ -54,6 +57,9 @@
         - 0 # tritium
         - 0.615413715 # water vapor
       temperature: 293.15
+  - type: Tag # Goobstation - For survival boxes
+    tags:
+    - EmergencyWaterVaporTank
 
 - type: entity
   id: DoubleEmergencyWaterVaporTankFilled
@@ -73,3 +79,6 @@
         - 0 # tritium
         - 1.025689525 # water vapor
       temperature: 293.15
+  - type: Tag # Goobstation - For survival boxes
+    tags:
+    - EmergencyWaterVaporTank

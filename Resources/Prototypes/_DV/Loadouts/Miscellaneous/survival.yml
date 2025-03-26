@@ -14,7 +14,7 @@
     proto: WaterBreather
   storage:
     back:
-    - BoxSurvivalWaterVapor
+    - BoxSurvivalSlotsWaterVapor
 
 # Clown
 - type: loadout
@@ -24,7 +24,7 @@
     proto: WaterBreather
   storage:
     back:
-    - BoxHugWaterVapor
+    - BoxHugSlotsWaterVapor
 
 # Mime
 - type: loadout
@@ -34,7 +34,7 @@
     proto: WaterBreather
   storage:
     back:
-    - BoxMimeWaterVapor
+    - BoxMimeSlotsWaterVapor
 
 # Engineering / Extended
 - type: loadout
@@ -44,7 +44,7 @@
     proto: WaterBreather
   storage:
     back:
-    - BoxSurvivalEngineeringWaterVapor
+    - BoxSurvivalSlotsEngineeringWaterVapor
 
 # Medical
 - type: loadout
@@ -54,7 +54,7 @@
     proto: WaterBreather
   storage:
     back:
-    - BoxSurvivalMedicalWaterVapor
+    - BoxSurvivalSlotsMedicalWaterVapor
 
 # Security
 - type: loadout
@@ -64,7 +64,7 @@
     proto: WaterBreather
   storage:
     back:
-    - BoxSurvivalSecurityWaterVapor
+    - BoxSurvivalSlotsSecurityWaterVapor
 
 # Syndicate
 - type: loadout
@@ -74,7 +74,7 @@
     proto: WaterBreather
   storage:
     back:
-    - BoxSurvivalWaterVapor
+    - BoxSurvivalSlotsWaterVapor
 
 # Full EVA Tank, Any Species
 - type: loadout
