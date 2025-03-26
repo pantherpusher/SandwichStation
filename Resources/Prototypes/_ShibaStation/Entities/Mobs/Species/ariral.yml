@@ -15,6 +15,30 @@
     spawned:
     - id: FoodMeatHuman
       amount: 5
+  - type: Bloodstream
+    bloodReagent: AriralBlood
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 3 # Less melee damage but they apply poison after two+ hits.
+  - type: SolutionContainerManager # Contact with arirals is toxic, so we need a way to transfer that in melee combat.
+    solutions:
+      melee:
+        maxVol: 30
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: AriralSweat
+        Quantity: 5
+  - type: MeleeChemicalInjector # Effects should be applied after two hits, three+ applying poison.
+    solution: melee
+    transferAmount: 5
   - type: HumanoidAppearance
     species: Ariral
     hideLayersOnEquip:
