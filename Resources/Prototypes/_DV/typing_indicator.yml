@@ -10,11 +10,8 @@
   typingState: rodentia0
   offset: 0, 0.2 # 0625
 
-- type: speechVerb
-  id: Feroxi
-  name: chat-speech-verb-name-feroxi
-  speechVerbStrings:
-  - chat-speech-verb-feroxi-1
-  - chat-speech-verb-feroxi-2
-  - chat-speech-verb-feroxi-3
-  - chat-speech-verb-feroxi-4
+- type: typingIndicator
+  id: feroxi
+  spritePath: /Textures/_DV/Effects/speech.rsi
+  typingState: feroxi0
+  offset: 0, 0.2 # 0625
