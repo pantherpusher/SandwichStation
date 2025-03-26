@@ -20,6 +20,10 @@
     hideLayersOnEquip:
     - Hair
     - HeadTop
+  - type: Sprite
+    scale: 1, 1.2
+  - type: ScaleData # Goobstation
+    scale: 1, 1.2
   - type: Inventory
     speciesId: reptilian # Reuse lizard displacements, especially for the feet.
     displacements: # Reuse lizard displacements, especially for the feet.
@@ -45,6 +49,10 @@
   components:
   - type: HumanoidAppearance
     species: Ariral
+  - type: Sprite
+    scale: 1, 1.2
+  - type: ScaleData # Goobstation
+    scale: 1, 1.2
   - type: Inventory
     speciesId: reptilian # Reuse lizard displacements, especially for the feet.
     displacements: # Reuse lizard displacements, especially for the feet.
