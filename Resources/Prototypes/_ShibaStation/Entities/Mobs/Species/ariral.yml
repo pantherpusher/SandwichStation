@@ -10,13 +10,23 @@
     sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
     state: full
   - type: Thirst
+  - type: InteractionPopup
+    successChance: 0
+    interactFailureString: petting-failure-ariral
   - type: Butcherable
     butcheringType: Spike
     spawned:
     - id: FoodMeatHuman
       amount: 5
-  - type: Bloodstream
+  - type: Damageable
+    damageModifierSet: Ariral
+  - type: Stamina
+    critThreshold: 75 # Less stamina, easier to down.
+  - type: Bloodstream # Ariral blood is unique and toxic, but arirals bleed very easily and don't passively heal as fast.
     bloodReagent: AriralBlood
+    bloodRefreshAmount: 0.5
+    bleedReductionAmount: 0.1
+    damageBleedModifiers: BloodlossAriral
   - type: MeleeWeapon
     soundHit:
       collection: Punch
