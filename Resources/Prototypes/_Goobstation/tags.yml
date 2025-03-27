@@ -102,9 +102,6 @@
   id: EmergencyOxygenTank
 
 - type: Tag
-  id: EmergencyWaterVaporTank
-
-- type: Tag
   id: EnergySpeedloader
 
 - type: Tag
@@ -127,9 +124,6 @@
 
 - type: Tag
   id: FlashIgnoreResistances
-
-- type: Tag
-  id: FoodTinMRE
 
 - type: Tag
   id: FrozenIgnoreMindAction
