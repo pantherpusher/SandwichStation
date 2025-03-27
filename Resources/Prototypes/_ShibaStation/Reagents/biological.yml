@@ -5,12 +5,9 @@
   desc: reagent-desc-ariral-blood
   flavor: metallic
   color: "#d82000"
-  metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/bloodglass.rsi
-    state: icon_empty
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
+  metamorphicChangeColor: true
   recognizable: true
   physicalDesc: reagent-physical-desc-ferrous
   slippery: false
@@ -23,41 +20,41 @@
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 2
-        probability: 0.3
+          min: 1
+        probability: 0.5
       - !type:GenericStatusEffect
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 3
+          min: 1
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
         time: 8
-        refresh: false
+        refresh: true
       - !type:PopupMessage
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 3
+          min: 1
         type: Local
         visualType: Medium
         messages: ["generic-reagent-effect-nauseous", "generic-reagent-effect-dizzy"]
-        probability: 0.3
+        probability: 0.4
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 4
+          min: 2
         damage:
           types:
-            Poison: 0.75
+            Poison: 1.25
   footstepSound:
     collection: FootstepBlood
     params:
@@ -70,13 +67,10 @@
   desc: reagent-desc-ariral-sweat
   flavor: metallic
   color: "#e0e0e0"
-  metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/bloodglass.rsi
-    state: icon_empty
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-  recognizable: true
+  metamorphicChangeColor: true
+  recognizable: false
   physicalDesc: reagent-physical-desc-volatile
   slippery: true
   metabolisms:
@@ -88,27 +82,27 @@
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 8
-        probability: 0.2
+          min: 1
+        probability: 0.4
       - !type:GenericStatusEffect
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 12
+          min: 1
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
         time: 6
-        refresh: false
+        refresh: true
       - !type:PopupMessage
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 12
+          min: 1
         type: Local
         visualType: Medium
         messages: ["generic-reagent-effect-nauseous", "generic-reagent-effect-dizzy"]
@@ -119,7 +113,7 @@
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 16
+          min: 2
         damage:
           types:
-            Poison: 0.5
+            Poison: 0.75
