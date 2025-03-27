@@ -1,4 +1,38 @@
 Entries:
+- author: bodenpflanze
+  changes:
+  - message: The Black Mesa Hazardous Environment Feline has been added to the game
+      (Caitlin plushie!)
+    type: Add
+  id: 257
+  time: '2025-03-27T19:04:11.352432'
+- author: AstroDogeDX
+  changes:
+  - message: Ariral bleeding has been adjusted to be more reasonable but still worse
+      than a normal mob.
+    type: Tweak
+  id: 256
+  time: '2025-03-27T19:00:17.681256'
+- author: AstroDogeDX
+  changes:
+  - message: Arirals now come with a survival box! Oopsie!
+    type: Fix
+  id: 255
+  time: '2025-03-27T19:00:36.735558'
+- author: AstroDogeDX
+  changes:
+  - message: Ariral reagents have been adjusted to be more potent, but the amount
+      administered in melee combat has been reduced.
+    type: Tweak
+  id: 254
+  time: '2025-03-27T19:01:07.147006'
+- author: AstroDogeDX
+  changes:
+  - message: Potentially (copium) fixed arirals seeing interaction success messages
+      even though it's impossible to successfully hug them.
+    type: Fix
+  id: 253
+  time: '2025-03-27T19:01:41.358790'
 - author: AstroDogeDX
   changes:
   - message: Added missing Mail Carrier spawn to Atlas.
