@@ -111,6 +111,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVapor
 
 - type: loadoutGroup
   id: GroupEVATank
@@ -119,6 +120,7 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+  - LoadoutSpeciesEVAWaterVapor
 
 - type: loadoutGroup
   id: GroupPocketTankDouble
@@ -127,6 +129,7 @@
   loadouts:
   - LoadoutSpeciesPocketDoubleNitrogen
   - LoadoutSpeciesPocketDoubleOxygen
+  - LoadoutSpeciesPocketDoubleWaterVapor
 
 # Command
 - type: loadoutGroup
@@ -536,6 +539,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporClown
 
 - type: loadoutGroup
   id: MimeHead
@@ -592,6 +596,7 @@
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMime
 
 - type: loadoutGroup
   id: MusicianJumpsuit
@@ -893,6 +898,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporExtended
 
 # Science
 - type: loadoutGroup
@@ -1183,6 +1189,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSecurity
 
 - type: loadoutGroup
   id: SecurityStar
@@ -1377,6 +1384,7 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMedical
 
 # Wildcards
 - type: loadoutGroup
@@ -1420,6 +1428,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSyndicate
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool
