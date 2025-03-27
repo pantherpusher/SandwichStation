@@ -20,15 +20,15 @@
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 1
-        probability: 0.5
+          min: 5
+        probability: 0.1
       - !type:GenericStatusEffect
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 1
+          min: 2
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
@@ -40,18 +40,18 @@
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 1
+          min: 2
         type: Local
         visualType: Medium
         messages: ["generic-reagent-effect-nauseous", "generic-reagent-effect-dizzy"]
-        probability: 0.4
+        probability: 0.5
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 2
+          min: 1
         damage:
           types:
             Poison: 1.25
@@ -82,15 +82,15 @@
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 1
-        probability: 0.4
+          min: 5
+        probability: 0.1
       - !type:GenericStatusEffect
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 1
+          min: 2
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
@@ -102,18 +102,18 @@
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 1
+          min: 2
         type: Local
         visualType: Medium
         messages: ["generic-reagent-effect-nauseous", "generic-reagent-effect-dizzy"]
-        probability: 0.2
+        probability: 0.5
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Ariral
           shouldHave: false
         - !type:ReagentThreshold
-          min: 2
+          min: 1
         damage:
           types:
             Poison: 0.75
