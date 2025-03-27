@@ -179,7 +179,7 @@
   name: loadout-group-captain-shoes
   loadouts:
   - CaptainShoes
-  - CommandPumps
+  - CommandStilettos
 
 - type: loadoutGroup
   id: HoPHead
@@ -225,7 +225,7 @@
   name: loadout-group-hop-shoes
   loadouts:
   - HoPShoes
-  - CommandPumps
+  - CommandStilettos
 
 # Civilian
 - type: loadoutGroup
@@ -703,7 +703,7 @@
   loadouts:
   - BrownShoes
   - CargoWinterBoots
-  - CommandPumps #ShibaStation
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -804,7 +804,7 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
-  - CommandPumps #ShibaStation
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -954,7 +954,7 @@
   loadouts:
   - BrownShoes
   - ScienceWinterBoots
-  - CommandPumps #ShibaStation
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: ScientistHead
@@ -1080,7 +1080,7 @@
   loadouts:
   - JackBoots
   - SecurityWinterBoots
-  - CommandPumps
+  - CommandStilettos
 
 - type: loadoutGroup
   id: WardenHead
@@ -1264,7 +1264,7 @@
   loadouts:
   - BrownShoes
   - MedicalWinterBoots
-  - CommandPumps #ShibaStation
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: MedicalDoctorHead

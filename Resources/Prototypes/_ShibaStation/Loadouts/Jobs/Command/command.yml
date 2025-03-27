@@ -1,8 +1,8 @@
 ﻿# Shoes
 - type: loadout
-  id: CommandPumps
+  id: CommandStilettos
   equipment:
-    shoes: ClothingClassicPumps
+    shoes: ClothingClassicStilettos
 
 - type: loadout
   id: CaptainShoes
