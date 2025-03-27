@@ -32,8 +32,8 @@
     critThreshold: 75 # Less stamina, easier to down.
   - type: Bloodstream # Ariral blood is unique and toxic, but arirals bleed very easily and don't passively heal as fast.
     bloodReagent: AriralBlood
-    bloodRefreshAmount: 0.5
-    bleedReductionAmount: 0.1
+    bloodRefreshAmount: 0.85
+    bleedReductionAmount: 0.25
     damageBleedModifiers: BloodlossAriral
   - type: MeleeWeapon
     soundHit:
@@ -46,17 +46,17 @@
         Blunt: 3 # Less melee damage but they apply poison after two+ hits.
   - type: SolutionContainerManager # Contact with arirals is toxic, so we need a way to transfer that in melee combat.
     solutions:
-      melee:
+      skin:
         maxVol: 30
   - type: SolutionRegeneration
-    solution: melee
+    solution: skin
     generated:
       reagents:
       - ReagentId: AriralSweat
-        Quantity: 5
+        Quantity: 0.5
   - type: MeleeChemicalInjector # Effects should be applied after two hits, three+ applying poison.
-    solution: melee
-    transferAmount: 5
+    solution: skin
+    transferAmount: 1
   - type: HumanoidAppearance
     species: Ariral
     hideLayersOnEquip:
