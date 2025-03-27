@@ -1,4 +1,24 @@
 Entries:
+- author: AstroDogeDX
+  changes:
+  - message: Added missing Mail Carrier spawn to Atlas.
+    type: Fix
+  id: 252
+  time: '2025-03-27T05:07:00.977808'
+- author: AstroDogeDX & marteeno
+  changes:
+  - message: Arirals have invaded Shiba Sector! Don't be mislead by their cute cat-like
+      appearance, they're incredibly toxic ~ but they ARE cute...
+    type: Add
+  id: 251
+  time: '2025-03-27T05:09:46.677717'
+- author: BlitzTheSquishy (ported from DeltaVby AstroDogeDX)
+  changes:
+  - message: Feroxi are here! A collection of shark-like peoples, who can use Water
+      Vapor instead of oxygen!
+    type: Add
+  id: 250
+  time: '2025-03-27T05:08:54.216436'
 - author: MinxIsntHere
   changes:
   - message: (Admin) Universal Access Configurators now spawn with a Universal ID
