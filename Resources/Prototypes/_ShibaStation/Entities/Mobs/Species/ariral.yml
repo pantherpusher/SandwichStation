@@ -10,6 +10,14 @@
     sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
     state: full
   - type: Thirst
+  - type: Speech
+    speechVerb: Ariral
+    allowedEmotes: ["Meow", "Purr", "Hiss"]
+  - type: Vocal
+    sounds:
+      Male: MaleAriral
+      Female: FemaleAriral
+      Unsexed: FemaleAriral
   - type: InteractionPopup
     successChance: 0
     interactFailureString: petting-failure-ariral
