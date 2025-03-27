@@ -48,6 +48,16 @@
   copyright: "Created by AstroDogeDX"
   source: "https://github.com/AstroDogeDX/ShibaStation-GS"
 
+- files: ["alert-dave.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Voice:Azrakoth"
+  source: "https://github.com/Azrakoth"
+
+- files: ["alert-dave.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Soundbit: AstroDogeDX"
+  source: "https://github.com/AstroDogeDX/ShibaStation-GS"
+
 - files: ["attention.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "Created by AstroDogeDX"
