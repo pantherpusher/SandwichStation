@@ -21,6 +21,7 @@
   - type: InteractionPopup
     successChance: 0
     interactFailureString: petting-failure-ariral
+    messagePerceivedByOthers: null
   - type: Butcherable
     butcheringType: Spike
     spawned:
