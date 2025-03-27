@@ -377,8 +377,11 @@
       path: /Audio/_ShibaStation/Announcements/vent-3-hostile.ogg
     earliestStart: 20
     minimumPlayers: 15
-    weight: 0.5 # GoobStation: was 5, vent critters bad
-    duration: 60
+    weight: 5
+    duration: 30 # DeltaV: was 60, used as a delay now
+    chaos: # Goobstation
+      Hostile: 20
+      Medical: 50
   - type: VentCrittersRule
     entries:
     - id: MobAdultSlimesBlueAngry
@@ -553,6 +556,8 @@
     duration: 150
     maxDuration: 300
     reoccurrenceDelay: 30
+    chaos: # Goobstation
+      Friend: 20
   - type: MassHallucinationsRule
     minTimeBetweenIncidents: 0.1
     maxTimeBetweenIncidents: 300
@@ -569,6 +574,10 @@
     reoccurrenceDelay: 20
     minimumPlayers: 16 # ShibaStation - Ion storms tend to give out free shitter tickets, and at low pop it's cringe. This better meshes with escalating danger in line with population.
     duration: 1
+    chaos: # Goobstation
+      Hostile: 10
+      Friend: 20
+      Mess: 30
   - type: IonStormRule
 
 - type: entity
@@ -580,6 +589,10 @@
     minimumPlayers: 20
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
     weight: 5
+    chaos: # Goobstation
+      Hostile: 20 # for when they're actually properly hostile
+      Hunger: 10
+      Thirst: 10
   - type: MobReplacementRule
 
 - type: entity
@@ -592,6 +605,9 @@
     weight: 5
     minimumPlayers: 25
     reoccurrenceDelay: 20
+    chaos: # Goobstation
+      Atmos: 15
+      Mess: 30
   - type: GreytideVirusRule
     accessGroups:
     - Cargo
@@ -614,6 +630,10 @@
     minimumPlayers: 16 # ShibaStation - Increased from 4 to 16
     maxOccurrences: 2 # ShibaStation - Derelicts now can only happen twice per round.
     duration: null
+    chaos: # Goobstation
+      # can be both hostile and friendly
+      Hostile: 10
+      Friend: -10
   - type: SpaceSpawnRule
     spawnDistance: 0
   - type: AntagSpawner
