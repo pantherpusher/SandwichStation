@@ -1,9 +1,51 @@
 - type: entity
+  id: BaseAriralOrganUnGibbable
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+  - type: Organ
+  - type: Food
+  - type: Extractable
+    grindableSolutionName: organ
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: AriralBlood
+          Quantity: 10
+  - type: FlavorProfile
+    flavors:
+      - strange
+  - type: Tag # goob edit
+    tags:
+    - Meat
+    - Organ
+
+- type: entity
+  id: BaseAriralOrgan
+  parent: BaseAriralOrganUnGibbable
+  abstract: true
+  components:
+  - type: Gibbable
+  - type: PhysicalComposition #Goobstation - Recycle update
+    materialComposition:
+      Biomass: 5
+
+- type: entity
   id: OrganAriralBrain
-  suffix: Ariral
-  parent: BaseHumanOrganUnGibbable
+  suffix: ariral
+  parent: BaseAriralOrganUnGibbable
   name: brain
-  description: "The source of incredible, unending intelligence. Honk."
+  description: "Spends 90% of the time thinking about shrimp."
   components:
   - type: MindContainer
     showExamineInfo: true
@@ -40,6 +82,8 @@
         reagents:
         - ReagentId: GreyMatter
           Quantity: 5
+        - ReagentId: AriralBlood
+          Quantity: 10
   - type: FlavorProfile
     flavors:
       - people
@@ -58,10 +102,10 @@
 
 - type: entity
   id: OrganAriralEyes
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: eyes
-  description: "I see you!"
+  description: "For spying on cute humans."
   components:
   - type: Organ # Shitmed Change
     slotId: eyes # Shitmed Change
@@ -81,10 +125,10 @@
 
 - type: entity
   id: OrganAriralTongue
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: tongue
-  description: "A fleshy muscle mostly used for lying."
+  description: "Is it rough like a cat's tongue?"
   components:
   - type: Sprite
     state: tongue
@@ -105,8 +149,8 @@
 
 - type: entity
   id: OrganAriralAppendix
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: appendix
   components:
   - type: Sprite
@@ -117,10 +161,10 @@
 
 - type: entity
   id: OrganAriralEars
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: ears
-  description: "There are three parts to the ear. Inner, middle and outer. Only one of these parts should normally be visible."
+  description: "Now in 5.1 surround sound!"
   components:
   - type: Sprite
     state: ears
@@ -137,10 +181,10 @@
 
 - type: entity
   id: OrganAriralLungs
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: lungs
-  description: "Filters oxygen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier."
+  description: "Stronger than a human's; perfect for meowing loudly."
   components:
   - type: Organ # Shitmed Change
     slotId: lungs # Shitmed Change
@@ -174,6 +218,8 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+        - ReagentId: AriralBlood
+          Quantity: 10
   - type: Tag # goob edit
     tags:
     - Meat
@@ -182,10 +228,10 @@
 
 - type: entity
   id: OrganAriralHeart
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: heart
-  description: "I feel bad for the heartless bastard who lost this."
+  description: "You have to work hard for an ariral to give this to you."
   components:
   - type: Heart # Shitmed Change
   - type: Organ # Shitmed Change
@@ -213,10 +259,10 @@
 
 - type: entity
   id: OrganAriralStomach
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: stomach
-  description: "Gross. This is hard to stomach."
+  description: "Putting this stomach inside your stomach would be a very bad idea."
   components:
   - type: Organ # Shitmed Change
     slotId: stomach # Shitmed Change
@@ -234,6 +280,8 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+        - ReagentId: AriralBlood
+          Quantity: 10
   - type: Stomach
   # The stomach metabolizes stuff like foods and drinks.
   # TODO: Have it work off of the ent's solution container, and move this
@@ -262,10 +310,10 @@
 
 - type: entity
   id: OrganAriralLiver
-  suffix: Ariral
-  parent: BaseHumanOrgan
+  suffix: ariral
+  parent: BaseAriralOrgan
   name: liver
-  description: "Pairing suggestion: chianti and fava beans."
+  description: "Pairing suggestion: hazmat suit and a furnace."
   components:
   - type: Liver # Shitmed Change
   - type: Organ # Shitmed Change
@@ -298,10 +346,10 @@
 
 - type: entity
   id: OrganAriralKidneys
-  suffix: Ariral
+  suffix: ariral
   parent: BaseHumanOrgan
   name: kidneys
-  description: "Filters toxins from the bloodstream."
+  description: "Filters toxins from the bloodstream, and probably puts them back into the bloodstream."
   components:
   - type: Organ # Shitmed
     slotId: kidneys
