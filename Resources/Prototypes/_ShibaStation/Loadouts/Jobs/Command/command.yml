@@ -1,0 +1,15 @@
+﻿# Shoes
+- type: loadout
+  id: CommandPumps
+  equipment:
+    shoes: ClothingClassicPumps
+
+- type: loadout
+  id: CaptainShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout
+  id: HoPShoes
+  equipment:
+    shoes:  ClothingShoesColorBrown
