@@ -581,6 +581,9 @@
   - type: Sprite
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Clothing
+    slots:
+    - outerClothing
+    - belt
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Item
     size: Ginormous
@@ -588,6 +591,7 @@
     maxItemSize: Huge
     grid:
     - 0,0,3,3
+    - type: AllowSuitStorage
     whitelist:
       components:
       - Gun
