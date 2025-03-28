@@ -591,12 +591,12 @@
     maxItemSize: Huge
     grid:
     - 0,0,3,3
-    - type: AllowSuitStorage
     whitelist:
       components:
       - Gun
       - BallisticAmmoProvider
       - CartridgeAmmo
+  - type: AllowSuitStorage
 
 # Belts without visualizers
 
