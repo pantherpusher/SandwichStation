@@ -2,7 +2,7 @@
   parent: BaseItem
   id: SevanPlush
   name: Sevan Plush 
-  description: A merketable replication of Shiba's best caffeine guzzler.
+  description: A merketable replication of Shiba's best caffeine guzzler! There appears to be a magnet in the hand.
   components:
   - type: Sprite
     sprite: _ShibaStation/Objects/Fun/ShibPlush/sevan.rsi
@@ -19,3 +19,13 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/Toys/toysqueak1.ogg
+  - type: ContainerContainer
+    containers:
+      mug: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mug:
+        ejectOnInteract: false
+        whitelist:
+          tags:
+          - DrinkBaseMug
