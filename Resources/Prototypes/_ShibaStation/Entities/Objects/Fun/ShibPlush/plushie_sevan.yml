@@ -1,6 +1,6 @@
 - type: entity
-  parent: BaseItem
-  id: SevanPlush
+  parent: BasePlushie
+  id: PlushieSevan
   name: Sevan Plush 
   description: A merketable replication of Shiba's best caffeine guzzler.
   components:
