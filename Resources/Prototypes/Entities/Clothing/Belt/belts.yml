@@ -563,10 +563,14 @@
   - type: Sprite
     sprite: Clothing/Belt/holster.rsi
   - type: Clothing
+    slots:
+    - outerClothing
+    - belt
     sprite: Clothing/Belt/holster.rsi
   - type: Storage
     grid:
     - 0,0,3,1
+  - type: AllowSuitStorage
 
 - type: entity
   parent: [ClothingBeltStorageBase, BaseSyndicateContraband]
