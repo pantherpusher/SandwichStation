@@ -1,0 +1,12 @@
+﻿# HEAD
+
+- type: marking
+  id: LizardHeadSpikedCobra
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Z-Atelier/Mobs/Customization/reptilian_parts.rsi
+    state: sharp_cobra_hood
+  - sprite: _Z-Atelier/Mobs/Customization/reptilian_parts.rsi
+    state: sharp_cobra_hood_overlay
