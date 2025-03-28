@@ -8,6 +8,7 @@
   - CaptainMask # Goobstation - Lollypops!
   - CaptainBackpack
   - CaptainOuterClothing
+  - CaptainShoes #ShibaStation
   - Survival
   - Trinkets
   - Sharks
@@ -24,6 +25,7 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
+  - HoPShoes #ShibaStation
   - Glasses
   - Survival
   - Trinkets
@@ -419,7 +421,7 @@
   - SecurityBackpack
   - SecurityBelt
   - HeadofSecurityOuterClothing
-  - SecurityShoes
+  - HeadofSecurityShoes #ShibaStation
   - SurvivalSecurity
   - Trinkets
   - Sharks

@@ -1,0 +1,42 @@
+﻿- type: entity
+  parent: Clothing
+  id: ClothingClassicStilettos
+  name: classic stilettos
+  description: Few things demand attention quite like a pair of stilettos. There's just something so commanding about them.
+  components:
+  - type: Sprite
+    state: icon
+    sprite: _ShibaStation/Clothing/Shoes/classic_stilettos.rsi
+  - type: Clothing
+    slots:
+    - FEET
+    sprite: _ShibaStation/Clothing/Shoes/classic_stilettos.rsi
+  - type: Item
+    size: Normal
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHighHeels
+      params:
+        variation: 0.09
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: ProtectedFromStepTriggers
+
+- type: entity
+  parent: ClothingClassicStilettos
+  id: HighTechStilettos
+  name: high-tech stilettos
+  suffix: Admeme
+  description: A top-of-the-line pair of stilettos, equipped with advanced anti-slip features to prevent falls, especially for untrained wearers. The sharpened heel can also serve as a weapon in a pinch.
+  components:
+  - type: MeleeWeapon
+    attackRate: 1.2
+    damage:
+      types:
+        Piercing: 12
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: ProtectedFromStepTriggers
+  - type: NoSlip
