@@ -563,10 +563,14 @@
   - type: Sprite
     sprite: Clothing/Belt/holster.rsi
   - type: Clothing
+    slots:
+    - outerClothing
+    - belt
     sprite: Clothing/Belt/holster.rsi
   - type: Storage
     grid:
     - 0,0,3,1
+  - type: AllowSuitStorage
 
 - type: entity
   parent: [ClothingBeltStorageBase, BaseSyndicateContraband]
@@ -577,6 +581,9 @@
   - type: Sprite
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Clothing
+    slots:
+    - outerClothing
+    - belt
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Item
     size: Ginormous
@@ -589,6 +596,7 @@
       - Gun
       - BallisticAmmoProvider
       - CartridgeAmmo
+  - type: AllowSuitStorage
 
 # Belts without visualizers
 
