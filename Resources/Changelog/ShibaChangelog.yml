@@ -1,4 +1,43 @@
 Entries:
+- author: AstroDogeDX
+  changes:
+  - message: Feroxi have footprints now! Patta patta!
+    type: Fix
+  id: 263
+  time: '2025-03-29T08:22:41.257309'
+- author: Fansana
+  changes:
+  - message: Reptilian long tail has a much nicer animated wag now!
+    type: Fix
+  id: 262
+  time: '2025-03-29T08:22:29.669317'
+- author: MinxIsntHere & chlymerine
+  changes:
+  - message: Added Classic Stiletto shoes! They're available in Command loadouts,
+      too!
+    type: Add
+  id: 261
+  time: '2025-03-29T08:21:39.694888'
+- author: NomNumNomYum
+  changes:
+  - message: Shoulder holsters can now be worn on the Outer Clothing slot (as well
+      as the Belt slot) and have Suit Storage too!
+    type: Tweak
+  id: 260
+  time: '2025-03-29T08:20:47.644461'
+- author: AstroDogeDX
+  changes:
+  - message: The codebase is now using Goob's Modular system; please report any issues
+      on our GitHub!
+    type: Tweak
+  id: 259
+  time: '2025-03-29T08:19:59.591941'
+- author: AstroDogeDX
+  changes:
+  - message: Door behaviour has been reverted back to how it used to be.
+    type: Fix
+  id: 258
+  time: '2025-03-29T08:19:58.739359'
 - author: bodenpflanze
   changes:
   - message: The Black Mesa Hazardous Environment Feline has been added to the game
