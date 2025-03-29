@@ -29,3 +29,9 @@
         whitelist:
           tags:
           - DrinkBaseMug
+  - type: ItemMapper
+    mapLayers:
+      mug:
+        whitelist:
+          tags:
+            - DrinkBaseMug
