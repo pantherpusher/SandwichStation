@@ -28,10 +28,10 @@
         ejectOnInteract: false
         whitelist:
           tags:
-          - DrinkBaseMug
+          - DrinkCup
   - type: ItemMapper
     mapLayers:
       mug:
         whitelist:
           tags:
-            - DrinkBaseMug
+            - DrinkCup
