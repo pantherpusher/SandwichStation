@@ -706,28 +706,28 @@
   - type: Sprite
     layers:
     - state: icon
-      color: "#044a92"
+      color: "#005dbf"
     - state: iconstripe
-      color: "#252426"
+      color: "#212022"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-        color: "#044a92"
+        color: "#005dbf"
       right:
       - state: inhand-right
-        color: "#040273"
+        color: "#005dbf"
   - type: Clothing
     clothingVisuals:
       head:
       - state: equipped-HELMET
-        color: "#044a92"
+        color: "#005dbf"
       jumpsuit:
       - state: equipped-INNERCLOTHING
-        color: "#044a92"
+        color: "#005dbf"
       belt:
       - state: equipped-BELT
-        color: "#044a92"
+        color: "#005dbf"
   - type: Fiber
     fiberColor: fibers-regal-blue
 
