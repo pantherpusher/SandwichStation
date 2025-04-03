@@ -43792,6 +43792,269 @@ entities:
       rot: 3.141592653589793 rad
       pos: 8.639447,32.54737
       parent: 2
+- proto: ChairOfficeDark
+  entities:
+  - uid: 231
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 4.4682918,0.6390649
+      parent: 2
+  - uid: 333
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -19.438293,-20.269924
+      parent: 2
+  - uid: 448
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 35.446915,-21.558496
+      parent: 2
+  - uid: 1052
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 18.435757,-9.759849
+      parent: 2
+  - uid: 1310
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 23.538269,-11.297682
+      parent: 2
+  - uid: 1785
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 9.457573,-17.462608
+      parent: 2
+  - uid: 2039
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -11.443111,-20.86026
+      parent: 2
+  - uid: 2151
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.96229506,-33.24098
+      parent: 2
+  - uid: 2157
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -12.384821,-33.347046
+      parent: 2
+  - uid: 2158
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -10.603571,-33.190796
+      parent: 2
+  - uid: 2160
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -3.4473205,-26.521994
+      parent: 2
+  - uid: 2180
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 31.584435,-26.471273
+      parent: 2
+  - uid: 3053
+    components:
+    - type: Transform
+      pos: -14.432013,-32.376667
+      parent: 2
+  - uid: 3120
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -20.02908,-25.40962
+      parent: 2
+  - uid: 3177
+    components:
+    - type: Transform
+      pos: -23.448484,-31.486954
+      parent: 2
+  - uid: 3515
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -35.51934,-33.34789
+      parent: 2
+  - uid: 3568
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -24.493858,12.659004
+      parent: 2
+  - uid: 4070
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 20.518196,18.500528
+      parent: 2
+  - uid: 4071
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 25.674446,11.875528
+      parent: 2
+  - uid: 4073
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 29.611946,22.375528
+      parent: 2
+  - uid: 4117
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 27.911285,4.6227093
+      parent: 2
+  - uid: 4303
+    components:
+    - type: Transform
+      pos: 31.581478,22.534786
+      parent: 2
+  - uid: 4329
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -4.605978,-17.781683
+      parent: 2
+  - uid: 4716
+    components:
+    - type: Transform
+      pos: -10.503469,11.609316
+      parent: 2
+  - uid: 5099
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -29.50343,20.10328
+      parent: 2
+  - uid: 5129
+    components:
+    - type: Transform
+      pos: -20.52276,24.548702
+      parent: 2
+  - uid: 5250
+    components:
+    - type: Transform
+      pos: -10.926676,20.555073
+      parent: 2
+  - uid: 6582
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 2.450543,39.20258
+      parent: 2
+  - uid: 6583
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5442929,39.57758
+      parent: 2
+  - uid: 6584
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 10.513042,29.48383
+      parent: 2
+  - uid: 6625
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -3.5669155,30.00437
+      parent: 2
+  - uid: 6714
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -24.53384,32.733223
+      parent: 2
+  - uid: 7133
+    components:
+    - type: Transform
+      pos: 38.620136,-15.528381
+      parent: 2
+  - uid: 7774
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -18.700035,-41.89003
+      parent: 2
+  - uid: 7951
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -50.46897,-31.354376
+      parent: 2
+  - uid: 7997
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -24.424982,30.67273
+      parent: 2
+  - uid: 9613
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -29.44567,-10.371562
+      parent: 2
+  - uid: 10413
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 17.685745,7.9186025
+      parent: 2
+  - uid: 10492
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -20.304087,-42.155655
+      parent: 2
+  - uid: 13627
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 5.376266,34.202606
+      parent: 2
+  - uid: 13676
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -1.503932,-24.622326
+      parent: 2
+  - uid: 13767
+    components:
+    - type: Transform
+      pos: 1.0366118,20.373814
+      parent: 2
+  - uid: 14676
+    components:
+    - type: Transform
+      pos: -17.478888,-32.361042
+      parent: 2
+  - uid: 15302
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.9565754,-16.251305
+      parent: 2
+  - uid: 15559
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -2.4354122,-6.304986
+      parent: 2
 - proto: ChairPilotSeat
   entities:
   - uid: 4639
