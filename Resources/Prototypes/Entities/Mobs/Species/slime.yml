@@ -117,13 +117,6 @@
       types:
         Asphyxiation: -1.0
     maxSaturation: 15
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
   - type: FootPrints # WD EDIT
     leftBarePrint: "footprint-left-bare-slime"
     rightBarePrint: "footprint-right-bare-slime"
@@ -135,10 +128,3 @@
   components:
   - type: HumanoidAppearance
     species: SlimePerson
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

@@ -6,9 +6,9 @@
   category: construction-category-machines
   icon:
     sprite: _Goobstation/Structures/Machines/contraband_detector.rsi
-    state: base
+    state: frame
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   startNode: start
-  targetNode: complete
+  targetNode: detector

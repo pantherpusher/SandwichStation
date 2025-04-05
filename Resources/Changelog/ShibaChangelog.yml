@@ -1,6 +1,196 @@
 Entries:
 - author: AstroDogeDX
   changes:
+  - message: Feroxi have footprints now! Patta patta!
+    type: Fix
+  id: 263
+  time: '2025-03-29T08:22:41.257309'
+- author: Fansana
+  changes:
+  - message: Reptilian long tail has a much nicer animated wag now!
+    type: Fix
+  id: 262
+  time: '2025-03-29T08:22:29.669317'
+- author: MinxIsntHere & chlymerine
+  changes:
+  - message: Added Classic Stiletto shoes! They're available in Command loadouts,
+      too!
+    type: Add
+  id: 261
+  time: '2025-03-29T08:21:39.694888'
+- author: NomNumNomYum
+  changes:
+  - message: Shoulder holsters can now be worn on the Outer Clothing slot (as well
+      as the Belt slot) and have Suit Storage too!
+    type: Tweak
+  id: 260
+  time: '2025-03-29T08:20:47.644461'
+- author: AstroDogeDX
+  changes:
+  - message: The codebase is now using Goob's Modular system; please report any issues
+      on our GitHub!
+    type: Tweak
+  id: 259
+  time: '2025-03-29T08:19:59.591941'
+- author: AstroDogeDX
+  changes:
+  - message: Door behaviour has been reverted back to how it used to be.
+    type: Fix
+  id: 258
+  time: '2025-03-29T08:19:58.739359'
+- author: bodenpflanze
+  changes:
+  - message: The Black Mesa Hazardous Environment Feline has been added to the game
+      (Caitlin plushie!)
+    type: Add
+  id: 257
+  time: '2025-03-27T19:04:11.352432'
+- author: AstroDogeDX
+  changes:
+  - message: Ariral bleeding has been adjusted to be more reasonable but still worse
+      than a normal mob.
+    type: Tweak
+  id: 256
+  time: '2025-03-27T19:00:17.681256'
+- author: AstroDogeDX
+  changes:
+  - message: Arirals now come with a survival box! Oopsie!
+    type: Fix
+  id: 255
+  time: '2025-03-27T19:00:36.735558'
+- author: AstroDogeDX
+  changes:
+  - message: Ariral reagents have been adjusted to be more potent, but the amount
+      administered in melee combat has been reduced.
+    type: Tweak
+  id: 254
+  time: '2025-03-27T19:01:07.147006'
+- author: AstroDogeDX
+  changes:
+  - message: Potentially (copium) fixed arirals seeing interaction success messages
+      even though it's impossible to successfully hug them.
+    type: Fix
+  id: 253
+  time: '2025-03-27T19:01:41.358790'
+- author: AstroDogeDX
+  changes:
+  - message: Added missing Mail Carrier spawn to Atlas.
+    type: Fix
+  id: 252
+  time: '2025-03-27T05:07:00.977808'
+- author: AstroDogeDX & marteeno
+  changes:
+  - message: Arirals have invaded Shiba Sector! Don't be mislead by their cute cat-like
+      appearance, they're incredibly toxic ~ but they ARE cute...
+    type: Add
+  id: 251
+  time: '2025-03-27T05:09:46.677717'
+- author: BlitzTheSquishy (ported from DeltaVby AstroDogeDX)
+  changes:
+  - message: Feroxi are here! A collection of shark-like peoples, who can use Water
+      Vapor instead of oxygen!
+    type: Add
+  id: 250
+  time: '2025-03-27T05:08:54.216436'
+- author: MinxIsntHere
+  changes:
+  - message: (Admin) Universal Access Configurators now spawn with a Universal ID
+      card inserted.
+    type: Add
+  id: 249
+  time: '2025-03-24T19:24:17.139604'
+- author: AstroDogeDX
+  changes:
+  - message: Rodentians can now vent crawl; but they can't take a bag, outerwear or
+      anything carried on their back.
+    type: Add
+  id: 248
+  time: '2025-03-24T19:27:01.375162'
+- author: AstroDogeDX
+  changes:
+  - message: Rodentians can still sneak while standing, and their speed penalty has
+      been reduced slightly.
+    type: Tweak
+  id: 247
+  time: '2025-03-24T19:26:35.613202'
+- author: AstroDogeDX
+  changes:
+  - message: All species can now sneak/crawl under tables and other objects while
+      laying down first - just activate the action when you're laying down!
+    type: Add
+  id: 246
+  time: '2025-03-24T19:25:53.569305'
+- author: AstroDogeDX
+  changes:
+  - message: You can no longer slide over tables while laying down.
+    type: Remove
+  id: 245
+  time: '2025-03-24T19:25:22.122535'
+- author: AstroDogeDX
+  changes:
+  - message: Carrying has been (temporarily) disabled for all species due to some
+      severe bugs. It may return in the future, it may not.
+    type: Remove
+  id: 244
+  time: '2025-03-24T19:25:04.964996'
+- author: AstroDogeDX
+  changes:
+  - message: Ore Processors will grant points even if they're not linked to a silo.
+      They still need to be on the station, though!
+    type: Fix
+  id: 243
+  time: '2025-03-24T19:27:25.323385'
+- author: MinxIsntHere
+  changes:
+  - message: Shelters created via the shelter capsule now have functioning doors
+    type: Fix
+  id: 242
+  time: '2025-03-23T16:11:08.316029'
+- author: Azrakoth
+  changes:
+  - message: Gave the Dave plushie some bodacious new voice lines, dude!
+    type: Tweak
+  id: 241
+  time: '2025-03-22T19:56:17.812042'
+- author: AstroDogeDX
+  changes:
+  - message: Cluster should work again.
+    type: Fix
+  id: 240
+  time: '2025-03-22T19:56:43.464074'
+- author: AstroDogeDX & kaminukurumi
+  changes:
+  - message: Akuji and Miccau have been turned into marketable plushies!
+    type: Add
+  id: 239
+  time: '2025-03-21T19:17:19.164592'
+- author: AstroDogeDX
+  changes:
+  - message: Shiba Sector brand plushies should now appear in loot tables!
+    type: Tweak
+  id: 238
+  time: '2025-03-21T19:17:41.981210'
+- author: kaminukurumi
+  changes:
+  - message: Changed the fax machines' animations to be consistent!
+    type: Fix
+  id: 237
+  time: '2025-03-21T19:19:31.301035'
+- author: AstroDogeDX
+  changes:
+  - message: Yet again have antag and ghost role requirements been adjusted; they've
+      mostly been lowered - so hopefully things get spicy again!
+    type: Tweak
+  id: 236
+  time: '2025-03-21T19:18:36.461676'
+- author: MinxIsntHere
+  changes:
+  - message: (Admin) Logging for anomaly spawns has been added.
+    type: Add
+  id: 235
+  time: '2025-03-21T19:18:10.715411'
+- author: AstroDogeDX
+  changes:
   - message: Jobs and non-antag roles now have varied shiba shilling payouts. Command,
       medical and security have higher bonuses!
     type: Add

@@ -1,22 +1,28 @@
 - type: entity
-  parent: BaseItem
-  id: DavePlush
-  name: CentComm Secretary Plushie 
+  parent: BasePlushie
+  id: PlushieDave
+  name: Secretary Dave plushie
   description: CentComm's best secretary and pizza delivery boy. Still looks great, even with his 5 speso haircut!
   components:
   - type: Sprite
     sprite: _ShibaStation/Objects/Fun/ShibPlush/dave.rsi
     state: icon
-    scale: 0.8, 0.8
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Effects/bone_rattle.ogg
+      collection: DavePlushUse
+      params:
+        variation: 0.03
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Effects/bone_rattle.ogg
+      collection: DavePlushUse
+      params:
+        variation: 0.03
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/Effects/bone_rattle.ogg
+      path: /Audio/_ShibaStation/Effects/dave_saying_dude.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/Toys/sitcom_laugh2.ogg
+      path: /Audio/_ShibaStation/Effects/dave_oof.ogg
+  - type: EmitSoundOnThrow
+    sound:
+      path: /Audio/_ShibaStation/Effects/dave_wee.ogg

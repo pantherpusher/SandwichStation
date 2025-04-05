@@ -61,8 +61,12 @@ public sealed class ShelterCapsuleSystem : SharedShelterCapsuleSystem
         var spreadAmount = (int) Math.Round(comp.BoxSize.Length() * 2);
         _smoke.StartSmoke(foamEnt, new Solution(), comp.DeployTime + 2f, spreadAmount);
 
-        if (!_preloader.TryGetPreloadedGrid(comp.PreloadedGrid, out var shelter))
-        {
+        // ShibaStation — Preloading currently causes shelter grids to skip normal map initialization.
+        // This breaks things like ContainerFillComponent, which installs door electronics for functioning doors.
+        // As a result, we always run the fallback system for now.
+
+        //if (!_preloader.TryGetPreloadedGrid(comp.PreloadedGrid, out var shelter))
+        //{
             _mapSystem.CreateMap(out var dummyMap);
             if (!_mapLoader.TryLoadGrid(dummyMap, path, out var shelterEnt))
             {
@@ -73,10 +77,11 @@ public sealed class ShelterCapsuleSystem : SharedShelterCapsuleSystem
             SetupShelter(shelterEnt.Value.Owner, new EntityCoordinates(mapEnt, posFixed.Position));
             _mapSystem.DeleteMap(dummyMap);
             return true;
-        }
+        //}
 
-        SetupShelter(shelter.Value, new EntityCoordinates(mapEnt, posFixed.Position));
-        return true;
+        // If preloader works in the future, we can re-enable this:
+        // SetupShelter(shelter.Value, new EntityCoordinates(mapEnt, posFixed.Position));
+        // // return true;
     }
 
     private void SetupShelter(Entity<TransformComponent?> shelter, EntityCoordinates coords)

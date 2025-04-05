@@ -89,3 +89,12 @@
       emergencyLightColor: Ivory
       forceEnableEmergencyLights: true
       shuttleTime: 2400
+    dave: # ShibaStation - Dave admeme alert level
+      announcement: alert-level-dave-announcement
+      selectable: false
+      sound:
+        path: /Audio/_ShibaStation/Announcements/alert-dave.ogg
+      color: Green
+      forceEnableEmergencyLights: true
+      emergencyLightColor: Green
+      shuttleTime: 600

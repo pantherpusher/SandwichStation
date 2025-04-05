@@ -39,8 +39,8 @@
   - type: Metabolizer
     updateInterval: 3
   - type: BoganAccent
-  - type: Carriable
-    freeHandsRequired: 4 # easiest way to make them uncarriable without removing carriable from base mob
+  # - type: Carriable # ShibaStation - Disabled carrying; it's buggy. It may get fixed in the future but it's not a priority.
+  #   freeHandsRequired: 4 # easiest way to make them uncarriable without removing carriable from base mob
   - type: NoWieldNeeded
   - type: OuterSlotPenalty
     equippedSpeedMultiplier: 0.8
@@ -67,11 +67,3 @@
   components:
   - type: HumanoidAppearance
     species: Diona
-  - type: Inventory
-    templateId: diona
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

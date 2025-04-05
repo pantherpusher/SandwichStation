@@ -7,7 +7,7 @@
   id: BaseMobSkeletonPerson
   abstract: true
   components:
-  - type: Carriable # Goobstation
+  # - type: Carriable # ShibaStation - Disabled carrying; it's buggy. It may get fixed in the future but it's not a priority.
   - type: HumanoidAppearance
     species: Skeleton
   - type: Icon
@@ -106,14 +106,9 @@
   - type: FireVisuals
     alternateState: Standing
   - type: FlashImmunity
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
   - type: FootPrints # WD EDIT
+  - type: CrawlUnderObjects # ShibaStation - Let species sneak but only while laying down.
+    actionProto: ActionToggleSneakMode
   - type: Tag # Goobstation
     tags:
     - CanPilot
@@ -129,10 +124,3 @@
   components:
   - type: HumanoidAppearance
     species: Skeleton
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

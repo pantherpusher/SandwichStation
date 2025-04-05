@@ -6,6 +6,8 @@ namespace Content.Client._DV.Abilities;
 
 public sealed partial class HideUnderTableAbilitySystem : SharedCrawlUnderObjectsSystem
 {
+    // ShibaStation - The client-side rendering is only concerned with the enabled state of sneaking,
+    // ShibaStation - which will be controlled server-side based on the SneakWhileStanding parameter
     [Dependency] private readonly AppearanceSystem _appearance = default!;
 
     public override void Initialize()

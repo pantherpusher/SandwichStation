@@ -53,6 +53,9 @@
     weight: 6
     duration: 50
     minimumPlayers: 30 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 15 -> 30)
+    chaos: # Goobstation
+      Mess: 10
+      Hostile: 1 # low chance to spawn rat king
   - type: VentCrittersRule
     entries:
     - id: MobMouse
@@ -119,6 +122,9 @@
     weight: 6
     duration: 50
     minimumPlayers: 30
+    chaos: # Goobstation
+      Mess: 5
+      Hostile: 1 # the very low gib snail prob
   - type: VentCrittersRule
     entries:
     - id: MobSnail
