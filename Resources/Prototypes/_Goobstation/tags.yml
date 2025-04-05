@@ -6,6 +6,9 @@
   id: BindSoulAction
 
 - type: Tag
+  id: Blobbernaut
+
+- type: Tag
   id: BlockLightning
 
 - type: Tag
@@ -63,6 +66,9 @@
   id: CursedAnimalMask
 
 - type: Tag
+  id: DroneMind
+
+- type: Tag
   id: Durand
 
 - type: Tag
@@ -102,6 +108,9 @@
   id: EmergencyOxygenTank
 
 - type: Tag
+  id: EmergencyWaterVaporTank
+
+- type: Tag
   id: EnergySpeedloader
 
 - type: Tag
@@ -124,6 +133,9 @@
 
 - type: Tag
   id: FlashIgnoreResistances
+
+- type: Tag
+  id: FoodTinMRE
 
 - type: Tag
   id: FrozenIgnoreMindAction
@@ -175,6 +187,9 @@
 
 - type: Tag
   id: Heart
+
+- type: Tag
+  id: HereticItem
 
 - type: Tag
   id: HEVSuit
@@ -291,6 +306,9 @@
   id: StasisCage
 
 - type: Tag
+  id: Steel
+
+- type: Tag
   id: Stomach
 
 - type: Tag
@@ -334,6 +352,9 @@
 
 - type: Tag
   id: WeaponPistolDualetta
+
+- type: Tag
+  id: WinterCoat
 
 - type: Tag
   id: WizardHat

@@ -111,6 +111,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVapor
 
 - type: loadoutGroup
   id: GroupEVATank
@@ -119,6 +120,7 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+  - LoadoutSpeciesEVAWaterVapor
 
 - type: loadoutGroup
   id: GroupPocketTankDouble
@@ -127,6 +129,7 @@
   loadouts:
   - LoadoutSpeciesPocketDoubleNitrogen
   - LoadoutSpeciesPocketDoubleOxygen
+  - LoadoutSpeciesPocketDoubleWaterVapor
 
 # Command
 - type: loadoutGroup
@@ -163,6 +166,7 @@
   - CaptainBackpack
   - CaptainSatchel
   - CaptainDuffel
+  - CaptainMessenger # Frontier
 
 - type: loadoutGroup
   id: CaptainOuterClothing
@@ -170,6 +174,13 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
+
+- type: loadoutGroup #ShibaStation
+  id: CaptainShoes
+  name: loadout-group-captain-shoes
+  loadouts:
+  - CaptainShoes
+  - CommandStilettos
 
 - type: loadoutGroup
   id: HoPHead
@@ -201,6 +212,7 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
+  - CommonMessenger # Frontier
   - HoPBackpackIan
 
 - type: loadoutGroup
@@ -209,6 +221,13 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
+
+- type: loadoutGroup #ShibaStation
+  id: HoPShoes
+  name: loadout-group-hop-shoes
+  loadouts:
+  - HoPShoes
+  - CommandStilettos
 
 # Civilian
 - type: loadoutGroup
@@ -258,6 +277,7 @@
   - CommonBackpack
   - CommonSatchel
   - CommonDuffel
+  - CommonMessenger # Frontier
 
 - type: loadoutGroup
   id: PassengerNeck
@@ -478,6 +498,7 @@
   - BotanistBackpack
   - BotanistSatchel
   - BotanistDuffel
+  - BotanistMessenger # Frontier
 
 - type: loadoutGroup
   id: BotanistOuterClothing
@@ -511,6 +532,7 @@
   - ClownBackpack
   - ClownSatchel
   - ClownDuffel
+  - ClownMessenger # Frontier
 
 - type: loadoutGroup
   id: ClownOuterClothing
@@ -536,6 +558,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporClown
 
 - type: loadoutGroup
   id: MimeHead
@@ -568,6 +591,7 @@
   - MimeBackpack
   - MimeSatchel
   - MimeDuffel
+  - MimeMessenger # Frontier
 
 - type: loadoutGroup
   id: MimeOuterClothing
@@ -592,6 +616,7 @@
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMime
 
 - type: loadoutGroup
   id: MusicianJumpsuit
@@ -684,6 +709,7 @@
   loadouts:
   - BrownShoes
   - CargoWinterBoots
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -707,6 +733,7 @@
   - CargoTechnicianBackpack
   - CargoTechnicianSatchel
   - CargoTechnicianDuffel
+  - CargoTechnicianMessenger # Frontier
 
 - type: loadoutGroup
   id: CargoTechnicianOuterClothing
@@ -729,6 +756,7 @@
   - SalvageSpecialistBackpack
   - SalvageSpecialistSatchel
   - SalvageSpecialistDuffel
+  - SalvageSpecialistMessenger # Frontier
 
 - type: loadoutGroup
   id: SalvageSpecialistOuterClothing
@@ -784,6 +812,7 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -821,6 +850,7 @@
   - StationEngineerBackpack
   - StationEngineerSatchel
   - StationEngineerDuffel
+  - StationEngineerMessenger # Frontier
 
 - type: loadoutGroup
   id: StationEngineerOuterClothing
@@ -876,6 +906,7 @@
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianSatchel
   - AtmosphericTechnicianDuffel
+  - AtmosphericTechnicianMessenger # Frontier
 
 - type: loadoutGroup
   id: AtmosphericTechnicianShoes
@@ -893,6 +924,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporExtended
 
 # Science
 - type: loadoutGroup
@@ -932,6 +964,7 @@
   loadouts:
   - BrownShoes
   - ScienceWinterBoots
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: ScientistHead
@@ -968,6 +1001,7 @@
   - ScientistBackpack
   - ScientistSatchel
   - ScientistDuffel
+  - ScientistMessenger # Frontier
 
 - type: loadoutGroup
   id: ScientistOuterClothing
@@ -1051,6 +1085,14 @@
   - ArmorVest #Goobstation change
   - ArmorVestSlim #Goobstation change
 
+- type: loadoutGroup #ShibaStation
+  id: HeadofSecurityShoes
+  name: loadout-group-head-of-security-shoes
+  loadouts:
+  - JackBoots
+  - SecurityWinterBoots
+  - CommandStilettos
+
 - type: loadoutGroup
   id: WardenHead
   name: loadout-group-warden-head
@@ -1103,6 +1145,7 @@
   - SecurityBackpack
   - SecuritySatchel
   - SecurityDuffel
+  - SecurityMessenger # Frontier
 
 - type: loadoutGroup
   id: SecurityBelt
@@ -1183,6 +1226,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSecurity
 
 - type: loadoutGroup
   id: SecurityStar
@@ -1232,6 +1276,7 @@
   loadouts:
   - BrownShoes
   - MedicalWinterBoots
+  - CommandStilettos #ShibaStation
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1275,6 +1320,7 @@
   - MedicalDoctorBackpack
   - MedicalDoctorSatchel
   - MedicalDoctorDuffel
+  - MedicalDoctorMessenger # Frontier
 
 - type: loadoutGroup
   id: MedicalShoes
@@ -1337,6 +1383,7 @@
   - ChemistBackpack
   - ChemistSatchel
   - ChemistDuffel
+  - ChemistMessenger # Frontier
 
 - type: loadoutGroup
   id: ParamedicHead
@@ -1377,6 +1424,7 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMedical
 
 # Wildcards
 - type: loadoutGroup
@@ -1420,6 +1468,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSyndicate
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool

@@ -1,4 +1,3 @@
-
 using Content.Shared.Popups;
 
 namespace Content.Shared._DV.Abilities;
@@ -11,6 +10,8 @@ public abstract class SharedCrawlUnderObjectsSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<CrawlUnderObjectsComponent, CrawlingUpdatedEvent>(OnCrawlingUpdated);
+
+        // ShibaStation - Note: The server-side implementation subscribes to StoodEvent to disable sneaking when appropriate
     }
 
     private void OnCrawlingUpdated(EntityUid uid,

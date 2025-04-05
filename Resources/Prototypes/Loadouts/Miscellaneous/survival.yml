@@ -28,6 +28,8 @@
     - Oni
     - Resomi
     - Tajaran
+    # ShibaStation - Custom Races
+    - Ariral
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

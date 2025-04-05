@@ -29,6 +29,13 @@ public sealed partial class CrawlUnderObjectsComponent : Component
 
     [DataField]
     public float SneakSpeedModifier = 0.7f;
+
+    /// <summary>
+    ///     Whether the entity can sneak while standing.
+    ///     ShibaStation - If false, entity must be in laying state to sneak.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool SneakWhileStanding = false;
 }
 
 [Serializable, NetSerializable]
