@@ -52,15 +52,7 @@
       "directions": 4
     },
     {
-      "name": "reinforced1-equipped-OUTERCLOTHING-resomi",
-      "directions": 4
-    },
-    {
       "name": "reinforced1-equipped-HELMET",
-      "directions": 4
-    },
-    {
-      "name": "reinforced1-equipped-HELMET-resomi",
       "directions": 4
     },
     {
@@ -68,15 +60,7 @@
       "directions": 4
     },
     {
-      "name": "reinforced2-equipped-OUTERCLOTHING-resomi",
-      "directions": 4
-    },
-    {
       "name": "reinforced2-equipped-HELMET",
-      "directions": 4
-    },
-    {
-      "name": "reinforced2-equipped-HELMET-resomi",
       "directions": 4
     },
     {
@@ -84,15 +68,7 @@
       "directions": 4
     },
     {
-      "name": "reinforced3-equipped-OUTERCLOTHING-resomi",
-      "directions": 4
-    },
-    {
       "name": "reinforced3-equipped-HELMET",
-      "directions": 4
-    },
-    {
-      "name": "reinforced3-equipped-HELMET-resomi",
       "directions": 4
     }
   ]
