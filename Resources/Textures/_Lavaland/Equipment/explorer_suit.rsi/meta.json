@@ -18,16 +18,16 @@
       "directions": 4
     },
     {
-          "name": "equipped-OUTERCLOTHING-resomi",
-          "directions": 4
+      "name": "equipped-OUTERCLOTHING-resomi",
+      "directions": 4
     },
     {
       "name": "equipped-HELMET",
       "directions": 4
     },
     {
-          "name": "equipped-HELMET-resomi",
-          "directions": 4
+      "name": "equipped-HELMET-resomi",
+      "directions": 4
     },
     {
       "name": "reinforced1-equipped-OUTERCLOTHING",
@@ -44,6 +44,14 @@
       "name": "reinforced1-icon_head"
     },
     {
+        "name": "reinforced1-equipped-OUTERCLOTHING-resomi",
+        "directions": 4
+    },
+    {
+        "name": "reinforced1-equipped-HELMET-resomi",
+        "directions": 4
+    },
+    {
       "name": "reinforced2-equipped-OUTERCLOTHING",
       "directions": 4
     },
@@ -55,6 +63,14 @@
       "directions": 4
     },
     {
+       "name": "reinforced2-equipped-HELMET-resomi",
+       "directions": 4
+    },
+    {
+       "name": "reinforced2-equipped-OUTERCLOTHING-resomi",
+       "directions": 4
+    },
+    {
       "name": "reinforced2-icon_head"
     },
     {
@@ -62,10 +78,18 @@
       "directions": 4
     },
     {
+      "name": "reinforced3-equipped-OUTERCLOTHING-resomi",
+      "directions": 4
+    },
+    {
       "name": "reinforced3-icon"
     },
     {
       "name": "reinforced3-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "reinforced3-equipped-HELMET-resomi",
       "directions": 4
     },
     {
