@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ClothingOuterBaseMedium, AllowSuitStorageClothing ]
+  parent: [ ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseCargoContraband ]
   id: LavalandEquipmentExplorerSuit
   suffix: Lava
   name: explorer suit
@@ -31,6 +31,9 @@
   - type: Construction
     graph: ExplorerSuit
     node: start
+  - type: ModifyDelayedKnockdown # Goobstation
+    delayDelta: 1.5
+    knockdownTimeDelta: -1.5
 
 - type: entity
   parent: ClothingHeadBase
