@@ -38,9 +38,10 @@
   id: ChangelingMidround
   components:
   - type: StationEvent
-    earliestStart: 30
-    weight: 3
-    minimumPlayers: 7
+    earliestStart: 10
+    weight: 2
+    minimumPlayers: 12
+    maxOccurrences: 1
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/_ShibaStation/Announcements/sleeper-activate.ogg
@@ -73,9 +74,10 @@
   id: HereticMidround
   components:
   - type: StationEvent
-    earliestStart: 30
-    weight: 3
-    minimumPlayers: 7
+    earliestStart: 15
+    weight: 4
+    minimumPlayers: 10
+    maxOccurrences: 1
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/_ShibaStation/Announcements/sleeper-activate.ogg
