@@ -38,6 +38,9 @@
     - id: NinjaSpawn
     - id: RevenantSpawn
     - id: SleeperAgents
+    - id: ChangelingMidround # ShibaStation
+    - id: HereticMidround # ShibaStation
+    - id: WizardMidround # ShibaStation
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
     - id: DerelictCyborgSpawn
