@@ -196,7 +196,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 40
+          damage: 12 # ShibaStation - make tendons less robust
         behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
