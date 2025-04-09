@@ -49,6 +49,11 @@
     - id: PlushieLucy
     - id: PlushieDave
     - id: PlushieAkuji
+    - id: PlushieCaitlin
+    - id: PlushieLexai
+    - id: PlushieSevan
+    - id: PlushieShuukei
+    - id: PlushieTwiggy
     # ShibaStation Plushies End
     - !type:GroupSelector
       children:
