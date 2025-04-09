@@ -1974,3 +1974,15 @@ Entries:
       message: 'Meat Kudzu (Tendons) have had their health reduced: 40 -> 12.'
   id: 270
   time: '2025-04-09T17:33:01.0000000+00:00'
+- author: TheOneTrueWolfio
+  changes:
+    - type: Add
+      message: >-
+        Lexai, Twiggy and Shuukei have been turned into marketable plushies and
+        are available in the loot pools!
+    - type: Tweak
+      message: Achto in plushie form is cuter, like the real thing!
+    - type: Fix
+      message: Sevan plushie is now in the loot pools.
+  id: 271
+  time: '2025-04-09T16:11:04.0000000+00:00'
