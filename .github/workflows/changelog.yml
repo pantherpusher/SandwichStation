@@ -12,7 +12,7 @@ env:
 
 jobs:
   changelog:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     permissions:
       contents: write
@@ -33,25 +33,24 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+          cache: 'npm'
+          cache-dependency-path: 'Tools/changelog/package-lock.json'
 
       - name: Install Dependencies
         run: |
           cd "Tools/changelog"
-          npm install
+          npm ci
         shell: bash
-        continue-on-error: true
 
       - name: Generate Changelog
         run: |
           cd "Tools/changelog"
           node changelog.js
         shell: bash
-        continue-on-error: true
 
       - name: Commit Changelog
         run: |
           git add *.yml
-          git commit -m "${{ vars.CHANGELOG_MESSAGE }} (#${{ env.PR_NUMBER }})"
+          git commit -m "${{ vars.CHANGELOG_MESSAGE }} (#${{ env.PR_NUMBER }})" || echo "No changes to commit"
           git push
         shell: bash
-        continue-on-error: true
