@@ -1,32 +1,26 @@
 - type: entity
   parent: BasePlushie
-  id: PlushieAchto
-  name: Achto plushie
-  description: A cute little resomi(?) plush. Smells like apples and bad decisions.
+  id: PlushieLexai
+  name: Lexai plushie
+  description: An adorable little resomi plush with it's arms open wide for a hug! There's a tag which reads "Have you turned on your coords?"
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/ShibPlush/achto.rsi
+    sprite: _ShibaStation/Objects/Fun/ShibPlush/lexai.rsi
     state: icon
-    scale: 0.6, 0.6
+    scale: 0.5, 0.5
   - type: EmitSoundOnUse
     sound:
       path: /Audio/_Floofstation/Voice/Avali/avali_1_ask.ogg
-      params:
-        variation: 0.1
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/_Floofstation/Voice/Avali/avali_1_ask.ogg
-      params:
-        variation: 0.1
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/_Floofstation/Voice/Avali/avali_1_ask.ogg
-      params:
-        variation: 0.1
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Floofstation/Voice/Avali/avali_scream.ogg
+      path: /Audio/Voice/Human/womanlaugh.ogg
       params:
-        variation: 0.1
+        variation: 0.03
   - type: UseDelay
     delay: .5

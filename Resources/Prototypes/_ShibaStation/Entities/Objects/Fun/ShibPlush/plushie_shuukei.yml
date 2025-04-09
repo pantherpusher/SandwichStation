@@ -1,0 +1,24 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieShuukei
+  name: Shuukei Plushie
+  description: Contrary to popular belief, this is, in fact, a bird! Theres a tag reading 'DO NOT EAT', but it smells strongly of waffles..."
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Objects/Fun/ShibPlush/shuukei.rsi
+    state: icon
+    scale: 0.6, 0.6
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Animals/cat_meow2.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Animals/cat_hiss.ogg
+  - type: UseDelay
+    delay: .5
