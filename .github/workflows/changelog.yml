@@ -33,13 +33,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          cache: 'npm'
-          cache-dependency-path: 'Tools/changelog/package-lock.json'
 
       - name: Install Dependencies
         run: |
           cd "Tools/changelog"
-          npm ci
+          npm install
+          npm install --package-lock-only
         shell: bash
 
       - name: Generate Changelog
