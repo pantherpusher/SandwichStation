@@ -24,6 +24,7 @@
   extendedAccess:
   - Medical # ShibaStation - Added Medical to Warden access
   - Chemistry # ShibaStation - Added Chemistry to Warden access
+  - Captain # ShibaStation - Let Command have access to Captain's Room during Low Pop
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

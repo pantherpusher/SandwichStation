@@ -32,6 +32,7 @@
   - External # goobstation
   extendedAccess:
   - Research # ShibaStation - Added Research to CMO access
+  - Captain # ShibaStation - Let Command have access to Captain's Room during Low Pop
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
