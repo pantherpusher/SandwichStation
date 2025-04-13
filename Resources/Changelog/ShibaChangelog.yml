@@ -1986,3 +1986,13 @@ Entries:
       message: Sevan plushie is now in the loot pools.
   id: 271
   time: '2025-04-09T16:11:04.0000000+00:00'
+- author: AstroDogeDX
+  changes:
+    - type: Add
+      message: >-
+        Command (and Warden) get access to the Captain's Room during 'Extended
+        Access' population counts. Command should still be following SOP and the
+        CoC correctly, but now you can stop breaking into the Captain's room
+        every shift.
+  id: 272
+  time: '2025-04-13T17:45:56.0000000+00:00'
