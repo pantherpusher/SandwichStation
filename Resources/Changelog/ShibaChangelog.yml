@@ -1996,3 +1996,11 @@ Entries:
         every shift.
   id: 272
   time: '2025-04-13T17:45:56.0000000+00:00'
+- author: AstroDogeDX
+  changes:
+    - type: Tweak
+      message: >-
+        The Summon Ghosts spell no longer allows the living to commune with the
+        dead - but they can still see them!
+  id: 273
+  time: '2025-04-16T07:00:59.0000000+00:00'
