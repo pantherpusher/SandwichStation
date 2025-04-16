@@ -160,13 +160,3 @@
   components:
   - type: HumanoidAppearance
     species: Skeleton
-<<<<<<< HEAD
-=======
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
->>>>>>> goob/master

@@ -188,7 +188,6 @@
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
-<<<<<<< HEAD
       collection: FemaleDeathGasp
 
 - type: emoteSounds
@@ -261,6 +260,4 @@
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
-=======
->>>>>>> goob/master
       collection: FemaleDeathGasp
