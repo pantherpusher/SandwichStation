@@ -54,7 +54,7 @@
     speechVerb: Rodentia
     speechSounds: Squeak
     allowedEmotes: ['Squeak']
-  - type: CheeseAccent
+  # - type: CheeseAccent # ShibaStation - Sorry Goob, you're a day late and a dollar short - we beat you to this.
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
