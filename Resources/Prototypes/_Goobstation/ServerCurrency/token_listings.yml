@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: tokenListing
   id: HighTierAntagToken
   name: gs-balanceui-shop-buy-token-hightier-antag
@@ -29,3 +35,11 @@
   description: gs-balanceui-shop-buy-token-ghost-desc
   price: 500
   adminNote: gs-balanceui-remark-token-ghost
+
+- type: tokenListing
+  id: AdminAbuseToken
+  name: gs-balanceui-shop-buy-token-admin-abuse
+  label: gs-balanceui-shop-token-admin-abuse
+  description: gs-balanceui-shop-buy-token-admin-abuse-desc
+  price: 250
+  adminNote: gs-balanceui-remark-token-admin-abuse
