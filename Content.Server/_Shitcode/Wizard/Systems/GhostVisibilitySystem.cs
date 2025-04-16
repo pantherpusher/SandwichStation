@@ -71,4 +71,9 @@ public sealed class GhostVisibilitySystem : SharedGhostVisibilitySystem
 
         return !component.CanGhostInteract;
     }
+
+    public bool CanSeeDeadChat()
+    {
+        return false; // Dead chat is only visible to ghosts and admins
+    }
 }

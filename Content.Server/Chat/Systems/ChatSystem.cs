@@ -970,14 +970,12 @@ public sealed partial class ChatSystem : SharedChatSystem
 
     private IEnumerable<INetChannel> GetDeadChatClients()
     {
-        if (_ghostVisibility.GhostsVisible()) // Goobstation
+        if (_ghostVisibility.CanSeeDeadChat()) // Goobstation
             return Filter.Broadcast().Recipients.Select(p => p.Channel);
 
         return Filter.Empty()
-            .AddWhereAttachedEntity(HasComp<GhostComponent>)
-            .AddWhereAttachedEntity(_scrying.IsScryingOrbEquipped) // Goobstation
+            .AddWhereAttachedEntity(p => HasComp<GhostComponent>(p) || _adminManager.IsAdmin(p))
             .Recipients
-            .Union(_adminManager.ActiveAdmins)
             .Select(p => p.Channel);
     }
 
