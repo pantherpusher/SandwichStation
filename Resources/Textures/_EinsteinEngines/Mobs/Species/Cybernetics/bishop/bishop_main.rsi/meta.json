@@ -63,6 +63,10 @@
       "name": "l_arm-combined",
       "directions": 4
     },
+      {
+          "name": "l_arm-combined-resomi",
+          "directions": 4
+      },
     {
       "name": "r_arm-primary",
       "directions": 4
@@ -79,14 +83,26 @@
       "name": "r_arm-combined",
       "directions": 4
     },
+      {
+          "name": "r_arm-combined-resomi",
+          "directions": 4
+      },
     {
       "name": "l_hand",
       "directions": 4
     },
+      {
+          "name": "l_hand-resomi",
+          "directions": 4
+      },
     {
       "name": "r_hand",
       "directions": 4
     },
+      {
+          "name": "r_hand-resomi",
+          "directions": 4
+      },
     {
       "name": "head",
       "directions": 4
