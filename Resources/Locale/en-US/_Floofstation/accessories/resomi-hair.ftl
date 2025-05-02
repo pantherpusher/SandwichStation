@@ -22,3 +22,12 @@ marking-HairResomiPointy = ResomiPointy
 marking-HairResomiTwies = Resomi Twies
 marking-HairResomiUpright = Resomi Upright
 marking-HairResomiLong = Resomi Long
+# Chlymerine Hair
+marking-HairResomiCosmorunner = Resomi Cosmorunner
+marking-HairResomiRebel = Resomi Rebel
+marking-HairResomiRebelExtended = Resomi Rebel with Extension
+marking-HairResomiLoyal = Resomi Loyal
+marking-HairResomiLoyalMale = Resomi Loyal (Male)
+marking-HairResomiPlumage = Resomi Plumage (Short)
+marking-HairResomiPlumageLong = Resomi Plumage (Long)
+marking-HairResomiGenericallyUnique = Resomi Uniquely Generic
