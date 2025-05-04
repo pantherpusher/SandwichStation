@@ -2004,3 +2004,11 @@ Entries:
         dead - but they can still see them!
   id: 273
   time: '2025-04-16T07:00:59.0000000+00:00'
+- author: kaminukurumi
+  changes:
+    - type: Add
+      message: 15 markings, 8 hair options for resomi
+    - type: Tweak
+      message: Changed marking points for resomi arms from 2 to 4.
+  id: 274
+  time: '2025-05-04T19:27:02.0000000+00:00'
