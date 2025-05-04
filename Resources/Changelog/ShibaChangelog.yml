@@ -2012,3 +2012,9 @@ Entries:
       message: Changed marking points for resomi arms from 2 to 4.
   id: 274
   time: '2025-05-04T19:27:02.0000000+00:00'
+- author: NomNumNomYum
+  changes:
+    - type: Add
+      message: Added the blueshield's towel!
+  id: 275
+  time: '2025-05-04T20:00:24.0000000+00:00'
