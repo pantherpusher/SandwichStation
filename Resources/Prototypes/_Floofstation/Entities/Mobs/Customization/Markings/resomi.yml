@@ -1,5 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+# SPDX-FileCopyrightText: 2025 chly <haychiethewonderfulsnivy@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -84,3 +86,147 @@
   sprites:
   - sprite: _Floofstation/Mobs/Customization/resomi_parts.rsi
     state: fluff_head_up
+
+
+# CHLYME'S MARKINGS
+# Head Markings
+- type: marking
+  id: ResomiWendigoFaceOnly
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/head_markings.rsi
+    state: Wendigo-paint
+
+- type: marking
+  id: ResomiWendigoFaceManed
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/head_markings.rsi
+    state: Wendigo-paint
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/head_markings.rsi
+    state: Wendigo-paint-mane
+
+- type: marking
+  id: ResomiEars
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/head_markings.rsi
+    state: fluff_ears
+
+- type: marking
+  id: ResomiEarsTop
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/head_markings.rsi
+    state: fluff_ears_toponly
+
+- type: marking
+  id: ResomiEarsBot
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/head_markings.rsi
+    state: fluff_ears_botonly
+
+# Leg Markings
+
+- type: marking
+  id: ResomiCyLegR
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/leg_markings.rsi
+    state: cyberkinetic-leg-r
+
+- type: marking
+  id: ResomiCyLegL
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/leg_markings.rsi
+    state: cyberkinetic-leg-l
+
+- type: marking
+  id: ResomiCyFootR
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/leg_markings.rsi
+    state: cyberkinetic-foot-r
+
+- type: marking
+  id: ResomiCyFootL
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/leg_markings.rsi
+    state: cyberkinetic-foot-l
+
+# Arm Markings
+
+- type: marking
+  id: ResomiCyArmLPart
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/arm_markings.rsi
+    state: cyberkinetic-arm-l
+
+- type: marking
+  id: ResomiCyArmRPart
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/arm_markings.rsi
+    state: cyberkinetic-arm-r
+
+- type: marking
+  id: ResomiCyArmL
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/arm_markings.rsi
+    state: cyberkinetic-arm-l-full
+
+- type: marking
+  id: ResomiCyArmR
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/arm_markings.rsi
+    state: cyberkinetic-arm-r-full
+
+- type: marking
+  id: ResomiCyHandR
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/arm_markings.rsi
+    state: cyberkinetic-hand-r
+
+- type: marking
+  id: ResomiCyHandL
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/arm_markings.rsi
+    state: cyberkinetic-hand-l

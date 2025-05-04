@@ -1,5 +1,8 @@
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+# SPDX-FileCopyrightText: 2025 chly <haychiethewonderfulsnivy@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -56,14 +59,18 @@
     Head:
       points: 2
       required: false
+    HeadSide:
+      points: 2
+      required: false
     Chest:
       points: 1
       required: false
     Legs:
       points: 2
       required: false
+      defaultMarkings: [ResomiLLegFeathers, ResomiRLegFeathers]
     Arms:
-      points: 2
+      points: 4
       required: false
 
 - type: humanoidBaseSprite

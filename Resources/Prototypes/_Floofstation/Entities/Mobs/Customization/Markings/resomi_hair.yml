@@ -1,5 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+# SPDX-FileCopyrightText: 2025 chly <haychiethewonderfulsnivy@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -164,3 +166,77 @@
   sprites:
     - sprite: _Floofstation/Mobs/Customization/resomi_hair.rsi
       state: ResomiLong
+
+# Few Additions here - Chlymerine
+
+- type: marking
+  id: HairResomiRebel
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiRebel
+
+- type: marking
+  id: HairResomiRebelExtended
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiRebelExtended
+
+- type: marking
+  id: HairResomiLoyal
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiLoyal
+
+- type: marking
+  id: HairResomiLoyalMale
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiLoyalMale
+
+- type: marking
+  id: HairResomiCosmorunner
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiCosmorunner
+
+- type: marking
+  id: HairResomiPlumage
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiPlumage
+
+- type: marking
+  id: HairResomiPlumageLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiPlumageLong
+
+- type: marking
+  id: HairResomiGenericallyUnique
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Resomi]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Resomi/resomi_hair.rsi
+    state: ResomiGenericallyUnique
