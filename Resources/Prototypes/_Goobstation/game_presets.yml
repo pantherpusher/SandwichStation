@@ -1,14 +1,16 @@
 # SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Fenn <162015305+TooSillyFennec@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
 # SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
 # SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 # SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
@@ -141,47 +143,50 @@
   - SubGamemodesRule
   - LavalandStormScheduler # Lavaland Change
 
-# - type: gamePreset
-#   id: Honkops
-#   alias:
-#     - honkops
-#   name: honkops-title
-#   description: honkops-description
-#   showInVote: false
-#   rules:
-#     - Honkops
-#     - SubGamemodesRule
-#     - BasicStationEventScheduler
-#   #  - MeteorSwarmScheduler Goobstation - nuh uh
-#     - SpaceTrafficControlEventScheduler
-#     - BasicRoundstartVariation
+- type: gamePreset
+  id: Honkops
+  alias:
+    - honkops
+  name: honkops-title
+  description: honkops-description
+  showInVote: false
+  rules:
+    - Honkops
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+  #  - MeteorSwarmScheduler Goobstation - nuh uh
+    - SpaceTrafficControlEventScheduler
+    - BasicRoundstartVariation
+    - LavalandStormScheduler
 
-# - type: gamePreset
-#   id: TheSleeper
-#   alias:
-#     - calm
-#     - calmdynamic
-#   name: sleeper-title
-#   description: sleeper-description
-#   showInVote: true
-#   minPlayers: 5
-#   rules:
-#     - CalmDynamic
-#     - BasicRoundstartVariation
-#     - LavalandStormScheduler # Lavaland Change
-#     - RareIonStormScheduler
+- type: gamePreset
+  id: TheGhost
+  alias:
+    - calm
+    - calmdynamic
+  name: sleeper-title
+  description: sleeper-description
+  showInVote: true
+  minPlayers: 5
+  rules:
+    - CalmDynamic
+    - LavalandStormScheduler
+    - SubGamemodesRule
+    - RareIonStormScheduler
+    - SpaceTrafficControlFriendlyEventScheduler
 
-# - type: gamePreset
-#   id: TheGuide
-#   alias:
-#     - combat
-#     - combatdynamic
-#   name: guide-title
-#   description: guide-description
-#   showInVote: true
-#   minPlayers: 25
-#   rules:
-#     - CombatDynamic
-#     - BasicRoundstartVariation
-#     - LavalandStormScheduler # Lavaland Change
-#     - IonStormScheduler
+- type: gamePreset
+  id: TheGuide
+  alias:
+    - combat
+    - combatdynamic
+  name: guide-title
+  description: guide-description
+  showInVote: true
+  minPlayers: 25
+  rules:
+    - CombatDynamic
+    - LavalandStormScheduler
+    - SubGamemodesRule
+    - IonStormScheduler
+    - SpaceTrafficControlEventScheduler

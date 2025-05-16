@@ -22,3 +22,10 @@
   - MatterBinStockPart
   - CapacitorStockPart
   - CableStack
+
+
+- type: latheRecipePack
+  id: TapeRecorderStatic
+  recipes:
+  - CassetteTape
+  - TapeRecorder

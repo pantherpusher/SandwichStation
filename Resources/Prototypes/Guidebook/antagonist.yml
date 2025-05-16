@@ -31,6 +31,7 @@
   - Heretics # Goobstation - heretics
   - Blob # Goobstation - Blob
   - Wizard # Goobstation - Wizard
+  - CosmicCult # DeltaV - Cosmic Cult
   - NuclearOperatives
   - Zombies
   - Revolutionaries
@@ -39,6 +40,7 @@
   - Thieves
   - Abductors # Shitmed - Abductors
   - Bingle # Goob content
+  - Devil # Goob content
 
 - type: guideEntry
   id: Traitors

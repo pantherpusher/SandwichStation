@@ -86,6 +86,10 @@
     - FelinidEmotes
     - AnomalyHost # ShibaStation
   - type: FelinidAccent # ShibaStation - hehe funne cringe cat accent :D
+  #- type: FootPrints # WD EDIT
+  - type: Consciousness
+    cap: 160
+    threshold: 80
 
 - type: entity
   save: false

@@ -222,6 +222,9 @@
     - DoorBumpOpener
     - ReptilianEmotes
     - AnomalyHost # ShibaStation
+  - type: Consciousness # Idk they are kinda more resistant to pain
+    threshold: 105
+    cap: 210
 
 - type: entity
   parent: BaseSpeciesDummy
