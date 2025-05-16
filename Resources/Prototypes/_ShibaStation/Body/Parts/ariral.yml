@@ -11,9 +11,9 @@
     species: Ariral
 
 - type: entity
-  parent: [ PartAriralBase, BaseTorso ]
+  parent: [ PartAriralBase, BaseChest ]
   id: TorsoAriral
-  name: "ariral torso"
+  name: "ariral chest"
 
 - type: entity
   parent: [ PartAriralBase, BaseHead ]

@@ -8,9 +8,9 @@
       sprite: _DV/Mobs/Species/Feroxi/parts.rsi
 
 - type: entity
-  parent: [ PartFeroxiBase, BaseTorso ]
+  parent: [ PartFeroxiBase, BaseChest ]
   id: TorsoFeroxi
-  name: feroxi torso
+  name: feroxi chest
 
 - type: entity
   parent: [ PartFeroxiBase, BaseHead ]
