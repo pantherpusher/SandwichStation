@@ -163,6 +163,13 @@
   - CardBoxNanotrasen # GoobStation
   - PersonalAI # Goobstation
   - GoldPersonalAI # Goobstation
+  # Begin DeltaV Additions
+  - GoldRing
+  - SilverRing
+  - Cane
+  - WhiteCane
+  - TapeRecorder
+  # End DeltaV Additions
   - ThreeCandles
   - Lighter
   - FlippoLighter
@@ -237,13 +244,6 @@
   - TowelColorYellow
   - TowelColorNT
   - TowelColorBlueshield
-  # Begin DeltaV Additions
-  - GoldRing
-  - SilverRing
-  - Cane
-  - WhiteCane
-  - TapeRecorder
-  # End DeltaV Additions
 
 - type: loadoutGroup
   id: Glasses
