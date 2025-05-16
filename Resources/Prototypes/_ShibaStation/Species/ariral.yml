@@ -78,19 +78,19 @@
   id: MobAriralTorso
   baseSprite:
     sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
-    state: torso_m
+    state: chest_m
 
 - type: humanoidBaseSprite
   id: MobAriralTorsoMale
   baseSprite:
     sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
-    state: torso_m
+    state: chest_m
 
 - type: humanoidBaseSprite
   id: MobAriralTorsoFemale
   baseSprite:
     sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
-    state: torso_f
+    state: chest_f
 
 - type: humanoidBaseSprite
   id: MobAriralLLeg
