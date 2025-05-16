@@ -7,8 +7,10 @@
 # SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
 # SPDX-FileCopyrightText: 2024 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 2024 Nikolai Korolev <korolevns98@gmail.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -29,7 +31,7 @@ jobs:
     name: Validate RSIs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.6.0
+      - uses: actions/checkout@v4.2.2
       - name: Setup Submodule
         run: git submodule update --init
       - name: Pull engine updates
