@@ -42013,13 +42013,6 @@ entities:
     - type: Transform
       pos: -36.59449,11.948141
       parent: 1668
-- proto: LauncherSyringe
-  entities:
-  - uid: 4649
-    components:
-    - type: Transform
-      pos: 23.50474,-12.504835
-      parent: 1668
 - proto: LemoonSeeds
   entities:
   - uid: 1023
