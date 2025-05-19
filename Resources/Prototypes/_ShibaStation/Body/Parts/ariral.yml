@@ -16,6 +16,15 @@
   name: "ariral chest"
 
 - type: entity
+  parent: [ PartAriralBase, BaseGroin ]
+  id: GroinAriral
+  name: ariral groin
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/parts.rsi
+    state: "groin_m"
+
+- type: entity
   parent: [ PartAriralBase, BaseHead ]
   id: HeadAriral
   name: "ariral head"
