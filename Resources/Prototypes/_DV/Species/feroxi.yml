@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: species
   id: Feroxi
   name: species-name-feroxi
@@ -20,6 +25,7 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobFeroxiTorso
+    Groin: MobFeroxiGroin
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -102,6 +108,24 @@
   baseSprite:
     sprite: _DV/Mobs/Species/Feroxi/parts.rsi
     state: chest_f
+
+- type: humanoidBaseSprite
+  id: MobFeroxiGroin
+  baseSprite:
+    sprite: _DV/Mobs/Species/Feroxi/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobFeroxiGroinMale
+  baseSprite:
+    sprite: _DV/Mobs/Species/Feroxi/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobFeroxiGroinFemale
+  baseSprite:
+    sprite: _DV/Mobs/Species/Feroxi/parts.rsi
+    state: groin_f
 
 - type: humanoidBaseSprite
   id: MobFeroxiLLeg

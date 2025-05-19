@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   abstract: true
   parent: BasePart
@@ -14,6 +19,11 @@
   parent: [ PartAriralBase, BaseChest ]
   id: TorsoAriral
   name: "ariral chest"
+
+- type: entity
+  parent: [ PartAriralBase, BaseGroin ]
+  id: GroinAriral
+  name: ariral groin
 
 - type: entity
   parent: [ PartAriralBase, BaseHead ]

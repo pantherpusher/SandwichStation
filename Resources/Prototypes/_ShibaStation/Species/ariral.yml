@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: species
   id: Ariral
   name: species-name-ariral
@@ -19,6 +24,7 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Chest: MobAriralTorso
+    Groin: MobAriralGroin
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -91,6 +97,24 @@
   baseSprite:
     sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
     state: chest_f
+
+- type: humanoidBaseSprite
+  id: MobAriralGroin
+  baseSprite:
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobAriralGroinMale
+  baseSprite:
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobAriralGroinFemale
+  baseSprite:
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+    state: groin_f
 
 - type: humanoidBaseSprite
   id: MobAriralLLeg
