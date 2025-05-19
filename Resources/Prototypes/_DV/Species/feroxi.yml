@@ -20,6 +20,7 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobFeroxiTorso
+    Groin: MobFeroxiGroin
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -102,6 +103,24 @@
   baseSprite:
     sprite: _DV/Mobs/Species/Feroxi/parts.rsi
     state: chest_f
+
+- type: humanoidBaseSprite
+  id: MobFeroxiGroin
+  baseSprite:
+    sprite: _DV/Mobs/Species/Feroxi/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobFeroxiGroinMale
+  baseSprite:
+    sprite: _DV/Mobs/Species/Feroxi/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobFeroxiGroinFemale
+  baseSprite:
+    sprite: _DV/Mobs/Species/Feroxi/parts.rsi
+    state: groin_f
 
 - type: humanoidBaseSprite
   id: MobFeroxiLLeg

@@ -16,10 +16,6 @@
   parent: [ PartFeroxiBase, BaseGroin ]
   id: GroinFeroxi
   name: feroxi groin
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "groin_m"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseHead ]

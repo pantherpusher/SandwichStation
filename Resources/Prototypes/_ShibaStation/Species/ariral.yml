@@ -19,6 +19,7 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Chest: MobAriralTorso
+    Groin: MobAriralGroin
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -91,6 +92,24 @@
   baseSprite:
     sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
     state: chest_f
+
+- type: humanoidBaseSprite
+  id: MobAriralGroin
+  baseSprite:
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobAriralGroinMale
+  baseSprite:
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+    state: groin_m
+
+- type: humanoidBaseSprite
+  id: MobAriralGroinFemale
+  baseSprite:
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+    state: groin_f
 
 - type: humanoidBaseSprite
   id: MobAriralLLeg
