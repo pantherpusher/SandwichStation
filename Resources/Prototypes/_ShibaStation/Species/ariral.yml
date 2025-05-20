@@ -13,9 +13,9 @@
   markingLimits: MobAriralMarkingLimits
   dollPrototype: MobAriralDummy
   skinColoration: TintedHues
-  maleFirstNames: names_ariral_male
-  femaleFirstNames: names_ariral_female
-  lastNames: names_ariral_last
+  maleFirstNames: AriralNamesMale
+  femaleFirstNames: AriralNamesFemale
+  lastNames: AriralNamesLast
 
 - type: speciesBaseSprites
   id: MobAriralSprites
