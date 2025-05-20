@@ -116,8 +116,6 @@ using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Station;
-using Content.Shared.Storage;
-using Content.Shared.Storage.Components;
 using Robust.Shared.Console;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -238,6 +236,7 @@ namespace Content.Server.Administration.Commands
                     }
 
                     invSystem.TryEquip(target, equipmentEntity, slot.Name, silent: true, force: true, inventory: inventoryComponent);
+
                     onEquipped?.Invoke(target, equipmentEntity);
 
                     if (startingGear.Storage.Count <= 0 // Goobstation - Start
@@ -268,27 +267,6 @@ namespace Content.Server.Administration.Commands
                 {
                     var inhandEntity = entityManager.SpawnEntity(prototype, coords);
                     handsSystem.TryPickup(target, inhandEntity, checkActionBlocker: false, handsComp: handsComponent);
-                }
-            }
-
-            // ShibaStation - Fill storage containers (like backpacks) with their specified contents from the starting gear prototype
-            if (startingGear.Storage != null)
-            {
-                var storageSystem = entityManager.System<StorageSystem>();
-                foreach (var storageEntry in startingGear.Storage)
-                {
-                    if (!equippedStorage.TryGetValue(storageEntry.Key, out var storageUid))
-                        continue;
-
-                    if (!entityManager.TryGetComponent<StorageComponent>(storageUid, out var storage))
-                        continue;
-
-                    var coords = entityManager.GetComponent<TransformComponent>(storageUid).Coordinates;
-                    foreach (var itemId in storageEntry.Value)
-                    {
-                        var item = entityManager.SpawnEntity(itemId, coords);
-                        storageSystem.Insert(storageUid, item, out _, user: null, storage);
-                    }
                 }
             }
 
