@@ -7,7 +7,7 @@
   id: AbductorNames
   values:
     prefix: abductor-names-dataset-
-    count: 45
+    count: 40
 
 - type: localizedDataset
   id: AbductorScientistPrefix
