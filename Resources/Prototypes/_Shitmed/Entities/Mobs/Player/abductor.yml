@@ -27,7 +27,7 @@
   - type: RandomMetadata
     nameSegments:
       - AbductorScientistPrefix
-      - names_abductor
+      - AbductorNames
   - type: Tag
     tags:
       - Abductor
@@ -62,7 +62,7 @@
       - LoneAbductorGear
   - type: RandomMetadata
     nameSegments:
-    - names_abductor
+    - AbductorNames
 
 - type: entity
   name: abductor scientist
@@ -108,7 +108,7 @@
   - type: RandomMetadata
     nameSegments:
       - AbductorAgentPrefix
-      - names_abductor
+      - AbductorNames
   - type: Tag # Ignore AbductorScientist tag
     tags:
       - Abductor

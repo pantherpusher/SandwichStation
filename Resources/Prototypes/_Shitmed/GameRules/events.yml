@@ -70,7 +70,7 @@
       - type: RandomMetadata
         nameSegments:
           - AbductorScientistPrefix
-          - names_abductor
+          - AbductorNames
       - type: Tag
         tags:
           - Abductor
@@ -164,7 +164,7 @@
       - type: RandomMetadata
         nameSegments:
           - AbductorScientistPrefix
-          - names_abductor
+          - AbductorNames
       - type: Tag
         tags:
           - Abductor
@@ -214,7 +214,7 @@
       - type: RandomMetadata
         nameSegments:
           - AbductorAgentPrefix
-          - names_abductor
+          - AbductorNames
       - type: Tag
         tags:
           - Abductor
