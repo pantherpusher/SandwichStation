@@ -275,7 +275,7 @@
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
   - EmergencyWaterVapor
-  - LoadoutSpeciesHeatingTool # Goobstation
+
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -1647,14 +1647,13 @@
 - type: loadoutGroup
   id: SurvivalSyndicate
   name: loadout-group-survival-syndicate
-  minLimit: 3 # Goobstation
+  minLimit: 2 # Goobstation
   hidden: true
   loadouts:
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
   - EmergencyWaterVaporSyndicate
-  - LoadoutSpeciesHeatlampSyndicate # Goobstation
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool

@@ -138,13 +138,6 @@
     species:
     - Vox
 
-- type: loadoutEffectGroup # Goobstation
-  id: EffectSpeciesReptilian
-  effects:
-  - !type:SpeciesLoadoutEffect
-    species:
-    - Reptilian
-
 # Basic
 - type: loadout
   id: EmergencyOxygen
@@ -270,15 +263,6 @@
     back:
     - BoxSurvivalSlotsSyndicate # Goobstation - Slots Based Survival Boxes
 
-- type: loadout # Goobstation
-  id: LoadoutSpeciesHeatlampSyndicate
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: EffectSpeciesReptilian
-  storage:
-    back:
-    - HeatLampEvil
-
 - type: loadout
   id: EmergencyNitrogenSyndicate
   effects:
@@ -341,15 +325,6 @@
     proto: EffectSpeciesVox
   equipment:
     outerClothing: ClothingOuterVestTank
-
-# Heatlamp - Goobstation
-- type: loadout
-  id: LoadoutSpeciesHeatingTool
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: EffectSpeciesReptilian
-  equipment:
-    belt: HeatLamp
 
 # Breath Tool On Face
 - type: loadout

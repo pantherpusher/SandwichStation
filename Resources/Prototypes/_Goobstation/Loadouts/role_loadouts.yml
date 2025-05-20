@@ -102,6 +102,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
   - Survival
 
 - type: roleLoadout
@@ -119,6 +120,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
   - SurvivalSecurity
 
 - type: roleLoadout
@@ -134,6 +136,7 @@
   - NanotrasenTrainerBelt
   - Trinkets
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
   - Survival
 
 - type: roleLoadout
