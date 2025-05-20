@@ -1,5 +1,7 @@
 // SPDX-FileCopyrightText: 2025 BeBright <98597725+be1bright@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BeBright <98597725+bebr3ght@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
