@@ -78,7 +78,6 @@
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
-          - AbductorMind
       - type: AbductorScientist
       - type: SurgeryIgnoreClothing
       - type: Sanitized
@@ -173,7 +172,6 @@
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
-          - AbductorMind
       - type: AbductorScientist
       - type: SurgeryIgnoreClothing
       - type: Sanitized
@@ -223,7 +221,6 @@
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
-          - AbductorMind
       - type: AbductorScientist # Should be removed when we have proper teleportation system
       mindRoles:
       - MindRoleAbductorAgent

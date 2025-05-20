@@ -92,6 +92,8 @@
 // SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
@@ -120,7 +122,8 @@ using Robust.Shared.Console;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Content.Shared._EinsteinEngines.Silicon.IPC; // Goobstation
-using Content.Shared.Radio.Components; // Goobstation
+using Content.Shared.Radio.Components;
+using Content.Shared.Storage; // Goobstation
 
 namespace Content.Server.Administration.Commands
 {
@@ -177,11 +180,23 @@ namespace Content.Server.Administration.Commands
                 return;
             }
 
-            if (!SetOutfit(target.Value, args[1], _entities))
+            var doSpecial = true; // Default to true if not specified - Goobstation Start
+
+            // Parse optional boolean argument
+            if (args.Length == 3)
+            {
+                if (!bool.TryParse(args[2], out doSpecial))
+                {
+                    shell.WriteLine(Loc.GetString("shell-argument-must-be-boolean"));
+                    return;
+                }
+            }
+
+            if (!SetOutfit(target.Value, args[1], doSpecial, _entities)) // Goobstation - End
                 shell.WriteLine(Loc.GetString("set-outfit-command-invalid-outfit-id-error"));
         }
 
-        public static bool SetOutfit(EntityUid target, string gear, IEntityManager entityManager, Action<EntityUid, EntityUid>? onEquipped = null)
+        public static bool SetOutfit(EntityUid target, string gear, bool doSpecialAction , IEntityManager entityManager, Action<EntityUid, EntityUid>? onEquipped = null) // Goobstation
         {
             if (!entityManager.TryGetComponent(target, out InventoryComponent? inventoryComponent))
                 return false;
@@ -203,19 +218,16 @@ namespace Content.Server.Administration.Commands
             }
 
             var invSystem = entityManager.System<InventorySystem>();
-            // ShibaStation - Track storage containers (like backpacks) that we equip to fill them later
-            Dictionary<string, EntityUid> equippedStorage = new();
-
+            var storageSystem = entityManager.System<StorageSystem>(); // Goobstation
             if (invSystem.TryGetSlots(target, out var slots))
             {
                 foreach (var slot in slots)
                 {
                     invSystem.TryUnequip(target, slot.Name, true, true, false, inventoryComponent);
                     var gearStr = ((IEquipmentLoadout) startingGear).GetGear(slot.Name);
+
                     if (gearStr == string.Empty)
-                    {
-                        continue;
-                    }
+                        continue; // Goobstation - No useless brackets!!
 
                     var equipmentEntity = entityManager.SpawnEntity(gearStr, entityManager.GetComponent<TransformComponent>(target).Coordinates);
                     if (slot.Name == "id" &&
@@ -228,11 +240,23 @@ namespace Content.Server.Administration.Commands
                     invSystem.TryEquip(target, equipmentEntity, slot.Name, silent: true, force: true, inventory: inventoryComponent);
                     onEquipped?.Invoke(target, equipmentEntity);
 
-                    // ShibaStation - Keep track of any storage containers we equip (backpacks, duffels, etc.)
-                    if (entityManager.HasComponent<StorageComponent>(equipmentEntity))
+                    if (startingGear.Storage.Count <= 0 // Goobstation - Start
+                    || slot.SlotFlags != SlotFlags.BACK
+                    || !entityManager.TryGetComponent<StorageComponent>(equipmentEntity, out var storage))
+                    continue;
+
+                    foreach (var (_, entProtos) in startingGear.Storage)
                     {
-                        equippedStorage[slot.Name] = equipmentEntity;
-                    }
+                        if (entProtos.Count == 0)
+                            continue;
+
+                        foreach (var entProto in entProtos)
+                        {
+                            var spawnedEntity = entityManager.SpawnEntity(entProto, entityManager.GetComponent<TransformComponent>(target).Coordinates);
+                            storageSystem.Insert(equipmentEntity, spawnedEntity, out _, storageComp: storage, playSound: false);
+                        }
+
+                    } // Goobstation - End
                 }
             }
 
@@ -274,6 +298,11 @@ namespace Content.Server.Administration.Commands
             {
                 if (job.StartingGear != gear)
                     continue;
+
+                // Goobstation - Implants for set-outfits
+                if (doSpecialAction)
+                    foreach (var jobSpecial in job.Special)
+                        jobSpecial.AfterEquip(target);
 
                 var jobProtoId = LoadoutSystem.GetJobPrototype(job.ID);
                 if (!prototypeManager.TryIndex<RoleLoadoutPrototype>(jobProtoId, out var jobProto))
