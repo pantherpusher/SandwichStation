@@ -157,6 +157,20 @@
   parent: [GasFilter, GasTrinaryFlippedBase]
   id: GasFilterFlipped
   components:
+  - type: NodeContainer # ShibaStation - hotfix for the fucked up flipped filters
+    nodes:
+      inlet:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: South
+      filter:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: West
+      outlet:
+        !type:PipeNode
+        nodeGroupID: Pipe
+        pipeDirection: North
   - type: SubFloorHide
     visibleLayers:
     - enum.SubfloorLayers.FirstLayer

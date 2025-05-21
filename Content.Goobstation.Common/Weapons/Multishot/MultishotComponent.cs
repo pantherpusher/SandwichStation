@@ -4,6 +4,8 @@
 // SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 // SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 //
@@ -65,5 +67,5 @@ public sealed partial class MultishotComponent : Component
     public float StaminaDamage;
 
     [DataField]
-    public static string ExamineMessage = "multishot-component-examine";
+    public string ExamineMessage = "multishot-component-examine";
 }

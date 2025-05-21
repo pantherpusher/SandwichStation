@@ -129,6 +129,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
@@ -147,6 +148,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 # Silicons
 #- type: roleLoadout
@@ -178,6 +180,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobBartender
@@ -194,6 +197,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -208,6 +212,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobChef
@@ -225,6 +230,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobLibrarian
@@ -239,6 +245,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobLawyer
@@ -254,6 +261,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobChaplain
@@ -272,6 +280,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobJanitor
@@ -290,6 +299,7 @@
   - Pins
   - JanitorPlunger
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobBotanist
@@ -306,6 +316,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobClown
@@ -322,6 +333,7 @@
   - Sharks
   - Towels
   - Pins
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobMime
@@ -339,6 +351,7 @@
   - Sharks
   - Towels
   - Pins
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobMusician
@@ -355,6 +368,7 @@
   - Pins
   - Instruments
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 # Cargo
 - type: roleLoadout
@@ -374,6 +388,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobCargoTechnician
@@ -391,6 +406,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobSalvageSpecialist
@@ -407,6 +423,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 # Engineering
 - type: roleLoadout
@@ -425,6 +442,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobTechnicalAssistant
@@ -438,6 +456,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobStationEngineer
@@ -455,6 +474,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
@@ -471,6 +491,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 # Science
 - type: roleLoadout
@@ -491,6 +512,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobScientist
@@ -511,6 +533,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobResearchAssistant
@@ -525,6 +548,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 # Security
 - type: roleLoadout
@@ -544,6 +568,7 @@
   - Pins
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobWarden
@@ -562,6 +587,7 @@
   - Pins
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobSecurityOfficer
@@ -581,6 +607,7 @@
   - Pins
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobDetective
@@ -598,6 +625,7 @@
   - Pins
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobSecurityCadet
@@ -612,6 +640,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathToolSecurity
+  - GroupSpeciesHeatingTool
 
 # Medical
 - type: roleLoadout
@@ -633,6 +662,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathToolMedical
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobMedicalDoctor
@@ -653,6 +683,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathToolMedical
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobMedicalIntern
@@ -667,6 +698,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathToolMedical
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobChemist
@@ -685,6 +717,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathToolMedical
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobParamedic
@@ -704,6 +737,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathToolMedical
+  - GroupSpeciesHeatingTool
 
 # Wildcards
 - type: roleLoadout
@@ -718,6 +752,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobReporter
@@ -733,6 +768,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobPsychologist
@@ -747,6 +783,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: JobBoxer
@@ -762,6 +799,7 @@
   - Towels
   - Pins
   - GroupSpeciesBreathTool
+  - GroupSpeciesHeatingTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
 # They will be used without player configuration, thus they will only ever apply what is forced by MinLimit
@@ -787,12 +825,14 @@
   - Survival
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: RoleSurvivalClown
   groups:
   - SurvivalClown
   - GroupTankHarness
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: RoleSurvivalExtended
@@ -800,6 +840,7 @@
   - SurvivalExtended
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: RoleSurvivalMedical
@@ -807,6 +848,7 @@
   - SurvivalMedical
   - GroupSpeciesBreathToolMedical
   - GroupTankHarness
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: RoleSurvivalSecurity
@@ -814,6 +856,7 @@
   - SurvivalSecurity
   - GroupSpeciesBreathToolSecurity
   - GroupTankHarness
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: RoleSurvivalSyndicate
@@ -821,6 +864,7 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupTankHarness
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: RoleSurvivalNukie
@@ -828,6 +872,7 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupPocketTankDouble
+  - GroupSpeciesHeatingTool
 
 - type: roleLoadout
   id: RoleSurvivalEVA

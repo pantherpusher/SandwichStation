@@ -730,7 +730,14 @@ namespace Content.Server.Kitchen.EntitySystems
                     }
                 }
 
-                _container.EmptyContainer(microwave.Storage);
+                // Eject any remaining non-recipe items
+                var remainingItems = microwave.Storage.ContainedEntities.ToList();
+                foreach (var item in remainingItems)
+                {
+                    _container.Remove(item, microwave.Storage);
+                    Transform(item).Coordinates = Transform(uid).Coordinates;
+                }
+
                 microwave.CurrentCookTimeEnd = TimeSpan.Zero;
                 UpdateUserInterfaceState(uid, microwave);
                 _audio.PlayPvs(microwave.FoodDoneSound, uid);

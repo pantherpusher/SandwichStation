@@ -70,7 +70,7 @@
       - type: RandomMetadata
         nameSegments:
           - AbductorScientistPrefix
-          - names_abductor
+          - AbductorNames
       - type: Tag
         tags:
           - Abductor
@@ -78,7 +78,6 @@
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
-          - AbductorMind
       - type: AbductorScientist
       - type: SurgeryIgnoreClothing
       - type: Sanitized
@@ -165,7 +164,7 @@
       - type: RandomMetadata
         nameSegments:
           - AbductorScientistPrefix
-          - names_abductor
+          - AbductorNames
       - type: Tag
         tags:
           - Abductor
@@ -173,7 +172,6 @@
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
-          - AbductorMind
       - type: AbductorScientist
       - type: SurgeryIgnoreClothing
       - type: Sanitized
@@ -216,14 +214,13 @@
       - type: RandomMetadata
         nameSegments:
           - AbductorAgentPrefix
-          - names_abductor
+          - AbductorNames
       - type: Tag
         tags:
           - Abductor
           - CanPilot
           - FootstepSound
           - DoorBumpOpener
-          - AbductorMind
       - type: AbductorScientist # Should be removed when we have proper teleportation system
       mindRoles:
       - MindRoleAbductorAgent
