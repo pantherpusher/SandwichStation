@@ -2034,3 +2034,11 @@ Entries:
       message: If aliens were real, they wouldn't break the server anymore
   id: 277
   time: '2025-05-21T00:29:32.0000000+00:00'
+- author: AstroDogeDX
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Durk trying to subvert Goob forks by breaking their ability to be
+        advertised on the Hub (removed Dynamic Hostname).
+  id: 278
+  time: '2025-05-21T02:08:28.0000000+00:00'
