@@ -2024,3 +2024,13 @@ Entries:
       message: Feroxi and Arirals now have groins. For medical purposes only.
   id: 276
   time: '2025-05-19T03:16:46.0000000+00:00'
+- author: AstroDogeDX
+  changes:
+    - type: Fix
+      message: Microwaves no longer break when microwaving beakers
+    - type: Fix
+      message: Flipped gas filters work again
+    - type: Fix
+      message: If aliens were real, they wouldn't break the server anymore
+  id: 277
+  time: '2025-05-21T00:29:32.0000000+00:00'
