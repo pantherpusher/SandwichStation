@@ -1,0 +1,15 @@
+﻿# Shoes
+- type: loadout
+  id: CommandStilettos
+  equipment:
+    shoes: ClothingClassicStilettos
+
+- type: loadout
+  id: CaptainShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout
+  id: HoPShoes
+  equipment:
+    shoes:  ClothingShoesColorBrown

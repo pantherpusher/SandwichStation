@@ -1,3 +1,16 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   abstract: true
   parent: BaseGameRule
@@ -5,7 +18,7 @@
   components:
   - type: WizardRule
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 15
   - type: AntagObjectives
     objectives:
     - WizardSurviveObjective
@@ -16,7 +29,7 @@
     definitions:
     - spawnerPrototype: SpawnPointWizard
       prefRoles: [ Wizard ]
-      playerRatio: 20
+      playerRatio: 10
       min: 1
       max: 1
       mindRoles:
@@ -28,9 +41,11 @@
       components:
       - type: Wizard
       - type: RandomMetadata
+      - type: CanEnchant
         nameSegments:
-        - wizard_first
-        - wizard_last
+        - WizardFirst
+        - WizardLast
+        nameFormat: name-format-standard
       - type: NpcFactionMember
         factions:
         - Wizard
@@ -51,22 +66,12 @@
 
 - type: entity
   parent: BaseWizardRule
-  id: WizardDynamic
-  components:
-  - type: DynamicRuleset
-    nameLoc: dynamic-gamerule-wizard-title
-    weight: 3
-    cost: 20
-    highImpact: true
-
-- type: entity
-  parent: BaseWizardRule
   id: WizardMidround
   components:
   - type: StationEvent
     earliestStart: 35
-    weight: 5.5
-    minimumPlayers: 20
+    weight: 2
+    minimumPlayers: 14
     duration: 1
     chaos: # Goobstation
       Hostile: 200
@@ -78,7 +83,7 @@
     selectionTime: PostPlayerSpawn
     definitions:
     - spawnerPrototype: SpawnPointWizard
-      playerRatio: 20
+      playerRatio: 10
       min: 1
       max: 1
       pickPlayer: false
@@ -91,19 +96,17 @@
       components:
       - type: Wizard
       - type: RandomMetadata
+      - type: CanEnchant
         nameSegments:
-        - wizard_first
-        - wizard_last
+        - WizardFirst
+        - WizardLast
+        nameFormat: name-format-standard
       - type: NpcFactionMember
         factions:
         - Wizard
   - type: Tag
     tags:
       - MidroundAntag
-
-- type: entity
-  parent: [ WizardDynamic, WizardMidround]
-  id: WizardDynamicMidround
 
 - type: entity
   parent: BaseGameRule
@@ -124,6 +127,7 @@
       - MindRoleApprentice
       components:
       - type: Apprentice
+      - type: CanEnchant
       - type: NpcFactionMember
         factions:
         - Wizard
@@ -158,6 +162,12 @@
   id: GhostsVisible
   components:
   - type: GhostsVisibleRule
+
+- type: entity
+  parent: BaseGameRule
+  id: GlobalTileMovement
+  components:
+  - type: GlobalTileMovementRule
 
 - type: gamePreset
   id: Wizard

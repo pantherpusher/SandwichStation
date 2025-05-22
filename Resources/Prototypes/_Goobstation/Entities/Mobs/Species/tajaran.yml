@@ -1,3 +1,11 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   name: Urist McTajaran
   parent: BaseMobSpeciesOrganic
@@ -8,18 +16,19 @@
   - type: Thirst
   - type: Sprite # ShibaStation - Made Tajara human sized. Felinids can be smol cats.
     scale: 1, 1
-  - type: Fixtures
-    fixtures: # TODO: This needs a second fixture just for mob collisions.
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.28
-        density: 140
-        restitution: 0.0
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
+# ShibaStation - Since Tajara are not small, we inherit density and phys shape from it's parent, similar to other species.
+#    - type: Fixtures
+#      fixtures: # TODO: This needs a second fixture just for mob collisions.
+#        fix1:
+#          shape:
+#            !type:PhysShapeCircle
+#            radius: 0.28
+#          density: 140
+#          restitution: 0.0
+#          mask:
+#          - MobMask
+#          layer:
+#          - MobLayer
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -85,8 +94,9 @@
     damage:
       types:
         Blunt: 1
-  - type: Stamina
-    critThreshold: 75 # Goobstation - Siouxcide, felinids take 3 disabler shots to down
+  # Tajara are full sized on ShibaStation, and as such don't need this addition.
+  # - type: Stamina
+  #   critThreshold: 75 # Goobstation - Siouxcide, felinids take 3 disabler shots to down
   - type: TypingIndicator
     proto: felinid
   # - type: PseudoItem # ShibaStation - Too big for bags, this is a Felinid trait.
@@ -109,7 +119,6 @@
     - DoorBumpOpener
     - FelinidEmotes # Since we need to add this, we also need to rewrite all others
     - AnomalyHost
-  - type: FootPrints # WD EDIT
 
 - type: entity
   save: false

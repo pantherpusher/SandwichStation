@@ -1,3 +1,28 @@
+// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
+// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Francesco <frafonia@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
+// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 // HEAVILY EDITED
 // if wizden ever does something to this system we're FUCKED
 // regards.
@@ -23,6 +48,35 @@ public sealed class StandingStateSystem : EntitySystem
 
     // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
     private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
+
+    // Separate collision layers to handle differently
+    private const int BulletCollisionLayer = (int) CollisionGroup.BulletImpassable;
+    // No longer modifying TableLayer when lying down - entities will still collide with tables
+
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<StandingStateComponent, AttemptMobCollideEvent>(OnMobCollide);
+        SubscribeLocalEvent<StandingStateComponent, AttemptMobTargetCollideEvent>(OnMobTargetCollide);
+    }
+
+    private void OnMobTargetCollide(Entity<StandingStateComponent> ent, ref AttemptMobTargetCollideEvent args)
+    {
+        if (!ent.Comp.Standing)
+        {
+            args.Cancelled = true;
+        }
+    }
+
+    private void OnMobCollide(Entity<StandingStateComponent> ent, ref AttemptMobCollideEvent args)
+    {
+        if (!ent.Comp.Standing)
+        {
+            args.Cancelled = true;
+        }
+    }
+
     public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
     {
         if (!Resolve(uid, ref standingState, false))
@@ -55,7 +109,8 @@ public sealed class StandingStateSystem : EntitySystem
         // and ultimately this is just to avoid boilerplate in Down callers + keep their behavior consistent.
         if (dropHeldItems && hands != null)
         {
-            RaiseLocalEvent(uid, new DropHandItemsEvent(), false);
+            var ev = new DropHandItemsEvent();
+            RaiseLocalEvent(uid, ref ev, false);
         }
 
         if (!force)
@@ -74,18 +129,21 @@ public sealed class StandingStateSystem : EntitySystem
         // Seemed like the best place to put it
         _appearance.SetData(uid, RotationVisuals.RotationState, RotationState.Horizontal, appearance);
 
-        // Change collision masks to allow going under certain entities like flaps and tables
+        // Change collision masks to allow only avoiding bullets but not passing under tables
         if (TryComp(uid, out FixturesComponent? fixtureComponent))
         {
             foreach (var (key, fixture) in fixtureComponent.Fixtures)
             {
-                if ((fixture.CollisionMask & StandingCollisionLayer) == 0)
+                // Only modify BulletImpassable layer, leave MidImpassable intact so they still collide with tables
+                if ((fixture.CollisionMask & BulletCollisionLayer) == 0)
                     continue;
 
                 standingState.ChangedFixtures.Add(key);
-                _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask & ~StandingCollisionLayer, manager: fixtureComponent);
+                // Only remove the bullet collision, not the table collision
+                _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask & ~BulletCollisionLayer, manager: fixtureComponent);
             }
         }
+
         // check if component was just added or streamed to client
         // if true, no need to play sound - mob was down before player could seen that
         if (standingState.LifeStage <= ComponentLifeStage.Starting)
@@ -93,7 +151,7 @@ public sealed class StandingStateSystem : EntitySystem
 
         if (playSound)
         {
-            _audio.PlayPredicted(standingState.DownSound, uid, null);
+            _audio.PlayPredicted(standingState.DownSound, uid, uid);
         }
 
         _movement.RefreshMovementSpeedModifiers(uid); // WD EDIT
@@ -108,6 +166,7 @@ public sealed class StandingStateSystem : EntitySystem
         // TODO: This should actually log missing comps...
         if (!Resolve(uid, ref standingState, false))
             return false;
+
         // Optional component.
         Resolve(uid, ref appearance, false);
 
@@ -135,7 +194,8 @@ public sealed class StandingStateSystem : EntitySystem
             foreach (var key in standingState.ChangedFixtures)
             {
                 if (fixtureComponent.Fixtures.TryGetValue(key, out var fixture))
-                    _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask | StandingCollisionLayer, fixtureComponent);
+                    // Restore bullet collision
+                    _physics.SetCollisionMask(uid, key, fixture, fixture.CollisionMask | BulletCollisionLayer, fixtureComponent);
             }
         }
         standingState.ChangedFixtures.Clear();
@@ -144,30 +204,55 @@ public sealed class StandingStateSystem : EntitySystem
         return true;
     }
 }
-public sealed class DropHandItemsEvent : EventArgs
-{
-}
+
+[ByRefEvent]
+public record struct DropHandItemsEvent();
+
 /// <summary>
 /// Subscribe if you can potentially block a down attempt.
 /// </summary>
 public sealed class DownAttemptEvent : CancellableEntityEventArgs
 {
 }
+
 /// <summary>
 /// Subscribe if you can potentially block a stand attempt.
 /// </summary>
 public sealed class StandAttemptEvent : CancellableEntityEventArgs
 {
 }
+
 /// <summary>
 /// Raised when an entity becomes standing
 /// </summary>
 public sealed class StoodEvent : EntityEventArgs
 {
 }
+
 /// <summary>
 /// Raised when an entity is not standing
 /// </summary>
 public sealed class DownedEvent : EntityEventArgs
 {
 }
+
+/// <summary>
+/// Raised after an entity falls down.
+/// </summary>
+public sealed class FellDownEvent : EntityEventArgs
+{
+    public EntityUid Uid { get; }
+
+    public FellDownEvent(EntityUid uid)
+    {
+        Uid = uid;
+    }
+}
+
+/// <summary>
+/// Raised on the entity being thrown due to the holder falling down.
+/// </summary>
+[ByRefEvent]
+public record struct FellDownThrowAttemptEvent(EntityUid Thrower, bool Cancelled = false);
+
+
