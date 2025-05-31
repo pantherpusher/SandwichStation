@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 marking-ResomiTail = Resomi tail
 marking-ResomiTail-tail = Resomi tail
 marking-ResomiTailFeathers = Tail feathers
@@ -16,3 +22,19 @@ marking-ResomiFluffHead = Resomi head fluff
 marking-ResomiFluffHead-fluff_head = Resomi head fluff
 marking-ResomiFluffHeadUp = Resomi head fluff (up)
 marking-ResomiFluffHeadUp-fluff_head_up = Resomi head fluff (up)
+# Chlymerine additions
+marking-ResomiWendigoFaceOnly = Sullen Facepaint
+marking-ResomiWendigoFaceManed = Sullen Facepaint with Mane
+marking-ResomiEars = Long Resomi Ears
+marking-ResomiEarsTop = Long Resomi Ears (Top Only)
+marking-ResomiEarsBot = Long Resomi Ears (Bottom Only)
+marking-ResomiCyLegL = Resomi Left Cyber-Leg (Alastrean Standard)
+marking-ResomiCyLegR = Resomi Right Cyber-Leg (Alastrean Standard)
+marking-ResomiCyFootL = Resomi Left Cyber-Talon (Alastrean Standard)
+marking-ResomiCyFootR = Resomi Right Cyber-Talon (Alastrean Standard)
+marking-ResomiCyArmLPart = Resomi Left Cyber-Armpart (Alastrean Standard)
+marking-ResomiCyArmRPart = Resomi Right Cyber-Armpart(Alastrean Standard)
+marking-ResomiCyArmL = Resomi Left Cyber-Wingarm (Alastrean Standard)
+marking-ResomiCyArmR = Resomi Right Cyber-Wingarm (Alastrean Standard)
+marking-ResomiCyHandL = Resomi Left Cyber-Wingpart (Alastrean Standard)
+marking-ResomiCyHandR = Resomi Right Cyber-Wingpart (Alastrean Standard)

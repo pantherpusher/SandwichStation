@@ -1,3 +1,11 @@
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   abstract: true
   parent: BaseObjective
@@ -16,8 +24,8 @@
       sprite: _Goobstation/Heretic/reality_fracture.rsi
       state: icon_harvested
   - type: NumberObjective
-    min: 12
-    max: 18
+    min: 8
+    max: 14
     title: objective-condition-knowledge-title
   - type: HereticKnowledgeCondition
 
@@ -27,11 +35,11 @@
   components:
   - type: Objective
     icon:
-      sprite: _Goobstation/Heretic/Blades/blade_blade.rsi
+      sprite: _Goobstation/Heretic/Blades/eldritch_blade.rsi
       state: icon
   - type: NumberObjective
-    min: 2
-    max: 4
+    min: 1
+    max: 3
     title: objective-condition-sacrifice-title
   - type: HereticSacrificeCondition
 
@@ -41,7 +49,7 @@
   components:
   - type: Objective
     icon:
-      sprite: _Goobstation/Heretic/Blades/blade_blade.rsi
+      sprite: _Goobstation/Heretic/Blades/eldritch_blade.rsi
       state: icon
   - type: NumberObjective
     min: 1

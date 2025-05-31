@@ -1,0 +1,68 @@
+# SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: body
+  name: "ariral"
+  id: Ariral
+  root: torso
+  slots:
+    head:
+      part: HeadAriral
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoAriral
+      connections: # Goobstation - fix some species having their hands the wrong way around
+      - groin
+      - right arm
+      - left arm
+      - head # Shitmed Change
+      organs:
+        heart: OrganAriralHeart
+        lungs: OrganAriralLungs
+    groin:
+      part: GroinAriral
+      connections:
+      - right leg
+      - left leg
+      organs:
+        stomach: OrganAriralStomach
+        liver: OrganAriralLiver
+        kidneys: OrganAriralKidneys
+    right arm:
+      part: RightArmAriral
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmAriral
+      connections:
+      - left hand
+    right hand:
+      part: RightHandAriral
+    left hand:
+      part: LeftHandAriral
+    right leg:
+      part: RightLegAriral
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegAriral
+      connections:
+      - left foot
+    right foot:
+      part: RightFootAriral
+    left foot:
+      part: LeftFootAriral

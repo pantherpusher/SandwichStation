@@ -1,0 +1,49 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieCaitlin
+  name: Caitlin plushie
+  description: The right man in the wrong place can make all the difference in the world... no, literally. She probably stole AA again to help out the crew.
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Objects/Fun/ShibPlush/caitlin.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound:
+      collection: CaitlinPlushUse
+      params:
+        volume: -4
+        maxDistance: 10
+  - type: EmitSoundOnActivate
+    sound:
+      collection: CaitlinPlushUse
+      params:
+        volume: -4
+        maxDistance: 10
+  - type: UseDelay
+    delay: 2.0
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_ShibaStation/Effects/sfx/hellothere.ogg
+      params:
+        volume: -4
+        maxDistance: 10
+  - type: EmitSoundOnLand
+    sound:
+      collection: CaitlinPlushLand
+      params:
+        volume: -4
+        maxDistance: 10
+  - type: EmitSoundOnThrow
+    sound:
+      collection: CaitlinPlushThrow
+      params:
+        volume: -4
+        maxDistance: 10
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    attackRate: 4
+    soundHit:
+      collection: CaitlinPlushHit
+      params:
+        volume: -20
+        maxDistance: 10

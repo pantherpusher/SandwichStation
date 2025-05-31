@@ -1,0 +1,17 @@
+- type: localizedDataset
+  id: AriralNamesMale
+  values:
+    prefix: ariral-names-male-dataset-
+    count: 16
+
+- type: localizedDataset
+  id: AriralNamesFemale
+  values:
+    prefix: ariral-names-female-dataset-
+    count: 19
+
+- type: localizedDataset
+  id: AriralNamesLast
+  values:
+    prefix: ariral-names-last-dataset-
+    count: 20

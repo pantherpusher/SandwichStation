@@ -1,3 +1,13 @@
+// SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 portfiend <109661617+portfiend@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Shared.Actions;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -29,6 +39,13 @@ public sealed partial class CrawlUnderObjectsComponent : Component
 
     [DataField]
     public float SneakSpeedModifier = 0.7f;
+
+    /// <summary>
+    ///     Whether the entity can sneak while standing.
+    ///     ShibaStation - If false, entity must be in laying state to sneak.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool SneakWhileStanding = false;
 }
 
 [Serializable, NetSerializable]
