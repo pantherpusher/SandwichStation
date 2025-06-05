@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 247.2.0
+  engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/03/2025 13:05:39
-  entityCount: 9331
+  time: 06/05/2025 09:05:54
+  entityCount: 9332
 maps:
 - 1
 grids:
@@ -4023,7 +4023,7 @@ entities:
       pos: -24.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -6945.8076
+      secondsUntilStateChange: -7119.9746
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -24783,8 +24783,6 @@ entities:
           occludes: True
           ents:
           - 3846
-    - type: ApcPowerReceiver
-      powerDisabled: True
   - uid: 3847
     components:
     - type: Transform
@@ -42171,6 +42169,13 @@ entities:
     - type: Transform
       pos: -10.5,6.5
       parent: 2
+- proto: LockerBrigmedicFilled
+  entities:
+  - uid: 3138
+    components:
+    - type: Transform
+      pos: 12.5,18.5
+      parent: 2
 - proto: LockerCaptainFilledHardsuit
   entities:
   - uid: 6258
@@ -42337,11 +42342,6 @@ entities:
       parent: 2
 - proto: LockerSecurityFilled
   entities:
-  - uid: 6284
-    components:
-    - type: Transform
-      pos: 12.5,18.5
-      parent: 2
   - uid: 6285
     components:
     - type: Transform
@@ -49911,6 +49911,13 @@ entities:
     - type: Transform
       pos: -10.5,5.5
       parent: 2
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 3139
+    components:
+    - type: Transform
+      pos: 13.5,18.5
+      parent: 2
 - proto: SpawnPointCaptain
   entities:
   - uid: 7425
@@ -50069,13 +50076,6 @@ entities:
     components:
     - type: Transform
       pos: -10.5,-9.5
-      parent: 2
-- proto: SpawnPointMailCarrier
-  entities:
-  - uid: 3138
-    components:
-    - type: Transform
-      pos: -16.5,14.5
       parent: 2
 - proto: SpawnPointMedicalDoctor
   entities:

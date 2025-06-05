@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 247.2.0
+  engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/03/2025 13:08:01
-  entityCount: 13887
+  time: 06/05/2025 09:07:43
+  entityCount: 13888
 maps:
 - 473
 grids:
@@ -11576,6 +11576,13 @@ entities:
     components:
     - type: Transform
       pos: -25.5,-20.5
+      parent: 4812
+- proto: BedsheetBrigmedic
+  entities:
+  - uid: 7030
+    components:
+    - type: Transform
+      pos: -26.5,22.5
       parent: 4812
 - proto: BedsheetCaptain
   entities:
@@ -31411,6 +31418,13 @@ entities:
     components:
     - type: Transform
       pos: -2.493187,-34.40246
+      parent: 4812
+- proto: ChestHuman
+  entities:
+  - uid: 12423
+    components:
+    - type: Transform
+      pos: -53.589386,-16.742252
       parent: 4812
 - proto: Cigar
   entities:
@@ -61290,6 +61304,13 @@ entities:
     - type: Transform
       pos: -30.5,15.5
       parent: 4812
+- proto: HolopadSecurityBrigMed
+  entities:
+  - uid: 7074
+    components:
+    - type: Transform
+      pos: -28.5,23.5
+      parent: 4812
 - proto: HolopadSecurityDetective
   entities:
   - uid: 13783
@@ -62552,6 +62573,13 @@ entities:
         - 0
         - 0
         - 0
+- proto: LockerBrigmedicFilled
+  entities:
+  - uid: 6736
+    components:
+    - type: Transform
+      pos: -28.5,24.5
+      parent: 4812
 - proto: LockerCaptainFilledNoLaser
   entities:
   - uid: 2729
@@ -62808,11 +62836,6 @@ entities:
     components:
     - type: Transform
       pos: -27.5,24.5
-      parent: 4812
-  - uid: 6736
-    components:
-    - type: Transform
-      pos: -28.5,24.5
       parent: 4812
   - uid: 10926
     components:
@@ -63568,6 +63591,11 @@ entities:
       parent: 4812
 - proto: MedicalBed
   entities:
+  - uid: 7066
+    components:
+    - type: Transform
+      pos: -26.5,22.5
+      parent: 4812
   - uid: 7572
     components:
     - type: Transform
@@ -73892,6 +73920,13 @@ entities:
     - type: Transform
       pos: -13.5,-6.5
       parent: 4812
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 6737
+    components:
+    - type: Transform
+      pos: -28.5,23.5
+      parent: 4812
 - proto: SpawnPointCaptain
   entities:
   - uid: 2697
@@ -77065,21 +77100,6 @@ entities:
     - type: Transform
       pos: -11.5,-19.5
       parent: 4812
-  - uid: 6737
-    components:
-    - type: Transform
-      pos: -26.5,22.5
-      parent: 4812
-  - uid: 7030
-    components:
-    - type: Transform
-      pos: -28.5,22.5
-      parent: 4812
-  - uid: 7066
-    components:
-    - type: Transform
-      pos: -27.5,22.5
-      parent: 4812
   - uid: 7328
     components:
     - type: Transform
@@ -78111,13 +78131,6 @@ entities:
     components:
     - type: Transform
       pos: 26.489439,14.7007885
-      parent: 4812
-- proto: TorsoHuman
-  entities:
-  - uid: 12423
-    components:
-    - type: Transform
-      pos: -53.589386,-16.742252
       parent: 4812
 - proto: ToyIan
   entities:

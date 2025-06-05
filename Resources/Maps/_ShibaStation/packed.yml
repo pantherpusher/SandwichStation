@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 247.2.0
+  engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/03/2025 13:18:28
-  entityCount: 15356
+  time: 06/05/2025 09:09:00
+  entityCount: 15357
 maps:
 - 126
 grids:
@@ -46969,6 +46969,9 @@ entities:
     - type: Transform
       pos: -0.0010213852,-26.399889
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodMeat
   entities:
   - uid: 566
@@ -47035,6 +47038,9 @@ entities:
     - type: Transform
       pos: -0.9697714,-25.884264
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodPoppy
   entities:
   - uid: 12099
@@ -47070,6 +47076,9 @@ entities:
     - type: Transform
       pos: -1.0166464,-26.540514
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
   - uid: 5887
     components:
     - type: Transform
@@ -68157,6 +68166,13 @@ entities:
     - type: Transform
       pos: 44.5,-10.5
       parent: 2
+- proto: LockerBrigmedicFilled
+  entities:
+  - uid: 5002
+    components:
+    - type: Transform
+      pos: 30.5,28.5
+      parent: 2
 - proto: LockerCaptainFilledNoLaser
   entities:
   - uid: 4137
@@ -79497,6 +79513,13 @@ entities:
     - type: Transform
       pos: 44.5,-6.5
       parent: 2
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 4406
+    components:
+    - type: Transform
+      pos: 33.5,29.5
+      parent: 2
 - proto: SpawnPointCaptain
   entities:
   - uid: 8682
@@ -80126,12 +80149,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 20.5,-41.5
-      parent: 2
-  - uid: 4406
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 30.5,28.5
       parent: 2
   - uid: 5067
     components:
@@ -83909,6 +83926,7 @@ entities:
     - type: Transform
       pos: 0.13960361,-25.931139
       parent: 2
+    - type: Conveyed
   - uid: 9603
     components:
     - type: Transform
