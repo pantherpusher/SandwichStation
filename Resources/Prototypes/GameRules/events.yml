@@ -580,7 +580,6 @@
     weight: 6 # ShibaStation - Reduced from 8 to 6
     reoccurrenceDelay: 45 # ShibaStation - Gas leaks now can only happen after 30 minutes since the last one.
     maxOccurrences: 3 # ShibaStation - Gas leaks now can only happen 3 times per round.
-    weight: 8
     chaos:
       Atmos: 100
       Medical: 50
