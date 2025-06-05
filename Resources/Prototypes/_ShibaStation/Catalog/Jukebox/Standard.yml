@@ -1,0 +1,5 @@
+- type: jukebox
+  id: shibastation
+  name: .Yuuchan - ShibaStation
+  path:
+    path: /Audio/_ShibaStation/Lobby/shibastation.ogg
