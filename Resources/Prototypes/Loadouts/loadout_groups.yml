@@ -1269,14 +1269,7 @@
   loadouts:
   - JackBoots
   - SecurityWinterBoots
-  - CommandStilettos
-
-- type: loadoutGroup #ShibaStation
-  id: HeadofSecurityShoes
-  name: loadout-group-head-of-security-shoes
-  loadouts:
-  - JackBoots
-  - SecurityWinterBoots
+  - AdvancedJackBoots
   - CommandStilettos
 
 - type: loadoutGroup
