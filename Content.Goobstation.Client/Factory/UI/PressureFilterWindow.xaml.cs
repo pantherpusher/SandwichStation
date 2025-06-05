@@ -1,3 +1,4 @@
+// SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
