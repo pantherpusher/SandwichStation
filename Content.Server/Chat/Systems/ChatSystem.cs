@@ -1246,15 +1246,15 @@ public sealed class EntitySpokeEvent : EntityEventArgs
 ///     InGame IC chat is for chat that is specifically ingame (not lobby) but is also in character, i.e. speaking.
 /// </summary>
 // ReSharper disable once InconsistentNaming
-public enum InGameICChatType : byte
-{
-    Speak,
-    Emote,
-    Whisper,
-    Subtle, // FloofStation,
-    Telepathic, // Goobstation Change
-    CollectiveMind // Goobstation - Starlight collective mind port
-}
+// public enum InGameICChatType : byte
+// {
+//     Speak,
+//     Emote,
+//     Whisper,
+//     Subtle, // FloofStation,
+//     Telepathic, // Goobstation Change
+//     CollectiveMind // Goobstation - Starlight collective mind port
+// }
 
 /// <summary>
 ///     InGame OOC chat is for chat that is specifically ingame (not lobby) but is OOC, like deadchat or LOOC.

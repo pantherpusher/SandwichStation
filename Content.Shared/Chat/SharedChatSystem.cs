@@ -411,6 +411,7 @@ public enum InGameICChatType : byte // Einstein Engines - Make InGameIIChatType 
     Speak,
     Emote,
     Whisper,
+    Subtle, // FloofStation,
     Telepathic, // Goobstation Change
     CollectiveMind // Goobstation - Starlight collective mind port
 }
