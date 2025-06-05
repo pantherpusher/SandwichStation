@@ -24,6 +24,7 @@
     inventory: Drop
     revertOnDeath: false
     revertOnCrit: false
+    duration: 120 # ShibaStation - Gondola polymorph now only lasts 2 minutes
 
 - type: polymorph
   id: Bingle
@@ -69,6 +70,7 @@
     revertOnDeath: true
     transferName: true
     revertOnCrit: true
+    duration: 120 # ShibaStation - Mouse polymorph now only lasts 2 minutes
 
 - type: polymorph
   id: MobFrogPolymorph

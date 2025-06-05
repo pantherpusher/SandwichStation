@@ -79,6 +79,7 @@
     transferDamage: true
     revertOnCrit: false
     revertOnDeath: true
+    duration: 120 # ShibaStation - Make carp polymorph two minutes
 
 - type: polymorph
   id: WizardForcedSkeleton
@@ -125,6 +126,7 @@
     exitPolymorphSound: !type:SoundPathSpecifier
       path: /Audio/Magic/forcewall.ogg
     allowMovement: false # Goobstation
+    duration: 60 # ShibaStation - Make wizard doors not permanent
 
 - type: polymorph
   id: WizardForcedCluwne
