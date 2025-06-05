@@ -136,7 +136,7 @@
     - ultra farted
     - ultra farting
 
-- type: emote 
+- type: emote
   id: Flap
   name: chat-emote-name-flap
   category: Vocal
@@ -157,24 +157,24 @@
    - flaps their wings
    - flaps its wings
 
-- type: emote
-  id: Trill
-  name: chat-emote-name-trill
-  category: Vocal
-  available: false
-  icon: _Goobstation/Interface/Emotes/caw.png
-  whitelist:
-    components:
-      - Vocal
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: ["chat-emote-msg-trill"]
-  chatTriggers:
-    - trill
-    - trills
-    - trilling
-    - trilled
+# - type: emote
+#   id: Trill
+#   name: chat-emote-name-trill
+#   category: Vocal
+#   available: false
+#   icon: _Goobstation/Interface/Emotes/caw.png
+#   whitelist:
+#     components:
+#       - Vocal
+#   blacklist:
+#     components:
+#     - BorgChassis
+#   chatMessages: ["chat-emote-msg-trill"]
+#   chatTriggers:
+#     - trill
+#     - trills
+#     - trilling
+#     - trilled
 
 - type: emote
   id: Warble
