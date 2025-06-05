@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 B3CKDOOR <22119241+B3CKDOOR@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: jukebox
   id: shibastation
   name: .Yuuchan - ShibaStation
