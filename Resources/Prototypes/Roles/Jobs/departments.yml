@@ -238,6 +238,7 @@
   - SecurityOfficer
   - Detective
   - Warden
+  - Brigmedic # Goob
 
 - type: department
   id: Science

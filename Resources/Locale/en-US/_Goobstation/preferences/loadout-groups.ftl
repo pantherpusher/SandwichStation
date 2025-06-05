@@ -43,5 +43,7 @@ loadout-group-salvage-specialist-neck = Salvage Specialist neck
 
 loadout-group-chemist-head = Chemist head
 
-loadout-group-species-heating-tool = Heating Tool
-loadout-group-species-heating-tool-syndicate = Evil Heating Tool
+loadout-group-brigmedic-jumpsuit = Brigmedic jumpsuit
+loadout-group-brigmedic-head = Brigmedic head
+loadout-group-brigmedic-outer = Brigmedic outer clothing
+loadout-group-brigmedic-backpack = Brigmedic backpack

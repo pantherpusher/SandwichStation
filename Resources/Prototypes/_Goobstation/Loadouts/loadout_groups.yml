@@ -103,6 +103,7 @@
   - BlueshieldOfficerOuterBlueshieldArmorVest
   - BlueshieldOfficerOuterBlueshieldArmoredJacket
   - BlueshieldOfficerOuterBlueshieldCowboyVest
+  - BlueshieldOfficerOuterWinterBlueshield
 
 - type: loadoutGroup
   id: BlueshieldOfficerNeck
@@ -124,6 +125,7 @@
   loadouts:
   - JackBoots
   - BlackCowboyBoots
+  - SnowjacksBso
 
 # Career Trainer
 
@@ -234,20 +236,40 @@
   - SeniorPhysicianBeret
   - ChemistUshanka # Da.
 
-# Lizor
+# Brigmedic
 
 - type: loadoutGroup
-  id: GroupSpeciesHeatingTool
-  name: loadout-group-species-heating-tool
-  minLimit: 1
-  hidden: true
+  id: BrigmedicJumpsuit
+  name: loadout-group-brigmedic-jumpsuit
   loadouts:
-  - LoadoutSpeciesHeatingTool
+  - BrigmedicJumpsuit
+  - BrigmedicJumpskirt
 
 - type: loadoutGroup
-  id: GroupSpeciesHeatingToolSyndicate
-  name: loadout-group-species-heating-tool-syndicate
-  minLimit: 1
-  hidden: true
+  id: BrigmedicHead
+  name: loadout-group-brigmedic-head
+  minLimit: 0
   loadouts:
-  - LoadoutSpeciesHeatingToolSyndicate
+  - BrigmedicBeret
+  - CMOMedicalHeadMirror
+  - SecurityBeret
+  - SecurityHat
+  - TrooperHat
+
+- type: loadoutGroup
+  id: BrigmedicOuterClothing
+  name: loadout-group-brigmedic-outer
+  loadouts:
+  - BrigmedicAMG
+  - ArmorVest
+  - ArmorVestSlim
+  - SecurityOfficerWintercoat
+
+- type: loadoutGroup
+  id: BrigmedicBackpack
+  name: loadout-group-brigmedic-backpack
+  loadouts:
+  - BrigmedicBackpack
+  - BrigmedicSatchel
+  - BrigmedicDuffel
+  - BrigmedicMessenger
