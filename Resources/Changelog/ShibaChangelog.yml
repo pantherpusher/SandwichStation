@@ -2060,3 +2060,11 @@ Entries:
       message: Wizard door spell now temporary (60 seconds)
   id: 280
   time: '2025-06-05T09:16:26.0000000+00:00'
+- author: AstroDogeDX
+  changes:
+    - type: Tweak
+      message: >-
+        Service Worker role now behind a 30 minute overall playtime requirement
+        to filter raiders.
+  id: 281
+  time: '2025-06-05T09:16:37.0000000+00:00'
