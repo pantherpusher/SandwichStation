@@ -121,6 +121,7 @@
 # SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 # SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
@@ -233,6 +234,12 @@
     duration: 35
     reoccurrenceDelay: 30 # ShibaStation - Anomalies now can only happen after 30 minutes since the last one.
     minimumPlayers: 3 # ShibaStation - Anomalies now require at least 3 players to spawn.
+    chaos: # Goobstation
+      Anomaly: 100
+    eventType: Chaotic # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 70
   - type: AnomalySpawnRule
 
 - type: entity
@@ -243,6 +250,7 @@
     delay:
       min:  30
       max:  30
+    chaosScore: 40 # Goobstation
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
     startAudio:
@@ -250,6 +258,9 @@
     weight: 6 # ShibaStation - Reduced from 8 to 6
     duration: 35
     reoccurrenceDelay: 15 # ShibaStation - Artifacts now can only happen after 15 minutes since the last one.
+    chaos: # Goobstation
+      Anomaly: 40
+    eventType: Chaotic # Goobstation
   - type: BluespaceArtifactRule
 
 - type: entity
@@ -262,6 +273,12 @@
     earliestStart: 1
     duration: 1
     maxOccurrences: 10 # ShibaStation - Long shifts result in like two thirds of all lockers being bluespaced. It's cringe.
+    chaos: # Goobstation
+      Anomaly: 40
+    eventType: Neutral # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 40
   - type: BluespaceLockerRule
 
 - type: entity
@@ -272,6 +289,12 @@
     weight: 7
     duration: 1
     minimumPlayers: 15
+    chaos: # Goobstation
+      Power: 100
+    eventType: Maintenance # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 60
   - type: BreakerFlipRule
 
 - type: entity
@@ -283,6 +306,10 @@
     minimumPlayers: 25
     weight: 3
     duration: 1
+    eventType: Neutral # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 50
   - type: BureaucraticErrorRule
     ignoredJobs:
     - StationAi
@@ -296,6 +323,10 @@
     minimumPlayers: 15
     weight: 5
     duration: 1
+    eventType: Chaotic # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 30
   - type: ClericalErrorRule
 
 - type: entity
@@ -309,6 +340,10 @@
     earliestStart: 90 # ShibaStation - First skeleton should spawn late into the shift.
     reoccurrenceDelay: 60 # ShibaStation - Skeletons now can only happen after 60 minutes since the last one.
     maxOccurrences: 2 # ShibaStation - Capped at 2, we get too many dang skeletons.
+    eventType: Chaotic # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 60
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
 
@@ -322,6 +357,16 @@
     reoccurrenceDelay: 20
     minimumPlayers: 16 # ShibaStation - reduced from 20 to 16.
     duration: null
+    chaos: # Goobstation
+      Hostile: 20
+      Friend: 20
+      Combat: 40
+      Death: 100
+      Medical: 100
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 600
   - type: SpaceSpawnRule
     spawnDistance: 0
   - type: AntagSpawner
@@ -351,6 +396,16 @@
     earliestStart: 135
     reoccurrenceDelay: 40
     minimumPlayers: 16
+    chaos: # Goobstation
+      Hostile: 20
+      Friend: 20
+      Combat: 40
+      Death: 40
+      Medical: 40
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 300
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
     # Goobstation start
@@ -410,6 +465,10 @@
     earliestStart: 20
     reoccurrenceDelay: 20
     minimumPlayers: 15
+    eventType: Chaotic # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 80
   - type: ParadoxCloneRule
     objectiveBlacklist:
       tags:
@@ -445,6 +504,16 @@
     duration: 1
     earliestStart: 90
     minimumPlayers: 16
+    chaos: # Goobstation
+      Hostile: 20
+      Friend: 20
+      Combat: 40
+      Death: 100
+      Medical: 100
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 280
   - type: RandomSpawnRule
     prototype: MobRevenant
 
@@ -511,6 +580,14 @@
     weight: 6 # ShibaStation - Reduced from 8 to 6
     reoccurrenceDelay: 45 # ShibaStation - Gas leaks now can only happen after 30 minutes since the last one.
     maxOccurrences: 3 # ShibaStation - Gas leaks now can only happen 3 times per round.
+    weight: 8
+    chaos:
+      Atmos: 100
+      Medical: 50
+    eventType: Maintenance # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 80 # most of the time scrubbers just clean it
   - type: GasLeakRule
 
 - type: entity
@@ -523,6 +600,14 @@
     weight: 5 # ShibaStation - Reduced from 7 to 5
     duration: 240
     maxOccurrences: 5 # ShibaStation - Kudzu growth now can only happen 5 times per round.
+    chaos:
+      Hostile: 20
+      Friend: 20
+      Medical: 100
+    eventType: Maintenance # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 40
   - type: KudzuGrowthRule
 
 - type: entity
@@ -540,6 +625,10 @@
     duration: 30 # ShibaStation - Reduced from 60 to 30
     maxDuration: 90 # ShibaStation - Reduced from 120 to 90
     reoccurrenceDelay: 35 # ShibaStation - Power grid checks now can only happen after 35 minutes since the last one.
+    eventType: Interference # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 80
   - type: PowerGridCheckRule
 
 - type: entity
@@ -557,6 +646,12 @@
     duration: 90 # ShibaStation - Reduced from 120 to 90
     maxDuration: 180 # ShibaStation - Reduced from 240 to 180
     reoccurrenceDelay: 40 # ShibaStation - Solar flares now can only happen after 40 minutes since the last one.
+    chaos: # Goobstation
+      Friend: 20
+    eventType: Interference # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 60
   - type: SolarFlareRule
     onlyJamHeadsets: true
     affectedChannels:
@@ -586,6 +681,12 @@
     weight: 3 # ShibaStation - Reduced from 5 to 3
     duration: 60
     reoccurrenceDelay: 40 # ShibaStation - Vent clogs now can only happen after 40 minutes since the last one.
+    chaos: # Goobstation
+      Mess: 200
+    eventType: Interference # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 70
   - type: VentClogRule
 
 - type: entity
@@ -603,6 +704,10 @@
     chaos: # Goobstation
       Hostile: 20
       Medical: 50
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 240
   - type: VentCrittersRule
     entries:
     - id: MobAdultSlimesBlueAngry
@@ -624,6 +729,13 @@
     minimumPlayers: 15
     weight: 2 # GoobStation: was 5, critters because bad
     duration: 60
+    chaos: # Goobstation
+      Hostile: 20
+      Medical: 50
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 240
   - type: VentCrittersRule
     entries:
     - id: MobPurpleSnake
@@ -645,6 +757,13 @@
     minimumPlayers: 15
     weight: 1 # GoobStation: was 1, vent critters bad
     duration: 60
+    chaos: # Goobstation
+      Hostile: 20
+      Medical: 50
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 240
   - type: VentCrittersRule
     entries:
     - id: MobGiantSpiderAngry
@@ -662,6 +781,13 @@
     minimumPlayers: 20
     weight: 0.5 # GoobStation: was 1.5, vent critters bad
     duration: 60
+    chaos: # Goobstation
+      Hostile: 20
+      Medical: 50
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 240
   - type: VentCrittersRule
     entries:
     - id: MobClownSpider
@@ -676,6 +802,14 @@
     minimumPlayers: 40
     weight: 1 # Zombies was happening basically every single survival round, so now it's super rare
     duration: 1
+    chaos: # Goobstation
+      Hostile: 100
+      Medical: 200
+      Death: 200
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 1400
   - type: ZombieRule
   - type: AntagSelection
     definitions:
@@ -711,6 +845,14 @@
     minimumPlayers: 18
     duration: 1
     maxOccurrences: 1 # ShibaStation - Lone nukies now can only happen once per round.
+    chaos: # Goobstation
+      Hostile: 60
+      Medical: 75
+      Death: 100
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 700
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml
@@ -759,6 +901,10 @@
       path: /Audio/_ShibaStation/Announcements/sleeper-activate.ogg
     duration: null # the rule has to last the whole round not 1 second
     occursDuringRoundEnd: false
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 550
   - type: AlertLevelInterceptionRule
   - type: AntagSelection
     definitions:
@@ -784,6 +930,10 @@
     reoccurrenceDelay: 30
     chaos: # Goobstation
       Friend: 20
+    eventType: Chaotic # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 30
   - type: MassHallucinationsRule
     minTimeBetweenIncidents: 0.1
     maxTimeBetweenIncidents: 300
@@ -804,6 +954,10 @@
       Hostile: 10
       Friend: 20
       Mess: 30
+    eventType: Chaotic # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 150
   - type: IonStormRule
 
 - type: entity
@@ -819,6 +973,10 @@
       Hostile: 20 # for when they're actually properly hostile
       Hunger: 10
       Thirst: 10
+    eventType: Neutral # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 20
   - type: MobReplacementRule
 
 - type: entity
@@ -834,6 +992,10 @@
     chaos: # Goobstation
       Atmos: 15
       Mess: 30
+    eventType: Maintenance # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 160
   - type: GreytideVirusRule
     accessGroups:
     - Cargo
@@ -873,6 +1035,10 @@
       # can be both hostile and friendly
       Hostile: 10
       Friend: -10
+    eventType: Chaotic # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 80
   - type: SpaceSpawnRule
     spawnDistance: 0
   - type: AntagSpawner
