@@ -10,8 +10,8 @@
 
 # Rules
 
-ui-rules-header = ShibaStation Official Server Rules
-ui-rules-header-rp = ShibaStation Roleplay Official Server Rules
+ui-rules-header = SandwichStation Official Server Rules
+ui-rules-header-rp = SandwichStation Official Server Roleplay Rules
 ui-rules-accept = I have read and agree to follow the rules.
 ui-rules-wait = The accept button will be enabled after {$time} seconds.
 
