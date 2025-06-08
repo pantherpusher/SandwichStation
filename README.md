@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 <p align="center"> <img alt="ShibaStation" src="Resources/Textures/Logo/logo.png" /></p>
 
-_SandwichStation_ is a fork of _ShibaStation_, which is a fork of _Goob-Station_, which is itself a fork of _Space Station 14_. This fork is mainly customized to our own standards and balances.
+_SandwichStation_ is a fork of _ShibaStation_<sup>†</sup>, which is a fork of _Goob-Station_, which is itself a fork of _Space Station 14_. This fork is mainly customized to our own standards and balances.
 
 
 If you want to host or create content for _SS14_, go to the [Space Station 14 repository](https://github.com/space-wizards/space-station-14) as it contains both RobustToolbox and the content pack for development of new content packs and is the base for your fork.
