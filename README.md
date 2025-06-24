@@ -32,7 +32,7 @@ If you want to host or create content for _SS14_, go to the [Space Station 14 re
 
 ## Links
 
-~~[SandwichStation Discord](https://discord.gg/SandwichStation)~~ (Not yet live)
+[SandwichStation Discord](https://discord.gg/Z6JvtKw6tp)
 
 ## Documentation/Wiki
 
@@ -40,7 +40,7 @@ Documentation is coming soon™
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in ~~[Discord](https://discord.gg/SandwichStation)~~ if you want to help but you dont know how to. Feel free to check the [list of issues](https://github.com/SandwichStation/SandwichStation/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
+We are happy to accept contributions from anybody. Get in [SandwichStation Discord](https://discord.gg/Z6JvtKw6tp) if you want to help but you dont know how to. Feel free to check the [list of issues](https://github.com/SandwichStation/SandwichStation/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
 While _SandwichStation_ doesn't use the [contribution guidelines,](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html) you can always check the documentation to help you out.
 
 ## Building
