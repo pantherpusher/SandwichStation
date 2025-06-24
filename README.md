@@ -24,6 +24,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <p align="center"> <img alt="ShibaStation" src="Resources/Textures/Logo/logo.png" /></p>
+<table>
+  <tr>
+    <th>Server uptime:</th>
+    <td><a target="_blank" href="https://status.b3ckdoor.com/status/sandwichstation"><img src="https://status.b3ckdoor.com/api/badge/25/uptime?labelPrefix=Gameserver+" alt="" /></a></td>
+  </tr>
+</table>
+
 
 _SandwichStation_ is a fork of _ShibaStation_<sup>†</sup>, which is a fork of _Goob-Station_, which is itself a fork of _Space Station 14_. This fork is mainly customized to our own standards and balances.
 
@@ -32,11 +39,7 @@ If you want to host or create content for _SS14_, go to the [Space Station 14 re
 
 ## Links
 
-[SandwichStation Discord](https://discord.gg/Z6JvtKw6tp)
-
-## Documentation/Wiki
-
-Documentation is coming soon™
+<a target="_blank" href="https://discord.gg/Z6JvtKw6tp"><img src="https://dcbadge.limes.pink/api/server/Z6JvtKw6tp?style=flat" alt="SandwichStation Discord" /></a>
 
 ## Contributing
 
