@@ -1,2 +1,5 @@
 ## code changes will send PR to following users
 * @SandwichStation/pr-reviewers
+
+# Only allow permission changes by SandwichStation Owner
+/.github/CODEOWNERS @SandwichStation/centcomm-captain
