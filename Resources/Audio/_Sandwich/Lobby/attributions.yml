@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 B3CKDOOR <22119241+B3CKDOOR@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+#- files: ["examplefile.ogg"]
+#  license: "License type code"
+#  copyright: "Artist name"
+#  source: "Artist name, youtube channel, name etc."
+
+- files: ["sandwichstation.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: ".yuuchan (on discord)"
+  source: "https://discord.gg/Z6JvtKw6tp"
