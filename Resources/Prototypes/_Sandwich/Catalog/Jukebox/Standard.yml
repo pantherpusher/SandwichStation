@@ -8,3 +8,9 @@
   name: .Yuuchan - ShibaStation
   path:
     path: /Audio/_ShibaStation/Lobby/shibastation.ogg
+
+- type: jukebox
+  id: sandwichstation
+  name: .Yuuchan - SandwichStation
+  path:
+    path: /Audio/_Sandwich/Jukebox/sandwichstation.ogg
