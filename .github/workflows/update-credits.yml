@@ -22,6 +22,9 @@ concurrency:
 jobs:
   get_credits:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     # Hey there fork dev! If you like to include your own contributors in this then you can probably just change this to your own repo
     # Do this in dump_github_contributors.ps1 too into your own repo
     if: github.repository == 'SandwichStation/SandwichStation'
