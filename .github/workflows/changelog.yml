@@ -49,7 +49,6 @@ jobs:
       - uses: actions/create-github-app-token@v1
         id: login
         with:
-          owner: ${{ github.repository_owner }}
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ steps.decode.outputs.private-key }}
 
