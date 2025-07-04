@@ -1,5 +1,5 @@
 Name: SandwichChangelog
-Order: -2
+Order: -3
 Entries:
 - author: SandwichStation
   changes:
@@ -7,11 +7,3 @@ Entries:
       type: Add
   id: 1
   time: '2025-06-07T17:00:00.000000'
-- author: Azrakoth
-  changes:
-    - type: Tweak
-      message: >-
-        Replaced goob_poster2_contraband.png with a newly made Dave poster as a
-        placeholder.
-  id: 2
-  time: '2025-07-03T18:42:23.0000000+00:00'
