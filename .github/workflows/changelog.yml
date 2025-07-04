@@ -40,7 +40,7 @@ jobs:
         run: |
           private_key=$(echo "$GH_PRIVATE_KEY" | base64 -d | awk 'BEGIN {ORS="\\n"} {print}' | head -c -2) &> /dev/null
           # GitHub way of making a variable sensitive / not shown in logs
-          echo "::add-mask::$private_key"
+          #echo "::add-mask::$private_key"
           echo "private-key=$private_key" >> "$GITHUB_OUTPUT"
         env:
           GH_PRIVATE_KEY: ${{ secrets.GH_PRIVATE_KEY }}
