@@ -13,3 +13,11 @@ Entries:
       message: Changelogs now work automagically™
   id: 2
   time: '2025-07-04T23:54:38.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Sandwich poster
+    - type: Fix
+      message: Moved Dave's portrait to _Sandwich
+  id: 3
+  time: '2025-07-05T20:22:34.0000000+00:00'
