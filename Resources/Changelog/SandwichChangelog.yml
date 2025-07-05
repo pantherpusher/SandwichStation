@@ -21,3 +21,11 @@ Entries:
       message: Moved Dave's portrait to _Sandwich
   id: 3
   time: '2025-07-05T20:22:34.0000000+00:00'
+- author: Azrakoth
+  changes:
+    - type: Tweak
+      message: >-
+        Replaced goob_poster2_contraband.png with a newly made Dave poster as a
+        placeholder.
+  id: 4
+  time: '2025-07-03T18:42:23.0000000+00:00'
