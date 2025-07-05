@@ -35,3 +35,9 @@ Entries:
       message: 'Fixed #17 '
   id: 5
   time: '2025-06-27T14:07:02.0000000+00:00'
+- author: mart33no
+  changes:
+    - type: Tweak
+      message: Increased legs and arms marking points
+  id: 6
+  time: '2025-06-27T21:32:18.0000000+00:00'
