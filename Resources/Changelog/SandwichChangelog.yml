@@ -47,3 +47,9 @@ Entries:
       message: Rebranding to SandwichStation
   id: 7
   time: '2025-06-08T13:20:31.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: Rebranding
+  id: 8
+  time: '2025-06-07T16:10:40.0000000+00:00'
