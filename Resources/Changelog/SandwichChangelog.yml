@@ -1,5 +1,5 @@
 Name: SandwichChangelog
-Order: -3
+Order: -2
 Entries:
 - author: SandwichStation
   changes:
@@ -7,3 +7,9 @@ Entries:
       type: Add
   id: 1
   time: '2025-06-07T17:00:00.000000'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Changelogs now work automagically™
+  id: 2
+  time: '2025-07-04T23:54:38.0000000+00:00'
