@@ -10649,3 +10649,9 @@ Entries:
       message: Added several new furniture to decorate the station with!
   id: 1170
   time: '2025-06-04T13:01:23.0000000+00:00'
+- author: SandwichStation
+  changes:
+    - type: Remove
+      message: Removed fork from Goobstation, from now on we are on our own!
+  id: 1171
+  time: '2025-06-30T07:00:00.0000000+00:00'
