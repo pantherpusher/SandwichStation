@@ -5,7 +5,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-name: "Labels: PR"
+name: "Labels: Pull Request"
 
 on:
 - pull_request_target
@@ -18,3 +18,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@v5
+      with:
+        labels: "S: Pull Request"
