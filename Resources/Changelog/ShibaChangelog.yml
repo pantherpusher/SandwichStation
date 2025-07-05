@@ -2074,3 +2074,9 @@ Entries:
       message: Added brigmed spawns and lockers to Shiba-edited maps.
   id: 282
   time: '2025-06-05T09:35:44.0000000+00:00'
+- author: ShibaStation - AstroDogeDX
+  changes:
+    - type: Remove
+      message: The lights have been turned off, o7 fellow crew, hope you enjoy SandwichStation.
+  id: 282
+  time: '2025-06-30T07:00:00.0000000+00:00'
