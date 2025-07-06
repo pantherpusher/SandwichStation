@@ -38,7 +38,7 @@ using Robust.Shared.Random;
 using System.Linq;
 using System.Text;
 using Content.Goobstation.Common.CCVar;
-using Content.Server._durkcode.ServerCurrency;
+using Content.Server._Sandwich.ServerCurrency;
 using Content.Server.Objectives.Commands;
 using Content.Shared.CCVar;
 using Content.Shared.Prototypes;

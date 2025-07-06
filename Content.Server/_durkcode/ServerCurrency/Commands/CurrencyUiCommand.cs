@@ -16,12 +16,12 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Server._durkcode.ServerCurrency.UI;
+using Content.Server._Sandwich.ServerCurrency.UI;
 using Content.Server.EUI;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
 
-namespace Content.Server._durkcode.ServerCurrency.Commands
+namespace Content.Server._Sandwich.ServerCurrency.Commands
 {
     [AnyCommand]
     public sealed class CurrencyUiCommand : IConsoleCommand

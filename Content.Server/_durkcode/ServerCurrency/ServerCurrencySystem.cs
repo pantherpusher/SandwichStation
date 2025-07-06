@@ -10,7 +10,7 @@
 using Content.Goobstation.Common.CCVar;
 using Content.Server.GameTicking;
 using Content.Server.Popups;
-using Content.Shared._durkcode.ServerCurrency;
+using Content.Shared._Sandwich.ServerCurrency;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
@@ -21,7 +21,7 @@ using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Content.Server._RMC14.LinkAccount;
 
-namespace Content.Server._durkcode.ServerCurrency
+namespace Content.Server._Sandwich.ServerCurrency
 {
     /// <summary>
     /// Connects <see cref="ServerCurrencyManager"/> to the simulation state.

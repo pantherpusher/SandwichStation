@@ -77,6 +77,7 @@ namespace Content.Client.Lobby.UI
 
             LeaveButton.OnPressed += _ => _consoleHost.ExecuteCommand("disconnect");
             OptionsButton.OnPressed += _ => UserInterfaceManager.GetUIController<OptionsUIController>().ToggleWindow();
+            ShopButton.OnPressed += _ => _consoleHost.ExecuteCommand("balanceui");
         }
 
         public void SwitchState(LobbyGuiState state)
