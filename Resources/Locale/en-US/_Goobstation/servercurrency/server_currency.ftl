@@ -56,7 +56,7 @@ gs-balanceui-gift-player-tooltip = Insert the name of the player you want to sen
 gs-balanceui-gift-value = Value
 gs-balanceui-gift-value-tooltip = Amount of money to transfer
 
-gs-balanceui-shop-label = Tokens Store
+gs-balanceui-shop-label = Buyable Tokens:
 gs-balanceui-shop-empty = Out of stock!
 gs-balanceui-shop-buy = Buy
 gs-balanceui-shop-footer = ⚠ use Ahelp to claim your token. Only 1 use per day.
@@ -66,15 +66,18 @@ gs-balanceui-shop-tittle-label = Titles
 
 gs-balanceui-shop-buy-token-antag = Buy an Antag Token - {$price} Sandwich Points
 gs-balanceui-shop-buy-token-admin-abuse = Buy an Admin Abuse Token - {$price} Sandwich Points
-gs-balanceui-shop-buy-token-hat = Buy a Hat Token - {$price} Sandwich Points
+gs-balanceui-shop-buy-token-hat = Buy an Hat Token - {$price} Sandwich Points
+gs-balanceui-shop-buy-token-hat = Buy an Event Token - {$price} Sandwich Points
 
 gs-balanceui-shop-token-antag = High Tier Antag Token
 gs-balanceui-shop-token-admin-abuse = Admin Abuse Token
 gs-balanceui-shop-token-hat = Hat Token
+gs-balanceui-shop-token-event = Event Token
 
 gs-balanceui-shop-buy-token-antag-desc = Allows you become any antag. (Excluding Wizards)
 gs-balanceui-shop-buy-token-admin-abuse-desc = Allows you to request an admin to abuse their powers against you. Admins are encouraged to go wild.
 gs-balanceui-shop-buy-token-hat-desc = An admin will give you a random hat.
+gs-balanceui-shop-buy-token-event-desc = An admin will spawn an event of your choice.
 
 gs-balanceui-admin-add-label = Add (or subtract) money:
 gs-balanceui-admin-add-player = Player name
@@ -82,6 +85,7 @@ gs-balanceui-admin-add-value = Value
 
 gs-balanceui-remark-token-antag = Bought an antag token.
 gs-balanceui-remark-token-admin-abuse = Bought an admin abuse token.
-gs-balanceui-remark-token-hat = Bought a hat token.
+gs-balanceui-remark-token-hat = Bought an hat token.
+gs-balanceui-remark-token-event = Bought an event spawn token.
 gs-balanceui-shop-click-confirm = Click again to confirm
 gs-balanceui-shop-purchased = Purchased {$item}
