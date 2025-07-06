@@ -10,12 +10,12 @@
 
 using System.Threading.Tasks;
 using Content.Server.Database;
-using Content.Shared._durkcode.ServerCurrency;
+using Content.Shared._Sandwich.ServerCurrency;
 using Robust.Server.Player;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Network;
 
-namespace Content.Server._durkcode.ServerCurrency
+namespace Content.Server._Sandwich.ServerCurrency
 {
     public sealed class ServerCurrencyManager
     {

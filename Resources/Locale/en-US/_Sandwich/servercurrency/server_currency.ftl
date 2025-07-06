@@ -67,7 +67,7 @@ gs-balanceui-shop-tittle-label = Titles
 gs-balanceui-shop-buy-token-antag = Buy an Antag Token - {$price} Sandwich Points
 gs-balanceui-shop-buy-token-admin-abuse = Buy an Admin Abuse Token - {$price} Sandwich Points
 gs-balanceui-shop-buy-token-hat = Buy an Hat Token - {$price} Sandwich Points
-gs-balanceui-shop-buy-token-hat = Buy an Event Token - {$price} Sandwich Points
+gs-balanceui-shop-buy-token-event = Buy an Event Token - {$price} Sandwich Points
 
 gs-balanceui-shop-token-antag = High Tier Antag Token
 gs-balanceui-shop-token-admin-abuse = Admin Abuse Token
@@ -79,7 +79,7 @@ gs-balanceui-shop-buy-token-admin-abuse-desc = Allows you to request an admin to
 gs-balanceui-shop-buy-token-hat-desc = An admin will give you a random hat.
 gs-balanceui-shop-buy-token-event-desc = An admin will spawn an event of your choice.
 
-gs-balanceui-admin-add-label = Add (or subtract) money:
+gs-balanceui-admin-add-label = Add (or subtract) points:
 gs-balanceui-admin-add-player = Player name
 gs-balanceui-admin-add-value = Value
 

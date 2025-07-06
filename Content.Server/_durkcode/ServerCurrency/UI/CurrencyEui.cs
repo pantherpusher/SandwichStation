@@ -7,13 +7,13 @@
 
 using Content.Server.Administration.Notes;
 using Content.Server.EUI;
-using Content.Shared._durkcode.ServerCurrency;
-using Content.Shared._durkcode.ServerCurrency.UI;
+using Content.Shared._Sandwich.ServerCurrency;
+using Content.Shared._Sandwich.ServerCurrency.UI;
 using Content.Shared.Eui;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._durkcode.ServerCurrency.UI
+namespace Content.Server._Sandwich.ServerCurrency.UI
 {
     public sealed class CurrencyEui : BaseEui
     {

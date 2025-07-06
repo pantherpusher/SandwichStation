@@ -118,7 +118,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Client._durkcode.ServerCurrency;
+using Content.Client._Sandwich.ServerCurrency;
 using Content.Client._RMC14.LinkAccount;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;

@@ -6,11 +6,11 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Eui;
-using Content.Shared._durkcode.ServerCurrency;
-using Content.Shared._durkcode.ServerCurrency.UI;
+using Content.Shared._Sandwich.ServerCurrency;
+using Content.Shared._Sandwich.ServerCurrency.UI;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._durkcode.ServerCurrency.UI
+namespace Content.Client._Sandwich.ServerCurrency.UI
 {
     public class CurrencyEui : BaseEui
     {

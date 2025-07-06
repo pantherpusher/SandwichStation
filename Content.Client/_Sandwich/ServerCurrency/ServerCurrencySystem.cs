@@ -5,9 +5,9 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Shared._durkcode.ServerCurrency;
+using Content.Shared._Sandwich.ServerCurrency;
 
-namespace Content.Client._durkcode.ServerCurrency;
+namespace Content.Client._Sandwich.ServerCurrency;
 
 public sealed class ServerCurrencySystem : EntitySystem
 {
