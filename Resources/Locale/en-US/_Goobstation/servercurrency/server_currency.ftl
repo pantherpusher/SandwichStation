@@ -5,8 +5,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-server-currency-name-singular = Shiba Shilling
-server-currency-name-plural = Shiba Shillings
+server-currency-name-singular = Sandwich Point
+server-currency-name-plural = Sandwich Points
 
 ## Commands
 
@@ -59,14 +59,14 @@ gs-balanceui-gift-value-tooltip = Amount of money to transfer
 gs-balanceui-shop-label = Tokens Store
 gs-balanceui-shop-empty = Out of stock!
 gs-balanceui-shop-buy = Buy
-gs-balanceui-shop-footer = ⚠ Ahelp to use your token. Only 1 use per day.
+gs-balanceui-shop-footer = ⚠ use Ahelp to claim your token. Only 1 use per day.
 
 gs-balanceui-shop-token-label = Tokens
 gs-balanceui-shop-tittle-label = Titles
 
-gs-balanceui-shop-buy-token-antag = Buy an Antag Token - {$price} Goob Coins
-gs-balanceui-shop-buy-token-admin-abuse = Buy an Admin Abuse Token - {$price} Goob Coins
-gs-balanceui-shop-buy-token-hat = Buy a Hat Token - {$price} Goob Coins
+gs-balanceui-shop-buy-token-antag = Buy an Antag Token - {$price} Sandwich Points
+gs-balanceui-shop-buy-token-admin-abuse = Buy an Admin Abuse Token - {$price} Sandwich Points
+gs-balanceui-shop-buy-token-hat = Buy a Hat Token - {$price} Sandwich Points
 
 gs-balanceui-shop-token-antag = High Tier Antag Token
 gs-balanceui-shop-token-admin-abuse = Admin Abuse Token
