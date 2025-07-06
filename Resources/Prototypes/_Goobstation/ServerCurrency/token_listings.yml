@@ -25,6 +25,14 @@
   adminNote: gs-balanceui-remark-token-admin-abuse
 
 - type: tokenListing
+  id: EventToken
+  name: gs-balanceui-shop-buy-token-event
+  label: gs-balanceui-shop-token-event
+  description: gs-balanceui-shop-buy-token-event-desc
+  price: 2500
+  adminNote: gs-balanceui-remark-token-event
+
+- type: tokenListing
   id: HatToken
   name: gs-balanceui-shop-buy-token-hat
   label: gs-balanceui-shop-token-hat
