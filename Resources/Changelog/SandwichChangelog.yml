@@ -61,3 +61,11 @@ Entries:
       message: SVG logo replaced (whoops forgot)
   id: 9
   time: '2025-06-07T16:37:34.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Remove
+      message: MoMMI
+    - type: Add
+      message: Discord chat link
+  id: 10
+  time: '2025-07-06T10:36:56.0000000+00:00'
