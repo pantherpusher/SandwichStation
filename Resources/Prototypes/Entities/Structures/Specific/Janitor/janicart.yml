@@ -190,10 +190,6 @@
         whitelist:
           tags:
             - PlushieSharkCargo
-      mopbucket_shark_nessie:
-        whitelist:
-          tags:
-            - PlushieSharkLizard
       mopbucket_carpplush:
         whitelist:
           tags:
@@ -217,7 +213,6 @@
             - PlushieSharkEngineering
             - PlushieSharkSecurity
             - PlushieSharkCargo
-            - PlushieSharkLizard
             - PlushieCarp
           components:
             - Rehydratable
