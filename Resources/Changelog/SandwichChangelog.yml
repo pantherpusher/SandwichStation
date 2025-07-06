@@ -69,3 +69,13 @@ Entries:
       message: Discord chat link
   id: 10
   time: '2025-07-06T10:36:56.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Sandwich Points™
+    - type: Add
+      message: Shop for said Points
+    - type: Remove
+      message: Shiba Shillings
+  id: 11
+  time: '2025-07-06T17:55:08.0000000+00:00'
