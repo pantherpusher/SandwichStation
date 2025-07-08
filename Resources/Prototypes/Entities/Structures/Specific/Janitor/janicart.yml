@@ -194,6 +194,10 @@
         whitelist:
           tags:
             - PlushieCarp
+      mopbucket_shark_lizard:
+        whitelist:
+          tags:
+            - PlushieSharkLizard
     sprite: Objects/Specific/Janitorial/janitorial.rsi
   - type: Transform
     noRot: true
@@ -213,6 +217,7 @@
             - PlushieSharkEngineering
             - PlushieSharkSecurity
             - PlushieSharkCargo
+            - PlushieSharkLizard
             - PlushieCarp
           components:
             - Rehydratable
