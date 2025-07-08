@@ -96,8 +96,30 @@
     - id: PlushieSnake
       orGroup: Plushie
     - id: PlushieMoth
-      prob: 0.5
       orGroup: Plushie
+    - id: PlushieTwiggy #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieAchto #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieCaitlin #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieShuukei #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: LizardShark #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieCass #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieSevan #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieLucy #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieLexai #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieDeroh #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+    - id: PlushieDave #ShibaStation - Crewplushie
+      orGroup: Plushiecrew
+  
 
 - type: entity
   parent: BaseMail
@@ -303,6 +325,26 @@
       prob: 0.3
       maxAmount: 5
     - id: SpaceCash1000
+      orGroup: Cash
+      prob: 0.6
+      maxAmount: 3
+      
+- type: entity
+  parent: BaseMail
+  id: MailFakeMoney
+  suffix: Money
+  components:
+  - type: Mail
+    contents:
+    - id: SpaceCashCounterfeit100
+      orGroup: Cash
+      prob: 0.1
+      maxAmount: 10
+    - id: SpaceCashCounterfeit500
+      orGroup: Cash
+      prob: 0.3
+      maxAmount: 5
+    - id: SpaceCashCounterfeit1000
       orGroup: Cash
       prob: 0.6
       maxAmount: 3
