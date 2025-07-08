@@ -46,7 +46,7 @@
     MailFlowers: 0.8
     MailCrayons: 0.9
     MailLowMoney: 0.75
-    MailFakeMoney: 1
+    MailFakeMoney: 0.75
   # Tools
     MailSignallerKit: 0.5
     MailFlashlight: 0.8
