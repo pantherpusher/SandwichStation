@@ -91,3 +91,9 @@ Entries:
       message: Fixed uncompletable thief objectives
   id: 13
   time: '2025-07-08T18:46:13.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: PTL can now be rotated
+  id: 14
+  time: '2025-07-08T20:37:46.0000000+00:00'
