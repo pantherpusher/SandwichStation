@@ -328,3 +328,23 @@
       orGroup: Cash
       prob: 0.6
       maxAmount: 3
+      
+- type: entity
+  parent: BaseMail
+  id: MailFakeMoney
+  suffix: Money
+  components:
+  - type: Mail
+    contents:
+    - id: SpaceCashCounterfeit100
+      orGroup: Cash
+      prob: 0.1
+      maxAmount: 10
+    - id: SpaceCashCounterfeit500
+      orGroup: Cash
+      prob: 0.3
+      maxAmount: 5
+    - id: SpaceCashCounterfeit1000
+      orGroup: Cash
+      prob: 0.6
+      maxAmount: 3

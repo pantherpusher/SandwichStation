@@ -35,3 +35,45 @@
   - type: Construction
     graph: SpesosCounterfeit
     node: spesos
+
+- type: entity
+  parent: SpaceCashCounterfeit
+  id: SpaceCashCounterfeit100
+  suffix: 100
+  components:
+  - type: Icon
+    sprite: Objects/Economy/cash.rsi
+    state: cash_100
+  - type: Stack
+    count: 100
+  - type: Construction
+    graph: SpesosCounterfeit
+    node: spesos
+    
+- type: entity
+  parent: SpaceCashCounterfeit
+  id: SpaceCashCounterfeit500
+  suffix: 500
+  components:
+  - type: Icon
+    sprite: Objects/Economy/cash.rsi
+    state: cash_500
+  - type: Stack
+    count: 500
+  - type: Construction
+    graph: SpesosCounterfeit
+    node: spesos
+    
+- type: entity
+  parent: SpaceCashCounterfeit
+  id: SpaceCashCounterfeit1000
+  suffix: 1000
+  components:
+  - type: Icon
+    sprite: Objects/Economy/cash.rsi
+    state: cash_1000
+  - type: Stack
+    count: 1000
+  - type: Construction
+    graph: SpesosCounterfeit
+    node: spesos
