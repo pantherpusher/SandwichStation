@@ -35,6 +35,9 @@
   - type: Transform
     anchored: true
     noRot: false
+  - type: Rotatable
+    rotateWhileAnchored: false
+    rotateWhilePulling: true
   - type: RadiationSource
   - type: Appearance
   - type: PowerNetworkBattery
