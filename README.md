@@ -52,7 +52,7 @@ While _SandwichStation_ doesn't use the [contribution guidelines,](https://docs.
 2. Run `RUN_THIS.py` to init submodules and download the engine.
 3. Compile the solution.
 
-[More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
+[More detailed instructions on building the project.](https://docs.b3ckdoor.com/en/general-development/setup.html)
 
 ## License
 
