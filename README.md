@@ -20,9 +20,7 @@ While _SandwichStation_ doesn't use the [contribution guidelines,](https://docs.
 
 ## Building
 
-1. Clone this repo.
-2. Run `RUN_THIS.py` to init submodules and download the engine.
-3. Compile the solution.
+Please check our [Documentation](https://docs.b3ckdoor.com/en/general-development/setup.html) for steps on how to build your own version.
 
 [More detailed instructions on building the project.](https://docs.b3ckdoor.com/en/general-development/setup.html)
 
