@@ -1,29 +1,4 @@
-
-<!--
-SPDX-FileCopyrightText: 2017 PJB3005 <pieterjan.briers@gmail.com>
-SPDX-FileCopyrightText: 2018 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-SPDX-FileCopyrightText: 2019 Ivan <silvertorch5@gmail.com>
-SPDX-FileCopyrightText: 2019 Silver <silvertorch5@gmail.com>
-SPDX-FileCopyrightText: 2020 Injazz <43905364+Injazz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2020 RedlineTriad <39059512+RedlineTriad@users.noreply.github.com>
-SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2022 ike709 <ike709@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 iglov <iglov@avalon.land>
-SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Rares Popa <2606875+rarepops@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 router <messagebus@vk.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-
-SPDX-License-Identifier: AGPL-3.0-or-later
--->
-
-<p align="center"> <img alt="ShibaStation" src="Resources/Textures/Logo/logo.png" /></p>
+<p align="center"> <img alt="SandwichStation_Logo" src="Resources/Textures/Logo/logo.png" /></p>
 <table>
   <tr>
     <th>Server uptime:</th>
@@ -33,9 +8,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 
 _SandwichStation_ was a fork of _ShibaStation_<sup>†</sup>, which is a fork of _Goob-Station_, which is itself a fork of _Space Station 14_. This fork is mainly customized to our own standards and balances.
-
-
-If you want to host or create content for _SS14_, go to the [Space Station 14 repository](https://github.com/space-wizards/space-station-14) as it contains both RobustToolbox and the content pack for development of new content packs and is the base for your fork.
 
 ## Links
 
