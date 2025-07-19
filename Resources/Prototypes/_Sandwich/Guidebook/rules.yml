@@ -7,7 +7,7 @@
   - SandwichCoreRules
   - SandwichRoleplayRules
   - SandwichJobExpectations
-  - SiliconRules
+  #- SandwichSiliconRules
 
 - type: guideEntry
   id: SandwichCoreRules
