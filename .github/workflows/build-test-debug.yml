@@ -37,6 +37,7 @@ on:
 
 jobs:
   build:
+    name: Build & Test Debug
     if: github.event.pull_request.draft == false
     strategy:
       matrix:
