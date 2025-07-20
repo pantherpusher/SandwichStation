@@ -11,7 +11,7 @@ _SandwichStation_ was a fork of _ShibaStation_<sup>†</sup>, which is a fork of
 
 ## Links
 
-<a target="_blank" href="https://discord.gg/Z6JvtKw6tp"><img src="https://dcbadge.limes.pink/api/server/Z6JvtKw6tp?style=flat" alt="SandwichStation Discord" /></a>
+<a target="_blank" href="https://discord.gg/Z6JvtKw6tp"><img src="https://dcbadge.limes.pink/api/server/Z6JvtKw6tp?style=flat?" alt="SandwichStation Discord" /></a>
 
 ## Contributing
 
