@@ -121,6 +121,19 @@ The [color=#9400d3]Epsilon Alert[/color] is only set when Central Command interv
   </ColorBox>
 </Table>
 
+<Table Columns="1">
+  <ColorBox Color="#00FF00">
+    <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="10">
+      [bold][color=#ffffff][head=1]Dave Alert[/head][/color][/bold]
+    </Box>
+  </ColorBox>
+  <ColorBox>
+    <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10">
+      Attention! Station alert level is now Dave! CentComm has decided to send Dave over to clean up your mess, you better listen to him...
+    </Box>
+  </ColorBox>
+</Table>
+
 The [color=#db7093]Gamma Alert[/color] is rare and often only used in extreme cases.
 
 <Table Columns="1">
