@@ -6,7 +6,7 @@
   startingGear: OffDutyGear
   icon: "JobIconOffDuty"
   supervisors: job-supervisors-everyone
-  goobcoins: 0
+  goobcoins: 0 # Off-duty, so your not earning anything
   access:
    - Maintenance
 
