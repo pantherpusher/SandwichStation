@@ -1,20 +1,20 @@
 - type: job
-  id: offduty
-  name: job-name-offduty
-  description: job-description-offduty
+  id: OffDuty
+  name: job-name-OffDuty
+  description: job-description-OffDuty
   playTimeTracker: JobOffDuty
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 7200 # 2 hrs overall playtime
-  startingGear: offdutyGear
-  icon: "JobIconoffduty"
+  startingGear: OffDutyGear
+  icon: "JobIconOffDuty"
   supervisors: job-supervisors-everyone
   goobcoins: 0 # Off-duty, so your not earning anything
   access:
    - Maintenance # Unlike passengers, you earned your access
 
 - type: startingGear
-  id: offdutyGear
+  id: OffDutyGear
   equipment:
     id: PassengerPDA
     ears: ClothingHeadsetGrey
