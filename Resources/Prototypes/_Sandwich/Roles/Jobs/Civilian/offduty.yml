@@ -1,10 +1,10 @@
 - type: job
-  id: Passenger
-  name: job-name-passenger
-  description: job-description-passenger
-  playTimeTracker: JobPassenger
-  startingGear: PassengerGear
-  icon: "JobIconPassenger"
+  id: OffDuty
+  name: job-name-OffDuty
+  description: job-description-OffDuty
+  playTimeTracker: JobOffDuty
+  startingGear: OffDutyGear
+  icon: "JobIconOffDuty"
   supervisors: job-supervisors-everyone
   goobcoins: 0
   access:
