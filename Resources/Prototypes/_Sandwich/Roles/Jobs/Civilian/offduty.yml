@@ -2,7 +2,7 @@
   id: offduty
   name: job-name-offduty
   description: job-description-offduty
-  playTimeTracker: Joboffduty
+  playTimeTracker: JobOffDuty
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 7200 # 2 hrs overall playtime
@@ -14,7 +14,7 @@
    - Maintenance # Unlike passengers, you earned your access
 
 - type: startingGear
-  id: PassengerGear # Your basically a passenger, so same gear
+  id: offdutyGear
   equipment:
     id: PassengerPDA
     ears: ClothingHeadsetGrey
