@@ -1,3 +1,3 @@
 # Please keep these alphabetical :)
 
-job-name-offduty = Off-Duty
+job-name-OffDuty = Off-Duty
