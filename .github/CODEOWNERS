@@ -3,11 +3,16 @@
 # code changes will send PR to following users
 * @SandwichStation/pr-reviewers
 
-# Only allow CentComm Captains to edit these files/folders:
-/.github/* @SandwichStation/centcomm-captain
-
 # Only allow CentComm Admirals to edit these files/folders:
-/LICENSES/* @SandwichStation/centcomm-admiral
+/LICENSES/* @SandwichStation/centcomm-admiral # We dont want legal trouble because a missing license
+/RobustToolbox/* @SandwichStation/centcomm-admiral # We dont want random bugs due to version updates
+/.github/* @SandwichStation/entcomm-admiral # important folder
+/SECURITY.md @SandwichStation/entcomm-admiral # Sensitive data, strict rules
+/README.md @SandwichStation/entcomm-admiral # Our public message, no random changes permitted
+*.bat @SandwichStation/entcomm-admiral # Since everyone will be running these, stricter rules
+*.sh @SandwichStation/entcomm-admiral # Since everyone will be running these, stricter rules
+/Scripts/* @SandwichStation/entcomm-admiral # Since everyone will be running these, stricter rules
+/Tools/* @SandwichStation/entcomm-admiral # Normal users have no reason to mess with these files
 
 # Only allow CentComm Admirals to edit permissions:
 /.github/CODEOWNERS @SandwichStation/centcomm-admiral
