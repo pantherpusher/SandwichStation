@@ -97,3 +97,21 @@ Entries:
       message: PTL can now be rotated
   id: 14
   time: '2025-07-08T20:37:46.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: SOP rules have been changed, check discord for more info.
+    - type: Add
+      message: Alert level Dave is now in the Guidebook under Alerts
+  id: 15
+  time: '2025-07-21T10:48:27.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Remove
+      message: Removed un-used rulefiles
+    - type: Tweak
+      message: Rules have been changed, check discord for more info.
+    - type: Fix
+      message: Broken links in the Guidebook
+  id: 16
+  time: '2025-07-21T10:47:51.0000000+00:00'

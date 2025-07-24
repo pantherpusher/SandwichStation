@@ -14,5 +14,5 @@
 /Scripts/* @SandwichStation/centcomm-admiral # Since everyone will be running these, stricter rules
 /Tools/* @SandwichStation/centcomm-admiral # Normal users have no reason to mess with these files
 
-# Only allow CentComm Admirals to edit permissions:
-/.github/CODEOWNERS @SandwichStation/centcomm-admiral
+# Only allow permission changes by SandwichStation Owner
+/.github/CODEOWNERS @B3CKDOOR
