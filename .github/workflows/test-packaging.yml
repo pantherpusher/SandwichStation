@@ -47,8 +47,7 @@ jobs:
   build:
     name: Test Packaging
     if: github.actor != 'PJBot' && github.event.pull_request.draft == false
-    runs-on: #ubuntu-latest <-- disabled to prefer self-hosted
-      labels: serv1 # <-- remove line to use non self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Master
