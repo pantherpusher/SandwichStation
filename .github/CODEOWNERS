@@ -1,5 +1,18 @@
-## code changes will send PR to following users
+# Warning: Inverted order, last one in file takes priority!
+
+# code changes will send PR to following users
 * @SandwichStation/pr-reviewers
 
+# Only allow CentComm Admirals to edit these files/folders:
+/LICENSES/* @SandwichStation/centcomm-admiral # We dont want legal trouble because a missing license
+/RobustToolbox/* @SandwichStation/centcomm-admiral # We dont want random bugs due to version updates
+/.github/* @SandwichStation/centcomm-admiral # important folder
+/SECURITY.md @SandwichStation/centcomm-admiral # Sensitive data, strict rules
+/README.md @SandwichStation/centcomm-admiral # Our public message, no random changes permitted
+*.bat @SandwichStation/centcomm-admiral # Since everyone will be running these, stricter rules
+*.sh @SandwichStation/centcomm-admiral # Since everyone will be running these, stricter rules
+/Scripts/* @SandwichStation/centcomm-admiral # Since everyone will be running these, stricter rules
+/Tools/* @SandwichStation/centcomm-admiral # Normal users have no reason to mess with these files
+
 # Only allow permission changes by SandwichStation Owner
-/.github/CODEOWNERS @SandwichStation/centcomm-admiral
+/.github/CODEOWNERS @B3CKDOOR
