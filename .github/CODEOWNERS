@@ -2,4 +2,4 @@
 * @SandwichStation/pr-reviewers
 
 # Only allow permission changes by SandwichStation Owner
-/.github/CODEOWNERS @SandwichStation/centcomm-captain
+/.github/CODEOWNERS @SandwichStation/centcomm-admiral
