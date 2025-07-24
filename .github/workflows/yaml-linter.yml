@@ -32,7 +32,8 @@ jobs:
   build:
     name: YAML Linter
     if: github.event.pull_request.draft == false
-    runs-on: ubuntu-latest
+    runs-on: #ubuntu-latest <-- disabled to prefer self-hosted
+      labels: serv1 # <-- remove line to use non self-hosted
     steps:
       - uses: actions/checkout@v4.2.2
       - name: Setup submodule

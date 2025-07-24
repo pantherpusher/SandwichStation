@@ -43,7 +43,8 @@ jobs:
       matrix:
         os: [ubuntu-latest]
 
-    runs-on: ${{ matrix.os }}
+    runs-on: #${{ matrix.os }} <-- disabled to prefer self-hosted
+      labels: serv1 # <-- remove line to use non self-hosted
 
     steps:
     - name: Checkout Master
