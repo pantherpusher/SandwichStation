@@ -5,7 +5,7 @@
   playTimeTracker: JobOffDuty
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 7200 # 2 hrs overall playtime
+      time: 14400 # 4 hrs overall playtime
   startingGear: OffDutyGear
   icon: "JobIconOffDuty"
   supervisors: job-supervisors-everyone
