@@ -137,3 +137,9 @@ Entries:
         access from good crew
   id: 18
   time: '2025-07-27T19:52:29.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: Reptilians can now have wigs
+  id: 19
+  time: '2025-07-27T19:52:07.0000000+00:00'
