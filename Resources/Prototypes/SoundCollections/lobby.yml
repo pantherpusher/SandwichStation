@@ -120,21 +120,40 @@
 - type: soundCollection
   id: LobbyMusic
   files:
-    #Sandwich - Lobby Songs
+    # Sandwich - Lobby Songs
+    - /Audio/_Sandwich/Lobby/arcadia.ogg
+    - /Audio/_Sandwich/Lobby/athletic_what_a_mario_world.ogg
+    - /Audio/_Sandwich/Lobby/boombox_5_extended.ogg
     - /Audio/_Sandwich/Lobby/kitsune_gon.ogg
-    #- /Audio/_Sandwich/Lobby/mikus_instant_crush.ogg
-    #- /Audio/_Sandwich/Lobby/mikus_little_dark_age.ogg
-    #- /Audio/_Sandwich/Lobby/mikus_nightcall.ogg
-    #- /Audio/_Sandwich/Lobby/mikus_real_hero.ogg
-    #- /Audio/_Sandwich/Lobby/mikus_saved_tears.ogg
-    #- /Audio/_Sandwich/Lobby/miku_anamanaguchi.ogg
-    #- /Audio/_Sandwich/Lobby/miku_confessions-of-a-rotten-girl.ogg
-    #- /Audio/_Sandwich/Lobby/miku_taken_on.ogg
-    #- /Audio/_Sandwich/Lobby/miku_wants_to_enjoy_the_silence.ogg
+    - /Audio/_Sandwich/Lobby/lagoona.ogg
     - /Audio/_Sandwich/Lobby/rainingmen.ogg
     - /Audio/_Sandwich/Lobby/recordspin.ogg
     - /Audio/_Sandwich/Lobby/sandwichstation.ogg
+    - /Audio/_Sandwich/Lobby/shibastation.ogg
     - /Audio/_Sandwich/Lobby/superkarts.ogg
-    - /Audio/_Sandwich/Lobby/tiger.ogg
-    - /Audio/_Sandwich/Lobby/treasure trove cove.ogg
     - /Audio/_Sandwich/Lobby/unwelcome_school.ogg
+    - /Audio/_Sandwich/Lobby/eurobeat/rockefellerbeat.ogg
+    - /Audio/_Sandwich/Lobby/memes/sparkanoko.ogg
+    - /Audio/_Sandwich/Lobby/miku/mikus_instant_crush.ogg
+    - /Audio/_Sandwich/Lobby/miku/mikus_little_dark_age.ogg
+    - /Audio/_Sandwich/Lobby/miku/mikus_nightcall.ogg
+    - /Audio/_Sandwich/Lobby/miku/mikus_real_hero.ogg
+    - /Audio/_Sandwich/Lobby/miku/mikus_saved_tears.ogg
+    - /Audio/_Sandwich/Lobby/miku/miku_anamanaguchi.ogg
+    - /Audio/_Sandwich/Lobby/miku/miku_confessions-of-a-rotten-girl.ogg
+    - /Audio/_Sandwich/Lobby/miku/miku_taken_on.ogg
+    - /Audio/_Sandwich/Lobby/miku/miku_wants_to_enjoy_the_silence.ogg
+    - /Audio/_Sandwich/Lobby/miku/plastic_love.ogg
+    - /Audio/_Sandwich/Lobby/retro/komm_susser_tod_astrophysics.ogg
+    - /Audio/_Sandwich/Lobby/retro/psyche_rock.ogg
+    - /Audio/_Sandwich/Lobby/retro/sweetplasma.ogg
+    - /Audio/_Sandwich/Lobby/retro/tigereye.ogg
+    - /Audio/_Sandwich/Lobby/retro/touchout.ogg
+    - /Audio/_Sandwich/Lobby/retro/treasure_trove_cove.ogg
+    - /Audio/_Sandwich/Lobby/backstab.ogg
+    # End Lobby Songs
+
+# Sandwich - Xmas songs, uncomment to enable
+#    - /Audio/_Sandwich/Lobby/xmas/all_i_want_for_christmas.ogg
+#    - /Audio/_Sandwich/Lobby/xmas/jingle_bells.ogg
+# End Xmas
