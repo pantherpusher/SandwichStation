@@ -143,3 +143,27 @@ Entries:
       message: Reptilians can now have wigs
   id: 19
   time: '2025-07-27T19:52:07.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Jukebox songs are now sorted
+    - type: Fix
+      message: Added missing attributions for music/textures
+    - type: Add
+      message: New lobby screens
+    - type: Add
+      message: New lobby music
+    - type: Tweak
+      message: NukeOps Music
+    - type: Tweak
+      message: NukeArmed Music
+    - type: Tweak
+      message: TEMP. disabled "known music" in favor of newer ones
+    - type: Remove
+      message: Hyde admeme
+    - type: Remove
+      message: Goobstation Music for Lobby/Jukebox
+    - type: Remove
+      message: Goobstation Lobby screens
+  id: 20
+  time: '2025-07-31T15:21:29.0000000+00:00'
