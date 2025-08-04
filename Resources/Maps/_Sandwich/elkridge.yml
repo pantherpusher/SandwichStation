@@ -4,7 +4,7 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/04/2025 04:28:15
+  time: 08/04/2025 05:27:17
   entityCount: 17022
 maps:
 - 1
@@ -13952,7 +13952,7 @@ entities:
       pos: 47.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -363040.56
+      secondsUntilStateChange: -363456.75
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -96221,6 +96221,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 51.5,-13.5
       parent: 2
+    - type: SurveillanceCamera
+      id: E21 - SM North
   - uid: 8941
     components:
     - type: MetaData
@@ -96471,10 +96473,17 @@ entities:
       parent: 2
   - uid: 16966
     components:
+    - type: MetaData
+      name: camera (E25 - HEV Room)
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 42.5,-27.5
       parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraEngineering
+      nameSet: True
+      id: E25 - HEV Room
 - proto: SurveillanceCameraGeneral
   entities:
   - uid: 12647
