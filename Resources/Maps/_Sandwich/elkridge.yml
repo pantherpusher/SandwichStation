@@ -4,7 +4,7 @@ meta:
   engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/04/2025 05:27:17
+  time: 08/04/2025 05:46:19
   entityCount: 17022
 maps:
 - 1
@@ -8958,7 +8958,7 @@ entities:
             0: 65520
           10,-9:
             0: 17984
-            4: 1
+            6: 1
             2: 2444
           11,-8:
             0: 4096
@@ -9012,9 +9012,11 @@ entities:
           13,-7:
             0: 4095
           13,-6:
-            0: 65399
+            0: 34935
+            3: 30464
           13,-5:
-            0: 1919
+            3: 7
+            0: 1912
           13,-4:
             0: 4095
           14,-8:
@@ -9304,7 +9306,7 @@ entities:
             0: 4881
             2: 8226
             3: 8
-            5: 2048
+            4: 2048
           4,-13:
             0: 4369
             2: 17508
@@ -9313,7 +9315,7 @@ entities:
             0: 36096
           5,-10:
             3: 3
-            5: 768
+            4: 768
             2: 32904
             0: 2048
           5,-9:
@@ -9526,17 +9528,17 @@ entities:
             2: 4113
             0: 256
             3: 12
-            6: 3072
+            5: 3072
           9,-9:
             2: 1025
             0: 2832
-            4: 12
+            6: 12
           10,-11:
             2: 295
             0: 17920
           10,-10:
             3: 1
-            6: 256
+            5: 256
             2: 18508
             0: 1024
           10,-12:
@@ -10195,25 +10197,6 @@ entities:
           temperature: 293.15
           moles:
           - 0
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
           - 0
           - 0
           - 6666.982
@@ -10234,6 +10217,25 @@ entities:
           moles:
           - 6666.982
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 6666.982
           - 0
           - 0
           - 0
@@ -13952,7 +13954,7 @@ entities:
       pos: 47.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -363456.75
+      secondsUntilStateChange: -363912.44
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -95839,8 +95841,6 @@ entities:
     - type: Transform
       pos: 53.5,-20.5
       parent: 2
-    - type: Supermatter
-      activated: True
 - proto: SurveillanceCameraCommand
   entities:
   - uid: 112
@@ -96222,6 +96222,9 @@ entities:
       pos: 51.5,-13.5
       parent: 2
     - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraEngineering
+      nameSet: True
       id: E21 - SM North
   - uid: 8941
     components:
@@ -96410,7 +96413,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: E11 - Particle Accelerator
+      id: E11 - SM Observation
   - uid: 15107
     components:
     - type: MetaData
@@ -96447,7 +96450,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: E16 - Containment Field
+      id: E16 - SM West
   - uid: 16815
     components:
     - type: MetaData
@@ -96456,6 +96459,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 54.5,-22.5
       parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraEngineering
+      nameSet: True
+      id: E24 - SM Core
   - uid: 16944
     components:
     - type: MetaData
@@ -96464,6 +96472,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 60.5,-18.5
       parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraEngineering
+      nameSet: True
+      id: E22 - SM East
   - uid: 16965
     components:
     - type: MetaData
@@ -96471,6 +96484,11 @@ entities:
     - type: Transform
       pos: 51.5,-27.5
       parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraEngineering
+      nameSet: True
+      id: E23 - SM South
   - uid: 16966
     components:
     - type: MetaData
