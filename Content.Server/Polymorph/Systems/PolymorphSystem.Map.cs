@@ -8,21 +8,12 @@
 // SPDX-License-Identifier: MIT
 
 using Content.Shared.GameTicking;
-using Robust.Shared.Map;
 
 namespace Content.Server.Polymorph.Systems;
 
 public sealed partial class PolymorphSystem
 {
-    private readonly IMapManager _mapManager;
-
     public EntityUid? PausedMap { get; private set; }
-
-    public PolymorphSystem(IMapManager mapManager)
-    {
-        _mapManager = mapManager;
-        InitializeMap();
-    }
 
     /// <summary>
     /// Used to subscribe to the round restart event
@@ -49,8 +40,7 @@ public sealed partial class PolymorphSystem
         if (PausedMap != null && Exists(PausedMap))
             return;
 
-        var newmap = _mapManager.CreateMap();
-        _mapManager.SetMapPaused(newmap, true);
-        PausedMap = _mapManager.GetMapEntityId(newmap);
+        PausedMap = _map.CreateMap();
+        _map.SetPaused(PausedMap.Value, true);
     }
 }
