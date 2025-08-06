@@ -338,7 +338,7 @@ public sealed class DefibrillatorSystem : EntitySystem
                 // notify them they're being revived.
                 if (mind.CurrentEntity != target)
                 {
-                    _euiManager.OpenEui(new ReturnToBodyEui(mind, _mind, _player), session);
+                    _euiManager.OpenEui(new ReturnToBodyEui(mind, _mind), session);
                 }
             }
             else

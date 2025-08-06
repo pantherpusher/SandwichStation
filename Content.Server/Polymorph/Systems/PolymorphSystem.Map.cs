@@ -8,12 +8,21 @@
 // SPDX-License-Identifier: MIT
 
 using Content.Shared.GameTicking;
+using Robust.Shared.Map;
 
 namespace Content.Server.Polymorph.Systems;
 
 public sealed partial class PolymorphSystem
 {
+    private readonly IMapManager _mapManager;
+
     public EntityUid? PausedMap { get; private set; }
+
+    public PolymorphSystem(IMapManager mapManager)
+    {
+        _mapManager = mapManager;
+        InitializeMap();
+    }
 
     /// <summary>
     /// Used to subscribe to the round restart event

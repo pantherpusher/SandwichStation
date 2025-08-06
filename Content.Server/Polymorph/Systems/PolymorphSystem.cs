@@ -366,7 +366,7 @@ public sealed partial class PolymorphSystem : EntitySystem
         }
         // Einstein Engines - Language end
 
-        var polymorphedComp = Factory.GetComponent<PolymorphedEntityComponent>();
+        var polymorphedComp = _compFact.GetComponent<PolymorphedEntityComponent>();
         polymorphedComp.Parent = uid;
         polymorphedComp.Configuration = configuration;
         AddComp(child, polymorphedComp);

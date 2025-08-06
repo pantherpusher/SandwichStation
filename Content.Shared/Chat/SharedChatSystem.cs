@@ -291,7 +291,8 @@ public abstract class SharedChatSystem : EntitySystem
         bool checkRadioPrefix = true,
         bool ignoreActionBlocker = false,
         string wrappedMessagePostfix = "" // Goobstation
-    ) { }
+    )
+    { }
 
     public string SanitizeMessageCapital(string message)
     {

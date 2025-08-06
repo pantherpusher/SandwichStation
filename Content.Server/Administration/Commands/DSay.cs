@@ -56,7 +56,7 @@ namespace Content.Server.Administration.Commands
                 return;
 
             var chat = _e.System<ChatSystem>();
-            chat.TrySendInGameOOCMessage(entity, message, InGameOOCChatType.Dead, false, shell, player);
+            chat.TrySendInGameOOCMessage(entity, message, Content.Server.Chat.Systems.InGameOOCChatType.Dead, false, shell, player);
         }
     }
 }

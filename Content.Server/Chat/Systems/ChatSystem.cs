@@ -360,7 +360,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         // Was there an emote in the message? If so, send it.
         if (player != null && emoteStr != message && emoteStr != null)
         {
-            SendEntityEmote(source, emoteStr, range, nameOverride, hideLog, true, language, ignoreActionBlocker); // Einstein Engines - Language
+            SendEntityEmote(source, emoteStr, range, nameOverride, language, ignoreActionBlocker); // Einstein Engines - Language
         }
 
         // This can happen if the entire string is sanitized out.
@@ -393,10 +393,10 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             if (TryProccessCollectiveMindMessage(source, message, out var modMessage, out var channel))
             {
-                if (collective != null && collective.RespectAccents)
-                {
-                    modMessage = TransformSpeech(source, modMessage, language); // Einstein Engines - Languages (I made null since it requires a language input)
-                }
+                //if (collective != null && collective.RespectAccents)
+                //{
+                //    modMessage = TransformSpeech(source, modMessage, language); // Einstein Engines - Languages (I made null since it requires a language input)
+                //}
 
                 SendCollectiveMindChat(source, modMessage, channel);
                 return;
@@ -1179,7 +1179,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     }
 
     // Einstein Engines - Language begin
-       /// <summary>
+    /// <summary>
     ///     Wraps a message sent by the specified entity into an "x says y" string.
     /// </summary>
     public string WrapPublicMessage(EntityUid source, string name, string message, LanguagePrototype? language = null)
@@ -1364,7 +1364,6 @@ public sealed class EntitySpokeEvent : EntityEventArgs
         Channel = channel;
         IsWhisper = isWhisper;
         Language = language;
-        ObfuscatedMessage = obfuscatedMessage;
     }
 }
 

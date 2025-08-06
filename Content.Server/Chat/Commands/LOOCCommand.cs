@@ -59,7 +59,7 @@ namespace Content.Server.Chat.Commands
             if (string.IsNullOrEmpty(message))
                 return;
 
-            _e.System<ChatSystem>().TrySendInGameOOCMessage(entity, message, InGameOOCChatType.Looc, false, shell, player);
+            _e.System<ChatSystem>().TrySendInGameOOCMessage(entity, message, Content.Server.Chat.Systems.InGameOOCChatType.Looc, false, shell, player);
         }
     }
 }
