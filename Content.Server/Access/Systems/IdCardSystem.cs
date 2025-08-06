@@ -146,22 +146,4 @@ public sealed class IdCardSystem : SharedIdCardSystem
 
         }
     }
-
-    public override void ExpireId(Entity<ExpireIdCardComponent> ent)
-    {
-        if (ent.Comp.Expired)
-            return;
-
-        base.ExpireId(ent);
-
-        if (ent.Comp.ExpireMessage != null)
-        {
-            _chat.TrySendInGameICMessage(
-                ent,
-                Loc.GetString(ent.Comp.ExpireMessage),
-                Shared.Chat.InGameICChatType.Speak,
-                ChatTransmitRange.Normal,
-                true);
-        }
-    }
 }
