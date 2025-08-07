@@ -201,7 +201,7 @@
     tags:
     - DoorBumpOpener
     - Unimplantable
-    - SiliconMob
+    #- SiliconMob
   - type: MobState
     allowedStates:
       - Alive
@@ -301,7 +301,7 @@
     - DoorBumpOpener
     - Bot
     - Unimplantable
-    - SiliconMob
+    #- SiliconMob
   - type: Body
     bodyType: Simple
     prototype: Bot

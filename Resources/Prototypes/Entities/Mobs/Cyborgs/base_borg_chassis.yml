@@ -410,7 +410,7 @@
     - CanPilot
     - BorgEmotes # ShibaStation - Emote Whitelist
     - Unimplantable
-    - SiliconMob
+    #- SiliconMob
   - type: Emoting
   - type: GuideHelp
     guides:
